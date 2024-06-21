@@ -43,20 +43,33 @@ import { useEffect, useState } from "react";
 //     return { props: { data } }
 // }
 
+function getDate() {
+    const today = new Date();
+    const month = today.getMonth() + 1;
+    const year = today.getFullYear();
+    const date = today.getDate();
+    return `${date}/${month}/${year}`;
+  }
+
+
+
 
 export default function Home() {
-
     const [data, setData] = useState(null)
   const [isLoading, setLoading] = useState(true)
+  const [currentDate, setCurrentDate] = useState(getDate());
  
   useEffect(() => {
-    fetch('https://api.openweathermap.org/data/2.5/weather?lat=10.4195841&lon=-75.5271224&lang=es&units=metric&appid=cc8411344583128d1ea0437c84b2f589')
+    // fetch('https://api.openweathermap.org/data/2.5/weather?lat=10.4195841&lon=-75.5271224&lang=es&units=metric&appid=cc8411344583128d1ea0437c84b2f589')
+    fetch('https://api.weatherapi.com/v1/current.json?key=afecaab6134341fc8f9231218242006&q=Cartagena&aqi=no&lang=es')
       .then((res) => res.json())
       .then((data) => {
         setData(data)
         setLoading(false)
       })
   }, [])
+
+  console.log(data);
  
 //   if (isLoading) return <p>Loading...</p>
 //   if (!data) return <p>No profile data</p>
@@ -180,20 +193,77 @@ initial={{ opacity: 0, x: "30%"}}
 whileInView={{ opacity: 1, x: 0 }}
 animate={{ x: 100 }}
 transition={{ ease: "linear",
-    duration: 1,
+    duration: 2,
     x: { duration: 1 }}}
     className="w-3/4 -x-100 mx-auto items-center block mb-20">
     <img src="/images/lineas-atencion.jpeg" />
 </motion.div>
 
 {/* Clima */}
-<div className="max-w-7xl m-20 bg-gray-50 dark:bg-gray-900 max-w-screen-2x border border-gray-50 rounded-lg  dark:border-gray-700 mx-auto  justify-center items-center">
-    
+<motion.div  
+initial={{ opacity: 0 }} 
+whileInView={{ opacity: 1 }} 
+transition={{ ease: "circInOut",
+    duration: 2,
+    x: { duration: 2 }}} 
+    className="mt-20 mx-auto max-w-7xl flex flex-col">
+    <span className="text-3xl font-medium mb-4 text-center ">El tiempo en Cartagena de Indias hoy, {currentDate}</span>
+    <div className="flex flex-row items-center max-w-7xl mb-20 bg-gray-50 dark:bg-gray-900 max-w-screen-2x border border-gray-150 rounded-lg  dark:border-gray-700 mx-auto">
+    <div className="flex flex-col bg-white h-full w-[370px] text-center items-center justify-center p-4">
+        <img className="block justify-center items-center text-center" width={100} height={100} src={"https:" + data?.current.condition.icon} alt="Icono del clima" />
+        <div className="flex flex-row justify-center mb-2"><h1 className="text-5xl">{Math.ceil(data?.current.temp_c)}</h1><span className="text-2xl">°C</span></div>
+        <div className="first-letter:uppercase text-gray-500">{data?.current.condition.text}</div>    
+    </div>
 
+    <div className="flex flex-col w-5xl p-2 h-32 w-44 bg-sky-400 rounded-xl  text-center m-3 ">
+        <div className="text-white drop-shadow-lg">Sensacion térmica</div>
+        <div className="flex flex-row justify-center mb-2 mt-6"><h1 className="text-4xl">{Math.ceil(data?.current.feelslike_c)}</h1><span className="text-1xl">°C</span></div>
+    </div>       
 
-    <img width={100} height={100} src={"https://openweathermap.org/img/wn/" + data?.weather[0].icon +"@2x.png"} alt="Icono del clima" />
-    <div className="flex flex-row"><h1 className="text-6xl">{Math.ceil(data?.main.temp)}</h1><span className="text-3xl">°C</span></div>
-    <h1>{data?.weather[0].description}</h1>
+    <div className="flex flex-col w-5xl p-2 h-32 w-44 bg-teal-400 rounded-xl  text-center m-3 ">
+        <div className="text-white drop-shadow-lg">Humedad</div>
+        <div className="flex flex-row justify-center mb-2 mt-6"><h1 className="text-4xl">{Math.ceil(data?.current.humidity)}</h1><span className="text-1xl">%</span></div>
+    </div>    
+    <div className="flex flex-col w-5xl p-2 h-32 w-44 bg-slate-400 rounded-xl  text-center m-3 ">
+        <div className="text-white drop-shadow-lg">Viento</div>
+        <div className="flex flex-row justify-center mb-2 mt-6"><h1 className="text-4xl">{Math.ceil(data?.current.wind_kph)}</h1><span className="text-1xl"> km/h</span></div>
+    </div>     
+{/* 
+    <div className="flex flex-col w-5xl p-2 h-32 w-40 bg-slate-400 rounded-xl  text-center m-3 ">
+        <div className="text-white drop-shadow-lg">min/max</div>
+        <div className="flex flex-row justify-center mb-1 mt-2"><h1 className="text-4xl">{Math.ceil(data?.current.temp_min)}</h1><span className="text-1xl"> °C</span></div>
+        <div className="flex flex-row justify-center "><h1 className="text-4xl">{Math.ceil(data?.current.temp_max)}</h1><span className="text-1xl"> °C</span></div>
+    </div>   
+
+    <div className="flex flex-col w-5xl p-2 h-32 w-40 bg-slate-400 rounded-xl  text-center m-3 ">
+        <div className="text-white drop-shadow-lg">Viento</div>
+        <div className="flex flex-row justify-center mb-2 mt-6"><h1 className="text-4xl">{Math.ceil(data?.current.speed)}</h1><span className="text-1xl"> km/h</span></div>
+    </div>    */}
+
+    </div>
+</motion.div>
+
+{/* ten atento a  */}
+<div id="alert-additional-content-1" className="w-3/4 p-4 mx-auto text-justify mb-4 mt-8 text-gray-600 border border-blue-300 rounded-lg bg-blue-50 dark:bg-gray-600 dark:text-blue-400 dark:border-blue-500" role="alert">
+  <div className="flex items-center">
+    <svg className="text-black flex-shrink-0 w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+    </svg>
+    <span className="sr-only">Info</span>
+    <h3 className="text-xl font-medium text-black">Info</h3>
+  </div>
+  <div className="mt-2 mb-4 text-lg">
+  Ten en cuenta las funciones en situacion de desastre que son de vital importancia para el correcto desarrollo de las actividades en una situación de dasastre.
+  </div>
+  <div className="flex">
+    <button type="button" className="text-white bg-blue-800 hover:bg-blue-900 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-lg text-xs px-3 py-1.5 me-2 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+      <svg className="me-2 h-3 w-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
+        <path d="M10 0C4.612 0 0 5.336 0 7c0 1.742 3.546 7 10 7 6.454 0 10-5.258 10-7 0-1.664-4.612-7-10-7Zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/>
+      </svg>
+      Ver mas
+    </button>
+
+  </div>
 </div>
 
 
@@ -204,12 +274,12 @@ whileInView={{ opacity: 1 }}
 transition={{ ease: "circInOut",
     duration: 1,
     x: { duration: 1 }}} >
-<section className="max-w-7xl bg-gray-50 dark:bg-gray-900 max-w-screen-2x border border-gray-100 rounded-lg shadow dark:border-gray-700 mx-auto  justify-center items-center">
+<section className="max-w-7xl bg-gray-50 dark:bg-gray-900 max-w-screen-2x border border-gray-200 rounded-lg  dark:border-gray-700 mx-auto  justify-center items-center">
     <div className="grid max-w-screen-xl px-8 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div className="mr-auto place-self-center lg:col-span-7">
           
             <h1 className="flex flex-row  items-center gap-4 max-w-2xl mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-3xl xl:text-3xl dark:text-white text-yellow-400">Objetivo General <img className="h-32 w-32 " src="/images/objetivo-general.png" alt="" /></h1>
-            <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 text-justify"> La Oficina Asesora Para la Gestión del Riesgo de Desastres, tendrá como objetivo facilitar la labor del alcalde como responsable y principal ejecutor de los procesos para la gestión del riesgo en el Distrito, coordinar el desempeño del Consejo Distrital de Gestión del Riesgo de Desastres, coordinar la continuidad de los procesos de la gestión del riesgo, en cumplimiento de la política nacional de gestión del riesgo y de forma articulada con la planificación del desarrollo y el ordenamiento territorial distrital, asesorar, aconsejar y asistir en el seguimiento y evaluación de políticas, estrategias, planes, programas, regulaciones y acciones permanentes para el conocimiento y la reducción del riesgo y para el manejo de desastres del Distrito de Cartagena, con el propósito explícito de contribuir a la seguridad, el bienestar, la calidad de vida de las personas y al desarrollo sostenible.</p>
+            <p className="max-w-2xl mb-6 font-light text-slate-700 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 text-justify"> La Oficina Asesora Para la Gestión del Riesgo de Desastres, tendrá como objetivo facilitar la labor del alcalde como responsable y principal ejecutor de los procesos para la gestión del riesgo en el Distrito, coordinar el desempeño del Consejo Distrital de Gestión del Riesgo de Desastres, coordinar la continuidad de los procesos de la gestión del riesgo, en cumplimiento de la política nacional de gestión del riesgo y de forma articulada con la planificación del desarrollo y el ordenamiento territorial distrital, asesorar, aconsejar y asistir en el seguimiento y evaluación de políticas, estrategias, planes, programas, regulaciones y acciones permanentes para el conocimiento y la reducción del riesgo y para el manejo de desastres del Distrito de Cartagena, con el propósito explícito de contribuir a la seguridad, el bienestar, la calidad de vida de las personas y al desarrollo sostenible.</p>
             
         </div>
         <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
@@ -252,115 +322,26 @@ transition={{ ease: "circInOut",
 
 </div>
 
-{/* <Weather/> */}
 
-{/* ten atento a  */}
-<div id="alert-additional-content-1" className="w-3/4 p-4 mx-auto text-justify mb-4 mt-8 text-gray-600 border border-blue-300 rounded-lg bg-blue-50 dark:bg-gray-600 dark:text-blue-400 dark:border-blue-500" role="alert">
-  <div className="flex items-center">
-    <svg className="text-black flex-shrink-0 w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
-    </svg>
-    <span className="sr-only">Info</span>
-    <h3 className="text-xl font-medium text-black">Info</h3>
-  </div>
-  <div className="mt-2 mb-4 text-lg">
-  Ten en cuenta las funciones en situacion de desastre que son de vital importancia para el correcto desarrollo de las actividades en una situación de dasastre.
-  </div>
-  <div className="flex">
-    <button type="button" className="text-white bg-blue-800 hover:bg-blue-900 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-lg text-xs px-3 py-1.5 me-2 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-      <svg className="me-2 h-3 w-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
-        <path d="M10 0C4.612 0 0 5.336 0 7c0 1.742 3.546 7 10 7 6.454 0 10-5.258 10-7 0-1.664-4.612-7-10-7Zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/>
-      </svg>
-      Ver mas
-    </button>
 
-  </div>
-</div>
 
 
 {/* our team */}
-<div className=" p-10 mt-20 text-center bg-gray-50">
+<div className=" p-20 mt-40 mb-40 w-full max-full text-center bg-gray-100">
 
-    <p className="text-4xl font-bold mb-5">Cuerpo Administrativo</p>
+    <p className="text-4xl font-bold mb-5">JEFE
+    Oficina Asesora para la Gestión del Riesgo de Desastres</p>
     {/* alinear admins */}
-<div className="flex w-full items-center justify-center">
-  <div className="max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3  text-justify">
-        <a href="#">
-            <img className="rounded-t-lg" src="/images/ejecutivo1.avif" alt="" />
-        </a>
-        <div className="p-5">
-            <a href="#">
-                <h5 className="mb-2 text-2xl font-medium tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-            </a>
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-            <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Read more
-                <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-            </a>
-        </div>
+    <div className="flex flex-col items-center mx-auto justify-center p-6 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-7xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+    <img width={400} height={400} className="object-cover rounded-full" src="/images/jefe-oagrd.jpeg" alt="" />
+    <div className="flex flex-col justify-between p-6 leading-normal">
+        <h5 className="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Daniel Vargas Díaz</h5>
+        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-xl text-justify">Administrador de Empresas, especialista en Gobierno y Gestión del Desarrollo Regional y Municipal de la Universidad Católica de Bogotá, con magíster en Ciencia Política y Gobierno de la Universidad del Norte. 
+        Tiene experiencia como Asesor de la Secretaría del Interior, Asesor de planeación y Director de Juventudes de la Gobernación de Bolívar.
+        Es un profesional comprometido y responsable que se destaca por su liderazgo, adaptabilidad y aprendizaje continuo.
+        </p>
     </div>
-    {/* segundo admin */}
-    <div className="max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700  m-3 text-justify">
-        <a href="#">
-            <img className="rounded-t-lg" src="/images/persona5.avif" alt="" />
-        </a>
-        <div className="p-5">
-            <a href="#">
-                <h5 className="mb-2 text-2xl font-medium tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-            </a>
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-            <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Read more
-                <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-            </a>
-        </div>
-    </div>
-     {/* tercer admin */}
-     <div className="max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3 text-justify">
-        <a href="#">
-            <img className="rounded-t-lg" src="/images/ejecutivo3.jpeg" alt="" />
-        </a>
-        <div className="p-5">
-            <a href="#">
-                <h5 className="mb-2 text-2xl font-medium tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-            </a>
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-            <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Read more
-                <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-            </a>
-        </div>
-    </div>
-       {/* cuarto admin */}
-
-
-    <div className="max-w-xs bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3 text-justify">
-        <a href="#">
-            <img className="rounded-t-lg" src="/images/persona6.webp" alt="" />
-        </a>
-        <div className="p-5">
-            <a href="#">
-                <h5 className="mb-2 text-2xl font-medium tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-            </a>
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-            <a href="#" className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Read more
-                <svg className="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
-            </a>
-        </div>
-    </div>
-
-
-
-  </div>
+</div>
 
 </div>
 
