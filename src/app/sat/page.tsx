@@ -17,7 +17,7 @@ function sat() {
       ];
       return (
         <main>
-            <ImagesSlider className="h-[43rem]" images={images}>
+            <ImagesSlider className="h-[47rem]" images={images}>
             <motion.div
                 initial={{
                 opacity: 1,
@@ -30,9 +30,9 @@ function sat() {
                 transition={{
                 duration: 0.6,
                 }}
-                className="z-50 flex flex-col justify-center items-center drop-shadow-xl"
+                className="z-50 flex flex-col justify-center items-center drop-shadow-2xl"
             >
-                <motion.p className="font-bold  drop-shadow-lg text-4xl md:text-4xl text-center bg-grey bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-200 py-4">
+                <motion.p className="font-bold  drop-shadow-2xl text-4xl md:text-4xl text-center bg-grey bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-200 py-4">
                 Sistema Alerta Temprana <br /> de Cartagena
                 </motion.p>
                 {/* <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">

@@ -205,7 +205,7 @@ initial={{ opacity: 0 }}
 whileInView={{ opacity: 1 }} 
 transition={{ ease: "circInOut",
     duration: 2,
-    x: { duration: 2 }}} 
+    x: { duration: 1 }}} 
     className="mt-20 mx-auto max-w-7xl flex flex-col">
     <span className="text-3xl font-medium mb-4 text-center ">El tiempo en Cartagena de Indias hoy, {currentDate}</span>
     <div className="flex flex-row items-center max-w-7xl mb-20 bg-gray-50 dark:bg-gray-900 max-w-screen-2x border border-gray-150 rounded-lg  dark:border-gray-700 mx-auto">
@@ -244,7 +244,7 @@ transition={{ ease: "circInOut",
 </motion.div>
 
 {/* ten atento a  */}
-<div id="alert-additional-content-1" className="w-3/4 p-4 mx-auto text-justify mb-4 mt-8 text-gray-600 border border-blue-300 rounded-lg bg-blue-50 dark:bg-gray-600 dark:text-blue-400 dark:border-blue-500" role="alert">
+<div id="alert-additional-content-1" className="w-3/4 p-4 mx-auto text-justify mb-20 mt-8 text-gray-600 border border-blue-300 rounded-lg bg-blue-50 dark:bg-gray-600 dark:text-blue-400 dark:border-blue-500" role="alert">
   <div className="flex items-center">
     <svg className="text-black flex-shrink-0 w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
       <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
@@ -274,11 +274,11 @@ whileInView={{ opacity: 1 }}
 transition={{ ease: "circInOut",
     duration: 1,
     x: { duration: 1 }}} >
-<section className="max-w-7xl bg-gray-50 dark:bg-gray-900 max-w-screen-2x border border-gray-200 rounded-lg  dark:border-gray-700 mx-auto  justify-center items-center">
-    <div className="grid max-w-screen-xl px-8 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div className="mr-auto place-self-center lg:col-span-7">
+<section className="max-w-full bg-gray-50 dark:bg-gray-900 border border-gray-100 rounded-lg  dark:border-gray-700 mx-auto  justify-center items-center">
+    <div className="grid px-8 py-8 mx-auto lg:gap-4 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div className="mr-10 place-self-center lg:col-span-7">
           
-            <h1 className="flex flex-row  items-center gap-4 max-w-2xl mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-3xl xl:text-3xl dark:text-white text-yellow-400">Objetivo General <img className="h-32 w-32 " src="/images/objetivo-general.png" alt="" /></h1>
+            <h1 className="flex flex-row  items-center gap-1 mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-3xl xl:text-3xl dark:text-white text-yellow-400">Objetivo General <img className="h-32 w-32 " src="/images/objetivo-general.png" alt="" /></h1>
             <p className="max-w-2xl mb-6 font-light text-slate-700 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 text-justify"> La Oficina Asesora Para la Gestión del Riesgo de Desastres, tendrá como objetivo facilitar la labor del alcalde como responsable y principal ejecutor de los procesos para la gestión del riesgo en el Distrito, coordinar el desempeño del Consejo Distrital de Gestión del Riesgo de Desastres, coordinar la continuidad de los procesos de la gestión del riesgo, en cumplimiento de la política nacional de gestión del riesgo y de forma articulada con la planificación del desarrollo y el ordenamiento territorial distrital, asesorar, aconsejar y asistir en el seguimiento y evaluación de políticas, estrategias, planes, programas, regulaciones y acciones permanentes para el conocimiento y la reducción del riesgo y para el manejo de desastres del Distrito de Cartagena, con el propósito explícito de contribuir a la seguridad, el bienestar, la calidad de vida de las personas y al desarrollo sostenible.</p>
             
         </div>
@@ -292,7 +292,16 @@ transition={{ ease: "circInOut",
 
 
 {/* funciones generales */}
-<div className="max-w-3/4 mx-auto mt-20 text-center block">
+<motion.div  
+// animate={{ rotate: 360 }}
+style={{ rotate: 0 }} 
+initial={{ opacity: 0, y: "30%"}}
+whileInView={{ opacity: 1, y: 0 }}
+animate={{ y: 100 }}
+transition={{ ease: "linear",
+    duration: 1,
+    y: { duration: 1 }}} 
+    className="max-w-7xl mx-auto mt-20 text-center block">
 <section  className="flex flex-col items-center bg-white   md:flex-row  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 ">
     <img className="object-cover w-full rounded h-[900px] md:h-auto md:w-80 md:rounded" src="/images/funciones-generales.avif" alt="" />
     <div className="flex flex-col items-center p-4 leading-normal mx-0">
@@ -320,22 +329,22 @@ transition={{ ease: "circInOut",
     </div>
 </section>
 
-</div>
+</motion.div>
 
 
 
 
 
 {/* our team */}
-<div className=" p-20 mt-40 mb-40 w-full max-full text-center bg-gray-100">
+<div className=" p-20 mt-40 w-full max-full text-center bg-gray-50">
 
     <p className="text-4xl font-bold mb-5">JEFE
     Oficina Asesora para la Gestión del Riesgo de Desastres</p>
     {/* alinear admins */}
-    <div className="flex flex-col items-center mx-auto justify-center p-6 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-7xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+    <div className="flex flex-col items-center mx-auto justify-center p-6 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-7xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
     <img width={400} height={400} className="object-cover rounded-full" src="/images/jefe-oagrd.jpeg" alt="" />
     <div className="flex flex-col justify-between p-6 leading-normal">
-        <h5 className="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Daniel Vargas Díaz</h5>
+        <h5 className="mb-4 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Daniel Vargas Díaz</h5>
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-xl text-justify">Administrador de Empresas, especialista en Gobierno y Gestión del Desarrollo Regional y Municipal de la Universidad Católica de Bogotá, con magíster en Ciencia Política y Gobierno de la Universidad del Norte. 
         Tiene experiencia como Asesor de la Secretaría del Interior, Asesor de planeación y Director de Juventudes de la Gobernación de Bolívar.
         Es un profesional comprometido y responsable que se destaca por su liderazgo, adaptabilidad y aprendizaje continuo.
@@ -355,7 +364,7 @@ transition={{ ease: "circInOut",
 
 
 <div className="w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-    <h5 className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">Descarga nuestra aplicacion</h5>
+    <h5 className="mb-2 text-4xl font-bold text-gray-900 dark:text-white">Descarga nuestra aplicacion</h5>
     <p className="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">Esta atento a todas nuestras actualizaciones y mantente alerta de manera temprana</p>
     <div className="flex flex-col gap-4 items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
        
@@ -373,7 +382,7 @@ transition={{ ease: "circInOut",
     </div>
 
 
-        <a href="#" className="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
+        <a href="#" className="w-full sm:w-auto bg-blue-900 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
             <svg className="me-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"></path></svg>
             <div className="text-left rtl:text-right">
                 <div className="mb-1 text-base">Descargala en</div>
