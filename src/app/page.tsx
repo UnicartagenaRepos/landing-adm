@@ -6,7 +6,8 @@ import Navbar from "@/components/global/navbar";
 import { Button } from "@/components/ui/button";
 import { clients } from "@/lib/constant";
 import Image from "next/image";
-
+import { motion } from "framer-motion";
+import { NextPageContext } from 'next'
 
 import { Dropdown } from "flowbite-react";
 
@@ -29,8 +30,39 @@ import {
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
 import { TypewriterEffectSmooth } from "@/components/global/typewriter-effect";
+import Weather from "@/components/global/weather";
+import { useEffect, useState } from "react";
+
+
+
+
+
+// export async function getServerSideProps() {
+//     const res = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=10.4195841&lon=-75.5271224&lang=es&units=metric&appid=cc8411344583128d1ea0437c84b2f589`);
+//     const data = await res.json();
+//     return { props: { data } }
+// }
+
 
 export default function Home() {
+
+    const [data, setData] = useState(null)
+  const [isLoading, setLoading] = useState(true)
+ 
+  useEffect(() => {
+    fetch('https://api.openweathermap.org/data/2.5/weather?lat=10.4195841&lon=-75.5271224&lang=es&units=metric&appid=cc8411344583128d1ea0437c84b2f589')
+      .then((res) => res.json())
+      .then((data) => {
+        setData(data)
+        setLoading(false)
+      })
+  }, [])
+ 
+//   if (isLoading) return <p>Loading...</p>
+//   if (!data) return <p>No profile data</p>
+
+
+    
   const words = [
     {
       text: "Oficina ",
@@ -54,6 +86,11 @@ export default function Home() {
     },
   ];
 
+
+
+
+
+  
   return (
     <main>
    
@@ -65,31 +102,23 @@ export default function Home() {
 
 
    
-
     {/* carrousel */}
     <div className="w-full justify-center items-center ">
       <div id="default-carousel" className="w-full relative" data-carousel="slide">
       {/* <!-- Carousel wrapper --> */}
-          <div className="relative overflow-hidden md:h-[550px]">
-              {/* <!-- Item 1 --> */}
-              <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img src="/images/oagrd1.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+          <div className="relative overflow-hidden md:h-[700px]">
+        
+              <div className="hidden duration-300" data-carousel-item>
+                  <img src="/images/home1.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-2/3 top-2/3 left-1/2" alt="..." />
               </div>
-              {/* <!-- Item 2 --> */}
-              <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img src="/images/oagrd2.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+              <div className="hidden duration-300" data-carousel-item>
+              <p className="relative z-30 w-full mx-auto  mr-3  pr-9 block font-bold items-end text-1xl md:text-1xl text-center py-2 bg-slate-50 opacity-70">
+              Comités Barriales de Emergencias del Distrito de Cartagena
+                </p>
+                  <img src="/images/home2.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-2/3 top-2/3 left-1/2" alt="..." />
               </div>
-              {/* <!-- Item 3 --> */}
-              <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img src="/images/oagrd3.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-              </div>
-              {/* <!-- Item 4 --> */}
-              <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img src="/images/oagrd4.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
-              </div>
-              {/* <!-- Item 5 --> */}
-              <div className="hidden duration-700 ease-in-out" data-carousel-item>
-                  <img src="/images/oagrd5.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+              <div className="hidden duration-300" data-carousel-item>
+                  <img src="/images/home3.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/3 top-1 left-1/2" alt="..." />
               </div>
           </div>
           {/* <!-- Slider indicators --> */}
@@ -97,11 +126,11 @@ export default function Home() {
               <button type="button" className="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
               <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
               <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-              <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
-              <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+              {/* <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+              <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button> */}
           </div>
           {/* <!-- Slider controls --> */}
-          <button type="button" className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+          {/* <button type="button" className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
               <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                   <svg className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                       <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 1 1 5l4 4"/>
@@ -116,7 +145,7 @@ export default function Home() {
                   </svg>
                   <span className="sr-only">Next</span>
               </span>
-          </button>
+          </button> */}
       </div>
     </div>
     {/* name of the page */}
@@ -135,19 +164,52 @@ export default function Home() {
     </div>
 
 
+
+ 
+
     {/* <div className="max-w-5xl p-4 mx-auto text-center text-wrap mt-10 mb-10 ">
       <h1 className="mb-4 text-4xl font-semibold leading-none tracking-tight text-gray-900 md:text-6xl lg:text-6xl dark:text-white">Oficina Asesora para la Gestion del Riesgo de Desastres </h1>
     </div> */}
 
 
+{/* Lineas de atencion */}
+<motion.div  
+// animate={{ rotate: 360 }}
+style={{ rotate: 0 }} 
+initial={{ opacity: 0, x: "30%"}}
+whileInView={{ opacity: 1, x: 0 }}
+animate={{ x: 100 }}
+transition={{ ease: "linear",
+    duration: 1,
+    x: { duration: 1 }}}
+    className="w-3/4 -x-100 mx-auto items-center block mb-20">
+    <img src="/images/lineas-atencion.jpeg" />
+</motion.div>
+
+{/* Clima */}
+<div className="max-w-7xl m-20 bg-gray-50 dark:bg-gray-900 max-w-screen-2x border border-gray-50 rounded-lg  dark:border-gray-700 mx-auto  justify-center items-center">
+    
+
+
+    <img width={100} height={100} src={"https://openweathermap.org/img/wn/" + data?.weather[0].icon +"@2x.png"} alt="Icono del clima" />
+    <div className="flex flex-row"><h1 className="text-6xl">{Math.ceil(data?.main.temp)}</h1><span className="text-3xl">°C</span></div>
+    <h1>{data?.weather[0].description}</h1>
+</div>
+
+
 {/* objetivo general */}
-   
-<section className="max-w-7xl bg-gray-50 dark:bg-gray-900 max-w-screen-2x border border-gray-200 rounded-lg shadow dark:border-gray-700 mx-auto  justify-center items-center">
+<motion.div 
+initial={{ opacity: 0 }} 
+whileInView={{ opacity: 1 }} 
+transition={{ ease: "circInOut",
+    duration: 1,
+    x: { duration: 1 }}} >
+<section className="max-w-7xl bg-gray-50 dark:bg-gray-900 max-w-screen-2x border border-gray-100 rounded-lg shadow dark:border-gray-700 mx-auto  justify-center items-center">
     <div className="grid max-w-screen-xl px-8 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
         <div className="mr-auto place-self-center lg:col-span-7">
           
             <h1 className="flex flex-row  items-center gap-4 max-w-2xl mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-3xl xl:text-3xl dark:text-white text-yellow-400">Objetivo General <img className="h-32 w-32 " src="/images/objetivo-general.png" alt="" /></h1>
-            <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 text-justify">La Oficina Asesora Para la Gestión del Riesgo de Desastres, tendrá como objetivo facilitar la labor del alcalde como responsable y principal ejecutor de los procesos para la gestión del riesgo en el Distrito, coordinar el desempeño del Consejo Distrital de Gestión del Riesgo de Desastres, coordinar la continuidad de los procesos de la gestión del riesgo, en cumplimiento de la política nacional de gestión del riesgo y de forma articulada con la planificación del desarrollo y el ordenamiento territorial distrital, asesorar, aconsejar y asistir en el seguimiento y evaluación de políticas, estrategias, planes, programas, regulaciones y acciones permanentes para el conocimiento y la reducción del riesgo y para el manejo de desastres del Distrito de Cartagena, con el propósito explícito de contribuir a la seguridad, el bienestar, la calidad de vida de las personas y al desarrollo sostenible.</p>
+            <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 text-justify"> La Oficina Asesora Para la Gestión del Riesgo de Desastres, tendrá como objetivo facilitar la labor del alcalde como responsable y principal ejecutor de los procesos para la gestión del riesgo en el Distrito, coordinar el desempeño del Consejo Distrital de Gestión del Riesgo de Desastres, coordinar la continuidad de los procesos de la gestión del riesgo, en cumplimiento de la política nacional de gestión del riesgo y de forma articulada con la planificación del desarrollo y el ordenamiento territorial distrital, asesorar, aconsejar y asistir en el seguimiento y evaluación de políticas, estrategias, planes, programas, regulaciones y acciones permanentes para el conocimiento y la reducción del riesgo y para el manejo de desastres del Distrito de Cartagena, con el propósito explícito de contribuir a la seguridad, el bienestar, la calidad de vida de las personas y al desarrollo sostenible.</p>
             
         </div>
         <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
@@ -155,67 +217,7 @@ export default function Home() {
         </div>                
     </div>
 </section>
-
-
-    {/*  ultimas novedades */}
-    <div className="p-10 mt-10 bg-gray-50">
-    <h1 className="p-10  gap-4 text-center mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-3xl xl:text-3xl dark:text-white text-yellow-400">Ultimas Novedades</h1>
-    
-    <div className="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2 bg-gray-100 dark:bg-gray-800">
-    <figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-800 dark:border-gray-700">
-        <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Very easy this was to integrate</h3>
-            <p className="my-4">If you care for your time, I hands down would go with this."</p>
-        </blockquote>
-        <figcaption className="flex items-center justify-center ">
-            <img className="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png" alt="profile picture" />
-            <div className="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
-                <div>Bonnie Green</div>
-                <div className="text-sm text-gray-500 dark:text-gray-400 ">Developer at Open AI</div>
-            </div>
-        </figcaption>    
-    </figure>
-    <figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
-        <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Solid foundation for any project</h3>
-            <p className="my-4">Designing with Figma components that can be easily translated to the utility classNamees of Tailwind CSS is a huge timesaver!"</p>
-        </blockquote>
-        <figcaption className="flex items-center justify-center ">
-            <img className="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png" alt="profile picture" />
-            <div className="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
-                <div>Roberta Casas</div>
-                <div className="text-sm text-gray-500 dark:text-gray-400">Lead designer at Dropbox</div>
-            </div>
-        </figcaption>    
-    </figure>
-    <figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-es-lg md:border-b-0 md:border-e dark:bg-gray-800 dark:border-gray-700">
-        <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Mindblowing workflow</h3>
-            <p className="my-4">Aesthetically, the well designed components are beautiful and will undoubtedly level up your next application."</p>
-        </blockquote>
-        <figcaption className="flex items-center justify-center ">
-            <img className="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png" alt="profile picture" />
-            <div className="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
-                <div>Jese Leos</div>
-                <div className="text-sm text-gray-500 dark:text-gray-400">Software Engineer at Facebook</div>
-            </div>
-        </figcaption>    
-    </figure>
-    <figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-gray-200 rounded-b-lg md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
-        <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Efficient Collaborating</h3>
-            <p className="my-4">You have many examples that can be used to create a fast prototype for your team."</p>
-        </blockquote>
-        <figcaption className="flex items-center justify-center ">
-            <img className="rounded-full w-9 h-9" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png" alt="profile picture" />
-            <div className="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
-                <div>Joseph McFall</div>
-                <div className="text-sm text-gray-500 dark:text-gray-400">CTO at Google</div>
-            </div>
-        </figcaption>    
-    </figure>
-</div>
-</div>
+</motion.div>
 
 
 
@@ -224,7 +226,7 @@ export default function Home() {
 <section  className="flex flex-col items-center bg-white   md:flex-row  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 ">
     <img className="object-cover w-full rounded h-[900px] md:h-auto md:w-80 md:rounded" src="/images/funciones-generales.avif" alt="" />
     <div className="flex flex-col items-center p-4 leading-normal mx-0">
-    <img src="./oagrd-logo.png" className="h-[150px] w-[150px] text-center pl-10" alt="oagrd Logo " />
+    <Image priority={true} width="150" height="150" src="/oagrd-logo.png" className="text-center pl-10" alt="oagrd Logo" />
         <h5 className="mb-6 text-4xl font-bold tracking-tight text-gray-900 dark:text-white text-justify pl-10">Funciones generales de OAGRD</h5>
         
         <Carousel   plugins={[
@@ -249,6 +251,8 @@ export default function Home() {
 </section>
 
 </div>
+
+{/* <Weather/> */}
 
 {/* ten atento a  */}
 <div id="alert-additional-content-1" className="w-3/4 p-4 mx-auto text-justify mb-4 mt-8 text-gray-600 border border-blue-300 rounded-lg bg-blue-50 dark:bg-gray-600 dark:text-blue-400 dark:border-blue-500" role="alert">

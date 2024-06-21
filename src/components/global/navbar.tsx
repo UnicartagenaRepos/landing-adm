@@ -3,13 +3,18 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { MenuIcon } from 'lucide-react'
+import { usePathname } from 'next/navigation';
+
+
 type Props = {}
 
 const Navbar = (props: Props) => {
+  const pathname = usePathname();
+  
   return (
     <header className='sticky right-0 left-0 top-0 py-4 px-4 bg-white/40 backdrop-blur-lg z-[100] flex items-center border-b-[0px] border-neutral-900 justify-between'>
         <nav className="bg-white dark:bg-gray-900 w-full !z-1000 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
-        <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-1">
         <Link href="https://localhost:3000/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <Image src="/oagrd-logo.png" width={104} height={30} className="h-24" alt="oagrd Logo" />
             {/* <span className="self-center text-4xl font-semibold whitespace-nowrap dark:text-white">OAGRD</span> */}
@@ -37,7 +42,7 @@ const Navbar = (props: Props) => {
               <Link href="/reportes" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Reportes</Link>
             </li>
             <li>
-              <Link href="/prqs" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">PQRS</Link>
+              <Link href="https://www.cartagena.gov.co/Atencion-y-Servicio-a-la-Ciudadania/PQRSDF" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">PQRS</Link>
             </li>
             <li>
               <Link href="/contactanos" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contactanos</Link>
