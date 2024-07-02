@@ -75,101 +75,7 @@ function sat() {
 
 
 
-            <div id="accordion-collapse" data-accordion="collapse">
-  <h2 id="accordion-collapse-heading-1">
-    <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
-      <span>Reducción del riesgo de desastres</span>
-      <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
-      </svg>
-    </button>
-  </h2>
-  <div id="accordion-collapse-body-1" className="hidden" aria-labelledby="accordion-collapse-heading-1">
-    <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
-      <p className="mb-2 text-gray-500 dark:text-gray-400">El sistema permite identificar y alertar a la población sobre posibles peligros con anticipación, lo que les da tiempo para tomar medidas de precaución y reducir su vulnerabilidad.</p>
-      {/* <p className="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" className="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p> */}
-    </div>
-  </div>
-  <h2 id="accordion-collapse-heading-2">
-    <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
-      <span>Protección de vidas</span>
-      <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
-      </svg>
-    </button>
-  </h2>
-  <div id="accordion-collapse-body-2" className="hidden" aria-labelledby="accordion-collapse-heading-2">
-    <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-      <p className="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
-      <p className="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" className="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classNamees from Tailwind CSS and components from Flowbite.</p>
-    </div>
-  </div>
-  <h2 id="accordion-collapse-heading-3">
-    <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
-      <span>Minimización de daños</span>
-      <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
-      </svg>
-    </button>
-  </h2>
-  <div id="accordion-collapse-body-3" className="hidden" aria-labelledby="accordion-collapse-heading-3">
-    <div className="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
-      <p className="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
-      <p className="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
-      <p className="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
-      <ul className="ps-5 text-gray-500 list-disc dark:text-gray-400">
-        <li><a href="https://flowbite.com/pro/" className="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
-        <li><a href="https://tailwindui.com/" rel="nofollow" className="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <h2 id="accordion-collapse-heading-2">
-    <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
-      <span>Aumento de la resiliencia</span>
-      <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
-      </svg>
-    </button>
-  </h2>
-  <div id="accordion-collapse-body-2" className="hidden" aria-labelledby="accordion-collapse-heading-2">
-    <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-      <p className="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
-      <p className="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" className="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classNamees from Tailwind CSS and components from Flowbite.</p>
-    </div>
-  </div>
-
-  <h2 id="accordion-collapse-heading-2">
-    <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
-      <span>Mejoramiento de la respuesta a emergencias</span>
-      <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
-      </svg>
-    </button>
-  </h2>
-  <div id="accordion-collapse-body-2" className="hidden" aria-labelledby="accordion-collapse-heading-2">
-    <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-      <p className="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
-      <p className="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" className="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classNamees from Tailwind CSS and components from Flowbite.</p>
-    </div>
-  </div>
-
-  <h2 id="accordion-collapse-heading-2">
-    <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
-      <span>Promoción de una cultura de prevención</span>
-      <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
-      </svg>
-    </button>
-  </h2>
-  <div id="accordion-collapse-body-2" className="hidden" aria-labelledby="accordion-collapse-heading-2">
-    <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
-      <p className="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
-      <p className="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" className="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classNamees from Tailwind CSS and components from Flowbite.</p>
-    </div>
-  </div>
-</div>
-
+ 
 
 
 
@@ -181,16 +87,99 @@ function sat() {
             
  
             {/* <div className="w-full flex fle-col h-[800px] mt-20 mb-20 text-center relative justify-center"> */}
-            <div  className="h-full bg-white mx-auto md:max-full justify-center flex flex-col items-center text-center pt-10 pb-10 my-20" >
-                <img className="h-[400px] w-[800px] object-fit rounded-xl" src="/ventajas_personas.jpeg" alt="" />
-                <div className="p-4 leading-normal">
-                    <h5 className="m-6 text-4xl font-extrabold text-black dark:text-white rounded-2xl h-10 w-auto ">Ventajas de un SAT</h5>
-                    <p className="font-normal text-sm mb-1 text-gray-700 dark:text-gray-400 flex text-justify gap-2"><FaCheck size={24} className='text-yellow-400' /><b>Reducción del riesgo de desastres:</b> El sistema permite identificar y alertar a la población sobre posibles peligros con anticipación, lo que les da tiempo para tomar medidas de precaución y reducir su vulnerabilidad.</p>
-                    <p className="font-normal text-sm mb-1 text-gray-700 dark:text-gray-400 flex text-justify gap-2"><FaCheck size={24} className='text-yellow-400' /><b>Protección de vidas:</b> Al brindar información oportuna sobre los riesgos, las personas pueden tomar decisiones informadas para protegerse a sí mismas y a sus familias, lo que puede salvar vidas.</p>
-                    <p className="font-normal text-sm mb-1 text-gray-700 dark:text-gray-400 flex text-justify gap-2"><FaCheck size={24} className='text-yellow-400' /><b>Minimización de daños:</b> La alerta temprana permite a las autoridades y a la población tomar medidas para reducir los daños materiales y económicos causados por los desastres.</p>
-                    <p className="font-normal text-sm mb-1 text-gray-700 dark:text-gray-400 flex text-justify gap-2"><FaCheck size={24} className='text-yellow-400' /><b>Mejoramiento de la respuesta a emergencias:</b> El sistema facilita la coordinación de la respuesta a emergencias entre las diferentes entidades gubernamentales y organizaciones de ayuda humanitaria.</p>
-                    <p className="font-normal text-sm mb-1 text-gray-700 dark:text-gray-400 flex text-justify gap-2"><FaCheck size={24} className='text-yellow-400' /><b>Promoción de una cultura de prevención:</b> El sistema ayuda a crear conciencia sobre los riesgos de desastres y la importancia de estar preparados para afrontarlos.</p>
-                    <div className='flex flex-col '><p className="font-normal text-base mb-1 text-gray-700 dark:text-gray-400 flex text-justify gap-2"><FaCheck size={24} className='text-yellow-400' /><b>Aumento de la resiliencia: </b><span className='text-base'>La resiliencia es la capacidad de una comunidad para recuperarse de un desastre. El sistema de alertas tempranas es una herramienta fundamental para fortalecer la resiliencia de las comunidades.</span></p></div>
+            <div  className="mx-auto max-w-6xl mb-20 items-center justify-center object-center text-center align-middle " >
+                <h5 className="m-6 text-4xl font-extrabold dark:text-white rounded-2xl bg-mainc text-white p-1 items-center text-center">Ventajas de un SAT</h5>
+                <img className="h-[400px] mx-auto object-fit rounded-xl" src="/ventajas_personas.jpeg" alt="" />
+                <div className="p-4">
+                    <div id="accordion-collapse" data-accordion="collapse" className='w-6xl max-w-6xl'>
+                        <h2 id="accordion-collapse-heading-1">
+                            <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                            <span>Reducción del riesgo de desastres</span>
+                            <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
+                            </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-collapse-body-1" className="hidden" aria-labelledby="accordion-collapse-heading-1">
+                            <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900 text-start">
+                            <p className="mb-2 text-gray-500 dark:text-gray-400">El sistema permite identificar y alertar a la población sobre posibles peligros con anticipación, lo que les da tiempo para tomar medidas de precaución y reducir su vulnerabilidad.</p>
+                            {/* <p className="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" className="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p> */}
+                            </div>
+                        </div>
+                        <h2 id="accordion-collapse-heading-2">
+                            <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+                            <span>Protección de vidas</span>
+                            <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
+                            </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-collapse-body-2" className="hidden" aria-labelledby="accordion-collapse-heading-2">
+                            <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 text-start">
+                            <p className="mb-2 text-gray-500 dark:text-gray-400">Al brindar información oportuna sobre los riesgos, las personas pueden tomar decisiones informadas para protegerse a sí mismas y a sus familias, lo que puede salvar vidas.</p>
+                            {/* <p className="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" className="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classNamees from Tailwind CSS and components from Flowbite.</p> */}
+                            </div>
+                        </div>
+                        <h2 id="accordion-collapse-heading-3">
+                            <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+                            <span>Minimización de daños</span>
+                            <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
+                            </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-collapse-body-3" className="hidden" aria-labelledby="accordion-collapse-heading-3">
+                            <div className="p-5 border border-t-0 border-gray-200 dark:border-gray-700 text-start">
+                            <p className="mb-2 text-gray-500 dark:text-gray-400">La alerta temprana permite a las autoridades y a la población tomar medidas para reducir los daños materiales y económicos causados por los desastres.</p>
+                            </div>
+                        </div>
+
+                        <h2 id="accordion-collapse-heading-4">
+                            <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-4" aria-expanded="false" aria-controls="accordion-collapse-body-4">
+                            <span>Aumento de la resiliencia</span>
+                            <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
+                            </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-collapse-body-4" className="hidden" aria-labelledby="accordion-collapse-heading-4">
+                            <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 text-start">
+                            <p className="text-gray-500 dark:text-gray-400">La resiliencia es la capacidad de una comunidad para recuperarse de un desastre. </p>
+                            <p className="text-gray-500 dark:text-gray-400">El sistema de alertas tempranas es una herramienta fundamental para fortalecer la resiliencia de las comunidades.</p>
+                            </div>
+                        </div>
+
+                        <h2 id="accordion-collapse-heading-5">
+                            <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-5" aria-expanded="false" aria-controls="accordion-collapse-body-5">
+                            <span>Mejoramiento de la respuesta a emergencias</span>
+                            <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
+                            </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-collapse-body-5" className="hidden" aria-labelledby="accordion-collapse-heading-5">
+                            <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 text-start">
+                            <p className="mb-2 text-gray-500 dark:text-gray-400">El sistema facilita la coordinación de la respuesta a emergencias entre las diferentes entidades gubernamentales y organizaciones de ayuda humanitaria.</p>
+                            {/* <p className="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" className="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classNamees from Tailwind CSS and components from Flowbite.</p> */}
+                            </div>
+                        </div>
+
+                        <h2 id="accordion-collapse-heading-6">
+                            <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-6" aria-expanded="false" aria-controls="accordion-collapse-body-6">
+                            <span>Promoción de una cultura de prevención</span>
+                            <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
+                            </svg>
+                            </button>
+                        </h2>
+                        <div id="accordion-collapse-body-6" className="hidden" aria-labelledby="accordion-collapse-heading-6">
+                            <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 text-start">
+                            <p className="mb-2 text-gray-500 dark:text-gray-400">El sistema ayuda a crear conciencia sobre los riesgos de desastres y la importancia de estar preparados para afrontarlos.</p>
+                            {/* <p className="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" className="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classNamees from Tailwind CSS and components from Flowbite.</p> */}
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             {/* </div> */}
