@@ -72,20 +72,6 @@ function sat() {
 
             {/* ventaja de un sat block */}
 
-
-
-
- 
-
-
-
-
-
-
-
-
-            
- 
             {/* <div className="w-full flex fle-col h-[800px] mt-20 mb-20 text-center relative justify-center"> */}
             <div  className="mx-auto max-w-6xl mb-20 items-center justify-center object-center text-center align-middle " >
                 <h5 className="m-6 text-4xl font-extrabold dark:text-white rounded-2xl bg-mainc text-white p-1 items-center text-center">Ventajas de un SAT</h5>
