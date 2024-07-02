@@ -8,6 +8,7 @@ import { clients } from "@/lib/constant";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { NextPageContext } from 'next'
+import { FaPhoneAlt } from "react-icons/fa";
 
 import { Dropdown } from "flowbite-react";
 
@@ -76,28 +77,28 @@ export default function Home() {
 
 
     
-  const words = [
-    {
-      text: "Oficina ",
-       className: "text-4xl",
-    },
-    {
-      text: "Asesora ",
-       className: "text-4xl",
-    },
-    {
-      text: "para la ",
-       className: "text-4xl",
-    },
-    {
-      text: "Gestion del ",
-       className: "text-4xl ",
-    },
-    {
-      text: "Riesgo de Desastres.",
-      className: "text-yellow-400 dark:text-yellow-400 text-4xl break-after-column",
-    },
-  ];
+  // const words = [
+  //   {
+  //       text: "SAT ",
+  //        className: "text-6xl",
+  //     },
+  //   {
+  //     text: "Sistema ",
+  //      className: "text-5xl",
+  //   },
+  //   {
+  //     text: "de Alertas ",
+  //      className: "text-5xl",
+  //   },
+  //   {
+  //     text: "Temprana ",
+  //      className: "text-5xl",
+  //   },
+  //   {
+  //       text: "de Cartagena de Indias",
+  //        className: "text-5xl ",
+  //     },
+  // ];
 
 
 
@@ -117,28 +118,43 @@ export default function Home() {
    
     {/* carrousel */}
     <div className="w-full justify-center items-center ">
-      <div id="default-carousel" className="w-full relative" data-carousel="slide">
+      <div id="default-carousel" className="" data-carousel="slide">
       {/* <!-- Carousel wrapper --> */}
-          <div className="relative overflow-hidden md:h-[700px]">
-        
-              <div className="hidden duration-300" data-carousel-item>
-                  <img src="/images/home1.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-2/3 top-2/3 left-1/2" alt="..." />
+          <div className="relative overflow-hidden md:h-[800px]">
+              <div className="hidden duration-3000" data-carousel-item>
+                  <img src="/images/banners/sat-banner2.png" className="absolute block w-full -translate-x-1/2 -translate-y-2/2 top-2/2 left-1/2" alt="..." />
               </div>
               <div className="hidden duration-300" data-carousel-item>
-              <p className="relative z-30 w-full mx-auto  mr-3  pr-9 block font-bold items-end text-1xl md:text-1xl text-center py-2 bg-slate-50 opacity-70">
+                  <img src="/images/home1.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/3 top-1/3 left-1/2" alt="..." />
+              </div>
+              <div className="hidden duration-300" data-carousel-item>
+              <p className="relative z-30 w-full mx-auto  mr-3  pr-9 block font-bold items-end text-1xl md:text-1xl text-center py-2 bg-gray-50 opacity-70">
               Comités Barriales de Emergencias del Distrito de Cartagena
                 </p>
-                  <img src="/images/home2.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-2/3 top-2/3 left-1/2" alt="..." />
+                  <img src="/images/home2.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/3 top-1/3 left-1/2" alt="..." />
               </div>
               <div className="hidden duration-300" data-carousel-item>
-                  <img src="/images/home3.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/3 top-1 left-1/2" alt="..." />
+                  <img src="/images/banners/ban1.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/3 top-1/3  left-1/2" alt="..." />
+              </div>
+              <div className="hidden duration-300" data-carousel-item>
+                  <img src="/images/banners/ban2.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/3 top-1/3  left-1/2" alt="..." />
+              </div>
+              <div className="hidden duration-300" data-carousel-item>
+                  <img src="/images/banners/ban3.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/3 top-1/3  left-1/2" alt="..." />
+              </div>
+              <div className="hidden duration-300" data-carousel-item>
+                  <img src="/images/banners/ban4.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/3 top-1/3  left-1/2" alt="..." />
               </div>
           </div>
           {/* <!-- Slider indicators --> */}
-          <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-              <button type="button" className="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-              <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-              <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+          <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse  ">
+              <button type="button" className="w-3 h-3 rounded-full bg-blue-300" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+              <button type="button" className="w-3 h-3 rounded-full bg-blue-300" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+              <button type="button" className="w-3 h-3 rounded-full bg-blue-300" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+              <button type="button" className="w-3 h-3 rounded-full bg-blue-300" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+              <button type="button" className="w-3 h-3 rounded-full bg-blue-300" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+              <button type="button" className="w-3 h-3 rounded-full bg-blue-300" aria-current="false" aria-label="Slide 6" data-carousel-slide-to="5"></button>
+              <button type="button" className="w-3 h-3 rounded-full bg-blue-300" aria-current="true" aria-label="Slide 7" data-carousel-slide-to="6"></button>
               {/* <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
               <button type="button" className="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button> */}
           </div>
@@ -164,17 +180,10 @@ export default function Home() {
     {/* name of the page */}
 
 
-    <div className="flex flex-col items-center justify-center h-[10rem] ">
+    {/* <div className="flex flex-col items-center justify-center h-[10rem] ">
       <TypewriterEffectSmooth words={words}/>
-      {/* <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
-        <button className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-3xl">
-          Join now
-        </button>
-        <button className="w-40 h-10 rounded-xl bg-white text-black border border-black  text-sm">
-          Signup
-        </button>
-      </div> */}
-    </div>
+    </div> */}
+
 
 
 
@@ -184,20 +193,100 @@ export default function Home() {
       <h1 className="mb-4 text-4xl font-semibold leading-none tracking-tight text-gray-900 md:text-6xl lg:text-6xl dark:text-white">Oficina Asesora para la Gestion del Riesgo de Desastres </h1>
     </div> */}
 
+{/* Download the app */}
+<div className="w-full text-center bg-white border border-gray-200 sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+    <h5 className="mb-4 mt-10 text-5xl font-bold text-gray-900 dark:text-white">Descarga nuestra aplicacion</h5>
+    <p className="mb-10 text-base text-gray-500 sm:text-lg dark:text-gray-400">Esta atento a todas nuestras actualizaciones y mantente alerta de manera temprana</p>
+    <div className="flex flex-col gap-4 items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
+       
 
-{/* Lineas de atencion */}
-<motion.div  
-// animate={{ rotate: 360 }}
-style={{ rotate: 0 }} 
-initial={{ opacity: 0, x: "30%"}}
-whileInView={{ opacity: 1, x: 0 }}
-animate={{ x: 100 }}
-transition={{ ease: "linear",
-    duration: 2,
-    x: { duration: 1 }}}
-    className="w-3/4 -x-100 mx-auto items-center block mb-20">
-    <img src="/images/lineas-atencion.jpeg" />
-</motion.div>
+{/* celphone */}
+    <div className="mb-10 relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
+        <div className="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
+        <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
+        <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
+        <div className="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
+        <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
+            <img src="/images/app-image.jpeg" className="dark:hidden w-[272px] h-[572px]" alt="" />
+            <img src="/images/app-image.jpeg" className="hidden dark:block w-[272px] h-[572px]" alt="" />
+        </div>
+    </div>
+
+
+        <a href="#" className="md:mt-10 w-full sm:w-auto bg-mainc hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
+            <svg className="me-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"></path></svg>
+            <div className="text-left rtl:text-right">
+                <div className="mb-1 text-base">Descargala en</div>
+                <div className="-mt-1 font-sans text-lg font-semibold">Google Play</div>
+            </div>
+        </a>
+    </div>
+</div>
+
+{/* Ultimas noticias */}
+<div className="mx-auto max-w-6xl text-2xl mb-10 flex items-center justify-center bg-mainc text-white pl-10 h-20 text-center mt-20">ULTIMAS NOTICIAS</div>
+<div className="mx-auto max-w-6xl grid grid-cols-3 gap-10">
+  <div className="flex flex-col text-justify border items-center justify-center transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+    <img className='object-cover h-full w-full' src={'/images/noticias/not1.jpeg'} width={600} height={600} alt='Noticia 1'/>
+    <div className="bg-gray-50 pb-6">
+      <p className="p-4 text-gray-800 ">Distriseguridad fomenta el cuidado ambiental y el sentido de pertenencia en el Caño Juan Angola</p>
+      <div className="text-center">
+        <button className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</button>
+      </div>
+    </div>
+  </div>
+
+  <div className="flex flex-col text-justify border items-center justify-center transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+    <img className='object-cover h-full w-full' src={'/images/noticias/not2.jpeg'} width={600} height={600} alt='Noticia 1'/>
+    <div className="bg-gray-50 pb-6">
+      <p className="p-4 text-gray-800 ">Distriseguridad fomenta el cuidado ambiental y el sentido de pertenencia en el Caño Juan Angola</p>
+      <div className="text-center">
+        <button className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</button>
+      </div>
+    </div>
+  </div>
+
+  <div className="flex flex-col text-justify border items-center justify-center transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+    <img className='object-cover h-full w-full' src={'/images/noticias/not3.jpeg'} width={600} height={600} alt='Noticia 1'/>
+    <div className="bg-gray-50 pb-6">
+      <p className="p-4 text-gray-800 ">Brigada Cívica de la Alcaldía Mayor de Cartagena recibe certificación en competencias ciudadanas</p>
+      <div className="text-center">
+        <button className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</button>
+      </div>
+    </div>
+  </div>
+
+  <div className="flex flex-col text-justify border items-center justify-center transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+    <img className='object-cover h-full w-full' src={'/images/noticias/not4.jpeg'} width={600} height={600} alt='Noticia 1'/>
+    <div className="bg-gray-50 pb-6">
+      <p className="p-4 text-gray-800 ">Con Brigada Cívica, Distriseguridad fomenta la sana convivencia en Corredores Universitarios de Cartagena</p>
+      <div className="text-center">
+        <button className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</button>
+      </div>
+    </div>
+  </div>
+
+  <div className="flex flex-col text-justify border items-center justify-center transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+    <img className='object-cover h-full w-full' src={'/images/noticias/not5.jpeg'} width={600} height={600} alt='Noticia 1'/>
+    <div className="bg-gray-50 pb-6">
+      <p className="p-4 text-gray-800 ">Distriseguridad, celebra el día del niño con Jornada de Rescate de Juegos Tradicionales</p>
+      <div className="text-center">
+        <button className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</button>
+      </div>
+    </div>
+  </div>
+
+  <div className="flex flex-col text-justify border items-center justify-center transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+    <img className='object-cover h-full w-full' src={'/images/noticias/not6.jpeg'} width={600} height={600} alt='Noticia 1'/>
+    <div className="bg-gray-50 pb-6">
+      <p className="p-4 text-gray-800 ">Distriseguridad continúa atendiendo el llamado de las comunidades con trabajo articulado por la seguridad</p>
+      <div className="text-center">
+        <button className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</button>
+      </div>
+    </div>
+  </div>
+  
+</div>
 
 {/* Clima */}
 <motion.div  
@@ -206,16 +295,16 @@ whileInView={{ opacity: 1 }}
 transition={{ ease: "circInOut",
     duration: 2,
     x: { duration: 1 }}} 
-    className="mt-20 mx-auto max-w-7xl flex flex-col">
-    <span className="text-3xl font-medium mb-4 text-center ">El tiempo en Cartagena de Indias hoy, {currentDate}</span>
-    <div className="flex flex-row items-center max-w-7xl mb-20 bg-gray-50 dark:bg-gray-900 max-w-screen-2x border border-gray-150 rounded-lg  dark:border-gray-700 mx-auto">
-    <div className="flex flex-col bg-white h-full w-[370px] text-center items-center justify-center p-4">
-        <img className="block justify-center items-center text-center" width={100} height={100} src={"https:" + data?.current.condition.icon} alt="Icono del clima" />
-        <div className="flex flex-row justify-center mb-2"><h1 className="text-5xl">{Math.ceil(data?.current.temp_c)}</h1><span className="text-2xl">°C</span></div>
+    className="mt-20 mx-auto max-w-6xl flex flex-col">
+    <span className="text-2xl font-medium mb-4 text-center bg-mainc text-white p-3">El tiempo en Cartagena de Indias hoy - {currentDate}</span>
+    <div className="flex flex-row items-center max-w-6xl mb-20 bg-gray-100 dark:bg-gray-900 max-w-screen-2x border border-gray-150 rounded-lg  dark:border-gray-700 mx-auto">
+    <div className="flex flex-col bg-white h-40 w-[370px] text-center items-center justify-center p-4">
+        <img className="block justify-center items-center text-center" width={50} height={50} src={"https:" + data?.current.condition.icon} alt="Icono del clima" />
+        <div className="flex flex-row justify-center mb-1"><h1 className="text-5xl">{Math.ceil(data?.current.temp_c)}</h1><span className="text-2xl">°C</span></div>
         <div className="first-letter:uppercase text-gray-500">{data?.current.condition.text}</div>    
     </div>
 
-    <div className="flex flex-col w-5xl p-2 h-32 w-44 bg-sky-400 rounded-xl  text-center m-3 ">
+    <div className="flex flex-col w-5xl p-2 h-32 w-44 bg-red-400 rounded-xl  text-center m-3 ">
         <div className="text-white drop-shadow-lg">Sensacion térmica</div>
         <div className="flex flex-row justify-center mb-2 mt-6"><h1 className="text-4xl">{Math.ceil(data?.current.feelslike_c)}</h1><span className="text-1xl">°C</span></div>
     </div>       
@@ -224,7 +313,7 @@ transition={{ ease: "circInOut",
         <div className="text-white drop-shadow-lg">Humedad</div>
         <div className="flex flex-row justify-center mb-2 mt-6"><h1 className="text-4xl">{Math.ceil(data?.current.humidity)}</h1><span className="text-1xl">%</span></div>
     </div>    
-    <div className="flex flex-col w-5xl p-2 h-32 w-44 bg-slate-400 rounded-xl  text-center m-3 ">
+    <div className="flex flex-col w-5xl p-2 h-32 w-44 bg-gray-400 rounded-xl  text-center m-3 ">
         <div className="text-white drop-shadow-lg">Viento</div>
         <div className="flex flex-row justify-center mb-2 mt-6"><h1 className="text-4xl">{Math.ceil(data?.current.wind_kph)}</h1><span className="text-1xl"> km/h</span></div>
     </div>     
@@ -243,7 +332,211 @@ transition={{ ease: "circInOut",
     </div>
 </motion.div>
 
-{/* ten atento a  */}
+{/* Lineas de atencion */}
+<motion.div  
+// animate={{ rotate: 360 }}
+style={{ rotate: 0 }} 
+initial={{ opacity: 0, x: "30%"}}
+whileInView={{ opacity: 1, x: 0 }}
+animate={{ x: 100 }}
+transition={{ ease: "linear",
+    duration: 2,
+    x: { duration: 1 }}}
+    className="w-3/4 -x-100 mx-auto items-center block mb-20">
+
+
+
+
+<div className="mx-auto max-w-6xl text-6xl mb-10 flex items-center justify-between bg-mainc text-white pl-10 h-20 text-center">LINEAS DE EMERGENCIAS <Image className="h-auto rounded-full relative -right-6" src={'/images/lineas/phone247.jpg'} width={200} height={200} alt="Telefono 24 horas"/></div>
+<div> 
+    <button data-popover-target="popover-oagrd" type="button" className="select-none flex flex-col items-center gab-2 space-y-2 border h-62 w-62 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto mb-10 hover:bg-slate-50">
+      <div><Image className="mb-1" src={'/oagrd-logo.png'} width={150} height={150} alt={""} ></Image></div>
+      <p className="hover:underline">OAGRD</p>
+      <a href="tel:3175030465" className="hover:no-underline text-4xl">317 5030465</a>
+      </button>
+
+    <div data-popover id="popover-oagrd" role="tooltip" className="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+        <div className="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg">
+            <h3 className="font-semibold text-gray-900 dark:text-white text-center hover:underline">OAGRD</h3>
+        </div>
+        <div className="flex mx-auto flex-col px-3 py-2 text-4xl text-mainc text-center justify-center items-center">
+            <Image className="mb-3" src={'/oagrd-logo.png'} width={100} height={100} alt={""} ></Image>
+            <div className="flex items-center gap-4"><FaPhoneAlt size={24}/><p className="text-5xl">123</p></div>
+        </div>
+        <div data-popper-arrow></div>
+    </div>
+  </div>
+
+
+<div className="mx-auto max-w-6xl grid grid-cols-4 gap-10 ">
+  <div> 
+    <button data-popover-target="popover-policia" type="button" className="select-none flex flex-col items-center gab-2 space-y-2 border h-56 w-56 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto hover:bg-slate-50">
+      <div><Image className="mb-3" src={'/images/lineas/policia.png'} width={100} height={100} alt={""} ></Image></div>
+      <p className="hover:underline">POLICIA NACIONAL</p>
+      <a href="tel:123" className="hover:no-underline text-4xl">123</a>
+      </button>
+
+    <div data-popover id="popover-policia" role="tooltip" className="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+        <div className="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg">
+            <h3 className="font-semibold text-gray-900 dark:text-white text-center hover:underline">POLICIA NACIONAL</h3>
+        </div>
+        <div className="flex mx-auto flex-col px-3 py-2 text-4xl text-mainc text-center justify-center items-center">
+            <Image className="mb-3" src={'/images/lineas/policia-person.png'} width={100} height={100} alt={""} ></Image>
+            <div className="flex items-center gap-4"><FaPhoneAlt size={24}/><p className="text-5xl">123</p></div>
+        </div>
+        <div data-popper-arrow></div>
+    </div>
+  </div>
+
+  <div> 
+    <button data-popover-target="popover-bomberos" type="button" className="select-none flex flex-col items-center gab-2 space-y-2 border h-56 w-56 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto hover:bg-slate-50">
+      <div><Image className="mb-3" src={'/images/lineas/bomberos.jpg'} width={100} height={100} alt={""} ></Image></div>
+      <p className="hover:underline">BOMBEROS</p>
+      <a href="tel:119"  className="hover:no-underline text-4xl">119</a>
+      </button>
+
+    <div data-popover id="popover-bomberos" role="tooltip" className="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+        <div className="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg">
+            <h3 className="font-semibold text-gray-900 dark:text-white text-center hover:underline">BOMBEROS</h3>
+        </div>
+        <div className="flex mx-auto flex-col px-3 py-2 text-4xl text-mainc text-center justify-center items-center">
+            <Image className="mb-3" src={'/images/lineas/bomberos-person.png'} width={100} height={100} alt={""} ></Image>
+            <div className="flex items-center gap-4"><FaPhoneAlt size={24}/><p className="text-5xl">119</p></div>
+        </div>
+        <div data-popper-arrow></div>
+    </div>
+  </div>
+
+
+  <div> 
+    <button data-popover-target="popover-cruz-roja" type="button" className="select-none flex flex-col items-center gab-2 space-y-2 border h-56 w-56 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto hover:bg-slate-50">
+      <div><Image className="mb-3" src={'/images/lineas/cruz-roja.png'} width={100} height={100} alt={""} ></Image></div>
+      <p className="hover:underline">CRUZ ROJA</p>
+      <a href="tel:132"  className="hover:no-underline text-4xl">132</a>
+      </button>
+
+    <div data-popover id="popover-cruz-roja" role="tooltip" className="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+        <div className="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg">
+            <h3 className="font-semibold text-gray-900 dark:text-white text-center hover:underline">CRUZ ROJA</h3>
+        </div>
+        <div className="flex mx-auto flex-col px-3 py-2 text-4xl text-mainc text-center justify-center items-center">
+            <Image className="mb-3" src={'/images/lineas/cruz-roja.png'} width={100} height={100} alt={""} ></Image>
+            <div className="flex items-center gap-4"><FaPhoneAlt size={24}/><p className="text-5xl">132</p></div>
+        </div>
+        <div data-popper-arrow></div>
+    </div>
+  </div>
+  
+  
+  <div> 
+    <button data-popover-target="popover-surtigas" type="button" className="select-none flex flex-col items-center gab-2 space-y-2 border h-56 w-56 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto hover:bg-slate-50">
+      <div><Image className="mb-3" src={'/images/lineas/surtigas.png'} width={100} height={100} alt={""} ></Image></div>
+      <p className="hover:underline">SURTIGAS</p>
+      <a href="tel:164"  className="hover:no-underline text-4xl">164</a>
+      </button>
+
+    <div data-popover id="popover-surtigas" role="tooltip" className="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+        <div className="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg">
+            <h3 className="font-semibold text-gray-900 dark:text-white text-center hover:underline">SURTIGAS</h3>
+        </div>
+        <div className="flex mx-auto flex-col px-3 py-2 text-4xl text-mainc text-center justify-center items-center">
+            <Image className="mb-3" src={'/images/lineas/surtigas.png'} width={100} height={100} alt={""} ></Image>
+            <div className="flex items-center gap-4"><FaPhoneAlt size={24}/><p className="text-5xl">164</p></div>
+        </div>
+        <div data-popper-arrow></div>
+    </div>
+  </div>
+  
+
+  <div> 
+    <button data-popover-target="popover-afinia" type="button" className="select-none flex flex-col items-center gab-2 space-y-2 border h-56 w-56 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto hover:bg-slate-50">
+      <div><Image className="mb-3" src={'/images/lineas/afinia.webp'} width={100} height={100} alt={""} ></Image></div>
+      <p className="hover:underline">AFINIA</p>
+      <a href="tel:115" className="hover:no-underline text-4xl">115</a>
+      </button>
+
+    <div data-popover id="popover-afinia" role="tooltip" className="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+        <div className="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg">
+            <h3 className="font-semibold text-gray-900 dark:text-white text-center hover:underline">AFINIA</h3>
+        </div>
+        <div className="flex mx-auto flex-col px-3 py-2 text-4xl text-mainc text-center justify-center items-center">
+            <Image className="mb-3" src={'/images/lineas/afinia.webp'} width={100} height={100} alt={""} ></Image>
+            <div className="flex items-center gap-4"><FaPhoneAlt size={24}/><p className="text-5xl">115</p></div>
+        </div>
+        <div data-popper-arrow></div>
+    </div>
+  </div>
+  
+
+
+  <div> 
+    <button data-popover-target="popover-aguas" type="button" className="select-none flex flex-col items-center gab-2 space-y-2 border h-56 w-56 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto hover:bg-slate-50">
+      <div><Image className="mb-3" src={'/images/lineas/aguas.png'} width={100} height={100} alt={""} ></Image></div>
+      <p className="hover:underline">AGUAS</p>
+      <a href="tel:116"  className="hover:no-underline text-4xl">116</a>
+      </button>
+
+    <div data-popover id="popover-aguas" role="tooltip" className="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+        <div className="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg">
+            <h3 className="font-semibold text-gray-900 dark:text-white text-center hover:underline">AGUAS</h3>
+        </div>
+        <div className="flex mx-auto flex-col px-3 py-2 text-4xl text-mainc text-center justify-center items-center">
+            <Image className="mb-3" src={'/images/lineas/aguas.png'} width={100} height={100} alt={""} ></Image>
+            <div className="flex items-center gap-4"><FaPhoneAlt size={24}/><p className="text-5xl">116</p></div>
+        </div>
+        <div data-popper-arrow></div>
+    </div>
+  </div>
+  
+
+  <div> 
+    <button data-popover-target="popover-defensa" type="button" className="select-none flex flex-col items-center gab-2 space-y-2 border h-56 w-56 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto hover:bg-slate-50">
+      <div><Image className="mb-3" src={'/images/lineas/defensa.png'} width={100} height={100} alt={""} ></Image></div>
+      <p className="hover:underline">DEFENSA CIVIL</p>
+      <a href="tel:144"  className="hover:no-underline text-4xl">144</a>
+      </button>
+
+    <div data-popover id="popover-defensa" role="tooltip" className="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+        <div className="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg">
+            <h3 className="font-semibold text-gray-900 dark:text-white text-center hover:underline">DEFENSA CIVIL</h3>
+        </div>
+        <div className="flex mx-auto flex-col px-3 py-2 text-4xl text-mainc text-center justify-center items-center">
+            <Image className="mb-3" src={'/images/lineas/defensa.png'} width={100} height={100} alt={""} ></Image>
+            <div className="flex items-center gap-4"><FaPhoneAlt size={24}/><p className="text-5xl">144</p></div>
+        </div>
+        <div data-popper-arrow></div>
+    </div>
+  </div>
+  
+
+
+  <div> 
+    <button data-popover-target="popover-crued" type="button" className="select-none flex flex-col items-center gab-2 space-y-2 border h-56 w-56 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto hover:bg-slate-50">
+      <div><Image className="mb-3" src={'/images/lineas/crued.png'} width={100} height={100} alt={""} ></Image></div>
+      <p className="hover:underline">CRUED</p>
+      <a href="tel:125"  className="hover:no-underline text-4xl">125</a>
+      </button>
+
+    <div data-popover id="popover-crued" role="tooltip" className="absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800">
+        <div className="px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg">
+            <h3 className="font-semibold text-gray-900 dark:text-white text-center hover:underline">CRUED</h3>
+        </div>
+        <div className="flex mx-auto flex-col px-3 py-2 text-4xl text-mainc text-center justify-center items-center">
+            <Image className="mb-3" src={'/images/lineas/crued.png'} width={100} height={100} alt={""} ></Image>
+            <div className="flex items-center gap-4"><FaPhoneAlt size={24}/><p className="text-5xl">125</p></div>
+        </div>
+        <div data-popper-arrow></div>
+    </div>
+  </div>
+  
+  
+</div>
+
+</motion.div>
+
+
+
+{/* ten atento a 
 <div id="alert-additional-content-1" className="w-3/4 p-4 mx-auto text-justify mb-20 mt-8 text-gray-600 border border-blue-300 rounded-lg bg-blue-50 dark:bg-gray-600 dark:text-blue-400 dark:border-blue-500" role="alert">
   <div className="flex items-center">
     <svg className="text-black flex-shrink-0 w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -264,133 +557,16 @@ transition={{ ease: "circInOut",
     </button>
 
   </div>
-</div>
+</div> */}
 
 
-{/* objetivo general */}
-<motion.div 
-initial={{ opacity: 0 }} 
-whileInView={{ opacity: 1 }} 
-transition={{ ease: "circInOut",
-    duration: 1,
-    x: { duration: 1 }}} >
-<section className="max-w-full bg-gray-50 dark:bg-gray-900 border border-gray-100 rounded-lg  dark:border-gray-700 mx-auto  justify-center items-center">
-    <div className="grid px-8 py-8 mx-auto lg:gap-4 xl:gap-0 lg:py-16 lg:grid-cols-12">
-        <div className="mr-10 place-self-center lg:col-span-7">
-          
-            <h1 className="flex flex-row  items-center gap-1 mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-3xl xl:text-3xl dark:text-white text-yellow-400">Objetivo General <img className="h-32 w-32 " src="/images/objetivo-general.png" alt="" /></h1>
-            <p className="max-w-2xl mb-6 font-light text-slate-700 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 text-justify"> La Oficina Asesora Para la Gestión del Riesgo de Desastres, tendrá como objetivo facilitar la labor del alcalde como responsable y principal ejecutor de los procesos para la gestión del riesgo en el Distrito, coordinar el desempeño del Consejo Distrital de Gestión del Riesgo de Desastres, coordinar la continuidad de los procesos de la gestión del riesgo, en cumplimiento de la política nacional de gestión del riesgo y de forma articulada con la planificación del desarrollo y el ordenamiento territorial distrital, asesorar, aconsejar y asistir en el seguimiento y evaluación de políticas, estrategias, planes, programas, regulaciones y acciones permanentes para el conocimiento y la reducción del riesgo y para el manejo de desastres del Distrito de Cartagena, con el propósito explícito de contribuir a la seguridad, el bienestar, la calidad de vida de las personas y al desarrollo sostenible.</p>
-            
-        </div>
-        <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
-            <img src="/images/objetivo-general.avif" alt="mockup" />
-        </div>                
-    </div>
-</section>
-</motion.div>
-
-
-
-{/* funciones generales */}
-<motion.div  
-// animate={{ rotate: 360 }}
-style={{ rotate: 0 }} 
-initial={{ opacity: 0, y: "30%"}}
-whileInView={{ opacity: 1, y: 0 }}
-animate={{ y: 100 }}
-transition={{ ease: "linear",
-    duration: 1,
-    y: { duration: 1 }}} 
-    className="max-w-7xl mx-auto mt-20 text-center block">
-<section  className="flex flex-col items-center bg-white   md:flex-row  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 ">
-    <img className="object-cover w-full rounded h-[900px] md:h-auto md:w-80 md:rounded" src="/images/funciones-generales.avif" alt="" />
-    <div className="flex flex-col items-center p-4 leading-normal mx-0">
-    <Image priority={true} width="150" height="150" src="/oagrd-logo.png" className="text-center pl-10" alt="oagrd Logo" />
-        <h5 className="mb-6 text-4xl font-bold tracking-tight text-gray-900 dark:text-white text-justify pl-10">Funciones generales de OAGRD</h5>
-        
-        <Carousel   plugins={[
-        Autoplay({
-          delay: 5000,
-        }),
-      ]}>
-      <CarouselContent className="text-lg text-justify -ml-4 max-w-screen-md">
-        <CarouselItem className="pl-32"><p>Asesorar en la formulación, seguimiento y evaluación de la política<br />pública de gestión de riesgo de emergencia y desastres del Distrito de<br />Cartagena ajustada a los lineamientos de esta materia.</p></CarouselItem>
-        <CarouselItem className="pl-32"><p>Coordinar el Consejo Distrital de Gestión del Riesgo de Desastres de la<br />ciudad de Cartagena.</p></CarouselItem>
-        <CarouselItem className="pl-32"><p>Coordinar la continuidad y efectividad de los procesos de conocimiento<br />y reducción del riesgo y manejo de desastres, con enfoque de equidad,<br />en el orden local, y su articulación con los lineamientos que en este<br />sentido se establezcan a nivel departamental, regional y nacional.</p>			</CarouselItem>
-        <CarouselItem className="pl-32"><p>Coordinar la articulación de los intervinientes privados, las<br />organizaciones sociales y las organizaciones no gubernamentales en el<br />sistema distrital.</p>			</CarouselItem>
-        <CarouselItem className="pl-32"><p>Asesorar en el diseño de las políticas, estrategias, planes, programas,<br />proyectos y procedimientos nacionales de gestión del riesgo de<br />desastres en el contexto Distrital y articularlo con el marco normativo y<br />los instrumentos de gestión de riesgos del Sistema Nacional para la<br />Gestión del Riesgo de Desastres.</p>			</CarouselItem>
-        <CarouselItem className="pl-32"><p>Coordinar la articulación con otros sistemas administrativos, tales<br />como el Sistema Nacional de Planeación, el Sistema Nacional<br />Ambiental, el Sistema Nacional de Ciencias, Tecnología e Innovación, el<br />Sistema Nacional de Bomberos y Sistema de Salud Pública entre otros<br />en los temas de su competencia.</p>			</CarouselItem>
-        <CarouselItem className="pl-32"><p>Apoyar y Coordinar las actividades en materia de gestión ambiental, en<br />los procesos educativos y de formación de valores que armonicen las<br />relaciones de los seres hamanos con la naturaleza y el medio ambiente;<br />para propiciar el desarrollo de los procesos económicos, sociales y<br />culturales hacia el Desarrollo Sostenible.</p>			</CarouselItem>
-        <CarouselItem className="pl-32"><p>Asesorar en la realización de los análisis, estudios e investigaciones en<br />materia de su competencia.</p>			</CarouselItem>
-        <CarouselItem className="pl-32"><p>Asesorar la formulación y ejecución del Plan Distrital para la Gestión<br />del Riesgo de Desastres, y realizar el seguimiento y evaluación del<br />mismo.</p>			</CarouselItem>
-        <CarouselItem className="pl-32"><p>Asesorar en la aplicación de las normas relacionadas con el<br />ordenamiento urbano, zonas de vulnerabilidad y asentamientos<br />humanos en condiciones de riesgo.</p>	</CarouselItem>
-      </CarouselContent>
-    </Carousel>
-    </div>
-</section>
-
-</motion.div>
-
-
-
-
-
-{/* our team */}
-<div className=" p-20 mt-40 w-full max-full text-center bg-gray-50">
-
-    <p className="text-4xl font-bold mb-5">JEFE
-    Oficina Asesora para la Gestión del Riesgo de Desastres</p>
-    {/* alinear admins */}
-    <div className="flex flex-col items-center mx-auto justify-center p-6 bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-7xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-    <img width={400} height={400} className="object-cover rounded-full" src="/images/jefe-oagrd.jpeg" alt="" />
-    <div className="flex flex-col justify-between p-6 leading-normal">
-        <h5 className="mb-4 text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Daniel Vargas Díaz</h5>
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-xl text-justify">Administrador de Empresas, especialista en Gobierno y Gestión del Desarrollo Regional y Municipal de la Universidad Católica de Bogotá, con magíster en Ciencia Política y Gobierno de la Universidad del Norte. 
-        Tiene experiencia como Asesor de la Secretaría del Interior, Asesor de planeación y Director de Juventudes de la Gobernación de Bolívar.
-        Es un profesional comprometido y responsable que se destaca por su liderazgo, adaptabilidad y aprendizaje continuo.
-        </p>
-    </div>
-</div>
-
-</div>
 
 
    
 
 
 
-{/* Download the app */}
 
-
-
-<div className="w-full p-4 text-center bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-    <h5 className="mb-2 text-4xl font-bold text-gray-900 dark:text-white">Descarga nuestra aplicacion</h5>
-    <p className="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">Esta atento a todas nuestras actualizaciones y mantente alerta de manera temprana</p>
-    <div className="flex flex-col gap-4 items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
-       
-
-{/* celphone */}
-    <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
-        <div className="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
-        <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
-        <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
-        <div className="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
-        <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
-            <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-light.png" className="dark:hidden w-[272px] h-[572px]" alt="" />
-            <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-dark.png" className="hidden dark:block w-[272px] h-[572px]" alt="" />
-        </div>
-    </div>
-
-
-        <a href="#" className="w-full sm:w-auto bg-blue-900 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-            <svg className="me-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"></path></svg>
-            <div className="text-left rtl:text-right">
-                <div className="mb-1 text-base">Descargala en</div>
-                <div className="-mt-1 font-sans text-lg font-semibold">Google Play</div>
-            </div>
-        </a>
-    </div>
-</div>
 
 
 

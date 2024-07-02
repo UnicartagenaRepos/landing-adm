@@ -44,21 +44,21 @@ function sat() {
 
 
             <div className=' md:flex md:flex-col flex-row items-center justify-center relative -mt-20  w-full '>
-                <a href="#" className="m-5 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl h-[380px] hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                <div className="m-5 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl h-[380px] dark:border-gray-700 dark:bg-gray-800">
                     <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
                         <img className=" w-32 h-32" src="/sat_icon.jpeg" alt="sat que es"/>
                         <h5 className="mt-4 mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">¿Que es un SAT?</h5>
-                        <p className="mb-4 font-light text-gray-700 dark:text-gray-400">Un Sistema de Alertas Tempranas (SAT) es un conjunto de herramientas, técnicas y procesos diseñados para detectar y notificar de manera oportuna la presencia de eventos o situaciones que representen un riesgo o peligro potencial.</p>
+                        <p className="mb-4 font-light text-gray-700 dark:text-gray-400">El Sistema de Alertas Tempranas de la Oficina Asesora para la Gestión del Riesgo de Desastres de Cartagena de Indias (OAGRD) es una herramienta fundamental para la prevención y atención de emergencias en la ciudad. Su objetivo principal es <b className='font-bold'>brindar información oportuna y veraz a la población sobre la ocurrencia de posibles desastres naturales o eventos que puedan poner en riesgo la vida e integridad física de las personas.</b></p>
                     </div>
-                </a> 
-                <a href="#" className="m-5 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl h-[380px] hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                </div> 
+                <div className="m-5 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl h-[380px] dark:border-gray-700 dark:bg-gray-800">
                     <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
                     <img className="w-32 h-32" src="/sat_obj_icon.png" alt="sat objetivos"/>
                         <h5 className="mt-4 mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">¿Cuál es su objetivo principal?</h5>
                         <p className="mb-4 font-light text-gray-700 dark:text-gray-400">El objetivo principal de un SAT es proporcionar información anticipada y precisa sobre eventos adversos para que las autoridades, organizaciones y personas puedan tomar medidas preventivas o mitigadoras.</p>
                     </div>
-                </a>
-                <a href="#" className="m-5 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl h-[380px] hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                </div>
+                <div className="m-5 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl h-[380px]  dark:border-gray-700 dark:bg-gray-800">
                     <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
 
                         <img className=" w-32 h-32" src="/sat_ventaja.jpeg" alt="sat ventajas"/>
@@ -67,28 +67,133 @@ function sat() {
                         <h5 className="mt-4 mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Ventajas de un SAT</h5>
                         <p className="mb-4 font-light text-gray-700 dark:text-gray-400">Un SAT proporciona información valiosa que puede ser utilizada para mejorar la planificación y la toma de decisiones. Al contar con datos y alertas precisas sobre riesgos potenciales</p>
                     </div>
-                </a>
+                </div>
             </div>
 
             {/* ventaja de un sat block */}
- 
-            <div className="w-full mt-20 mb-20 text-center relative">
-            <a href="#" className="flex flex-col items-center bg-white border border-gray-200 shadow md:flex-row md:max-full hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-                <img className="object-cover w-1/2 h-[300px] md:h-auto md:w-40 " src="/ventajas_personas.jpeg" alt="" />
-                <div className="flex flex-col justify-between p-4 leading-normal">
-                    <h5 className="m-6 text-2xl font-bold tracking-tight text-gray-900 dark:text-white bg-yellow-400 rounded-2xl h-10 w-auto ">Ventajas de un SAT</h5>
-                    <p className="font-normal text-gray-700 dark:text-gray-400 flex flew-row text-left gap-2"><FaCheck size={24} className='text-yellow-400' />Detectar eventos o situaciones potencialmente peligrosas con anticipación.</p>
-                    <p className="font-normal text-gray-700 dark:text-gray-400 flex flew-row text-left gap-2"><FaCheck size={24} className='text-yellow-400' />Ayuda a mitigar los riesgos y reducir el impacto negativo de los eventos.</p>
-                    <p className="font-normal text-gray-700 dark:text-gray-400 flex flew-row text-left gap-2"><FaCheck size={24} className='text-yellow-400' />Permite una respuesta más rápida y eficaz ante eventos adversos..</p>
-                    <p className="font-normal text-gray-700 dark:text-gray-400 flex flew-row text-left gap-2"><FaCheck size={24} className='text-yellow-400' />Contar con información oportuna y precisa a través de un SAT permite tomar decisiones informadas.</p>
-                    <p className="font-normal text-gray-700 dark:text-gray-400 flex flew-row text-left gap-2"><FaCheck size={24} className='text-yellow-400' />Al detectar y abordar eventos adversos en sus etapas iniciales, un SAT puede ayudar a reducir los costos asociados.</p>
-                   
-                   
-                   
 
+
+
+
+            <div id="accordion-collapse" data-accordion="collapse">
+  <h2 id="accordion-collapse-heading-1">
+    <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+      <span>Reducción del riesgo de desastres</span>
+      <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
+      </svg>
+    </button>
+  </h2>
+  <div id="accordion-collapse-body-1" className="hidden" aria-labelledby="accordion-collapse-heading-1">
+    <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+      <p className="mb-2 text-gray-500 dark:text-gray-400">El sistema permite identificar y alertar a la población sobre posibles peligros con anticipación, lo que les da tiempo para tomar medidas de precaución y reducir su vulnerabilidad.</p>
+      {/* <p className="text-gray-500 dark:text-gray-400">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" className="text-blue-600 dark:text-blue-500 hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p> */}
+    </div>
+  </div>
+  <h2 id="accordion-collapse-heading-2">
+    <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+      <span>Protección de vidas</span>
+      <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
+      </svg>
+    </button>
+  </h2>
+  <div id="accordion-collapse-body-2" className="hidden" aria-labelledby="accordion-collapse-heading-2">
+    <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+      <p className="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
+      <p className="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" className="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classNamees from Tailwind CSS and components from Flowbite.</p>
+    </div>
+  </div>
+  <h2 id="accordion-collapse-heading-3">
+    <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+      <span>Minimización de daños</span>
+      <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
+      </svg>
+    </button>
+  </h2>
+  <div id="accordion-collapse-body-3" className="hidden" aria-labelledby="accordion-collapse-heading-3">
+    <div className="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+      <p className="mb-2 text-gray-500 dark:text-gray-400">The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
+      <p className="mb-2 text-gray-500 dark:text-gray-400">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
+      <p className="mb-2 text-gray-500 dark:text-gray-400">Learn more about these technologies:</p>
+      <ul className="ps-5 text-gray-500 list-disc dark:text-gray-400">
+        <li><a href="https://flowbite.com/pro/" className="text-blue-600 dark:text-blue-500 hover:underline">Flowbite Pro</a></li>
+        <li><a href="https://tailwindui.com/" rel="nofollow" className="text-blue-600 dark:text-blue-500 hover:underline">Tailwind UI</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 id="accordion-collapse-heading-2">
+    <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+      <span>Aumento de la resiliencia</span>
+      <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
+      </svg>
+    </button>
+  </h2>
+  <div id="accordion-collapse-body-2" className="hidden" aria-labelledby="accordion-collapse-heading-2">
+    <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+      <p className="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
+      <p className="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" className="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classNamees from Tailwind CSS and components from Flowbite.</p>
+    </div>
+  </div>
+
+  <h2 id="accordion-collapse-heading-2">
+    <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+      <span>Mejoramiento de la respuesta a emergencias</span>
+      <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
+      </svg>
+    </button>
+  </h2>
+  <div id="accordion-collapse-body-2" className="hidden" aria-labelledby="accordion-collapse-heading-2">
+    <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+      <p className="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
+      <p className="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" className="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classNamees from Tailwind CSS and components from Flowbite.</p>
+    </div>
+  </div>
+
+  <h2 id="accordion-collapse-heading-2">
+    <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+      <span>Promoción de una cultura de prevención</span>
+      <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+        <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
+      </svg>
+    </button>
+  </h2>
+  <div id="accordion-collapse-body-2" className="hidden" aria-labelledby="accordion-collapse-heading-2">
+    <div className="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+      <p className="mb-2 text-gray-500 dark:text-gray-400">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
+      <p className="text-gray-500 dark:text-gray-400">Check out the <a href="https://flowbite.com/figma/" className="text-blue-600 dark:text-blue-500 hover:underline">Figma design system</a> based on the utility classNamees from Tailwind CSS and components from Flowbite.</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+            
+ 
+            {/* <div className="w-full flex fle-col h-[800px] mt-20 mb-20 text-center relative justify-center"> */}
+            <div  className="h-full bg-white mx-auto md:max-full justify-center flex flex-col items-center text-center pt-10 pb-10 my-20" >
+                <img className="h-[400px] w-[800px] object-fit rounded-xl" src="/ventajas_personas.jpeg" alt="" />
+                <div className="p-4 leading-normal">
+                    <h5 className="m-6 text-4xl font-extrabold text-black dark:text-white rounded-2xl h-10 w-auto ">Ventajas de un SAT</h5>
+                    <p className="font-normal text-sm mb-1 text-gray-700 dark:text-gray-400 flex text-justify gap-2"><FaCheck size={24} className='text-yellow-400' /><b>Reducción del riesgo de desastres:</b> El sistema permite identificar y alertar a la población sobre posibles peligros con anticipación, lo que les da tiempo para tomar medidas de precaución y reducir su vulnerabilidad.</p>
+                    <p className="font-normal text-sm mb-1 text-gray-700 dark:text-gray-400 flex text-justify gap-2"><FaCheck size={24} className='text-yellow-400' /><b>Protección de vidas:</b> Al brindar información oportuna sobre los riesgos, las personas pueden tomar decisiones informadas para protegerse a sí mismas y a sus familias, lo que puede salvar vidas.</p>
+                    <p className="font-normal text-sm mb-1 text-gray-700 dark:text-gray-400 flex text-justify gap-2"><FaCheck size={24} className='text-yellow-400' /><b>Minimización de daños:</b> La alerta temprana permite a las autoridades y a la población tomar medidas para reducir los daños materiales y económicos causados por los desastres.</p>
+                    <p className="font-normal text-sm mb-1 text-gray-700 dark:text-gray-400 flex text-justify gap-2"><FaCheck size={24} className='text-yellow-400' /><b>Mejoramiento de la respuesta a emergencias:</b> El sistema facilita la coordinación de la respuesta a emergencias entre las diferentes entidades gubernamentales y organizaciones de ayuda humanitaria.</p>
+                    <p className="font-normal text-sm mb-1 text-gray-700 dark:text-gray-400 flex text-justify gap-2"><FaCheck size={24} className='text-yellow-400' /><b>Promoción de una cultura de prevención:</b> El sistema ayuda a crear conciencia sobre los riesgos de desastres y la importancia de estar preparados para afrontarlos.</p>
+                    <div className='flex flex-col '><p className="font-normal text-base mb-1 text-gray-700 dark:text-gray-400 flex text-justify gap-2"><FaCheck size={24} className='text-yellow-400' /><b>Aumento de la resiliencia: </b><span className='text-base'>La resiliencia es la capacidad de una comunidad para recuperarse de un desastre. El sistema de alertas tempranas es una herramienta fundamental para fortalecer la resiliencia de las comunidades.</span></p></div>
                 </div>
-            </a>
             </div>
+            {/* </div> */}
 
 
             {/* funcionamiento de los sistemas */}

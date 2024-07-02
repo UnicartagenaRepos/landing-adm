@@ -12,6 +12,9 @@ const config = {
   ],
   prefix: '',
   theme: {
+    // colors: {
+      
+    // },
     container: {
       center: true,
       padding: '2rem',
@@ -21,6 +24,8 @@ const config = {
     },
     extend: {
       colors: {
+        'mainc': "#23234C",
+      'secondc': '#F4B926',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
