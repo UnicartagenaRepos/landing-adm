@@ -56,7 +56,7 @@ function Contactanos() {
         </div>
 
         {/* contact htmlForm */}
-        <div className='border shadow h-auto w-80 p-5 rounded-md grid gap-1 mb-6 md:grid-cols-1 '>
+        <div className='border shadow h-auto w-80 p-5 rounded-md grid gap-1 mb-6 md:grid-cols-1 bg-white'>
             <span className='text-xl font-semibold mb-10'>Contactanos</span>
             <div>
                 <label htmlFor="first_name" className="block mb-2 text-sm font-semibold text-gray-900 dark:text-white">Nombre</label>
@@ -69,7 +69,7 @@ function Contactanos() {
             <label htmlFor="message" className="block mb-2 text-sm font-semibold text-gray-900 dark:text-white">Mensaje</label>
             <textarea id="message" rows={4} className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Deja tu mensaje aqui..."></textarea>
             <p className="ms-auto text-xs text-gray-500 dark:text-gray-400 mb-10">Recuerda, este formulario ayuda a que puedas reportar de manera oportunida una incidencia, no lo uses para en caso contrario.</p>
-            <button type="submit" className="items-center px-4 text-lg font-semibold text-center text-black  bg-second rounded-lg focus:ring-4 h-10 ">
+            <button type="submit" className="items-center px-4 text-lg font-semibold text-center text-white bg-blue-900 rounded-lg focus:ring-4 h-10 ">
                         Enviar
            </button>       
         </div>
@@ -77,7 +77,7 @@ function Contactanos() {
         {/* google maps */}
         <div className='h-auto w-2/4 rounded-md bg-white block p-3 shadow'>
             <APIProvider apiKey='AIzaSyB2MmtCCU1GIWkoblto0sjSQrN_91XTL3U' >
-                <div className='h-[400px] w-full rounded'>
+                <div className='h-[450px] w-full rounded'>
                     <Map       
                         // style={{width: '100vw', height: '100vh'}}
                         id={'oagrd-address'}

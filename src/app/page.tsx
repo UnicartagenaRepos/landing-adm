@@ -287,8 +287,8 @@ export default function Home() {
             <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
             <div className="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
             <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
-                <img src="/images/app-image.jpeg" className="dark:hidden w-[272px] h-[572px]" alt="" />
-                <img src="/images/app-image.jpeg" className="hidden dark:block w-[272px] h-[572px]" alt="" />
+                <img src="/images/home-app.jpeg" className="dark:hidden w-[272px] h-[572px]" alt="" />
+                <img src="/images/home-app.jpeg" className="hidden dark:block w-[272px] h-[572px]" alt="" />
             </div>
         </div>
 
@@ -317,7 +317,7 @@ export default function Home() {
             <svg  className="me-3 w-8 h-8" fill="#23234c"  viewBox="-52.01 0 560.035 560.035" xmlns="http://www.w3.org/2000/svg"><path d="M380.844 297.529c.787 84.752 74.349 112.955 75.164 113.314-.622 1.988-11.754 40.191-38.756 79.652-23.343 34.117-47.568 68.107-85.731 68.811-37.499.691-49.557-22.236-92.429-22.236-42.859 0-56.256 21.533-91.753 22.928-36.837 1.395-64.889-36.891-88.424-70.883-48.093-69.53-84.846-196.475-35.496-282.165 24.516-42.554 68.328-69.501 115.882-70.192 36.173-.69 70.315 24.336 92.429 24.336 22.1 0 63.59-30.096 107.208-25.676 18.26.76 69.517 7.376 102.429 55.552-2.652 1.644-61.159 35.704-60.523 106.559M310.369 89.418C329.926 65.745 343.089 32.79 339.498 0 311.308 1.133 277.22 18.785 257 42.445c-18.121 20.952-33.991 54.487-29.709 86.628 31.421 2.431 63.52-15.967 83.078-39.655"/></svg>
             <div className="text-left rtl:text-right">
                 <div className="mb-1 text-base text-mainc">Descargala en</div>
-                <div className="-mt-1 font-sans text-lg font-semibold text-mainc">App Play</div>
+                <div className="-mt-1 font-sans text-lg font-semibold text-mainc">App Store</div>
             </div>
         </a>
         </div>
@@ -329,7 +329,7 @@ export default function Home() {
 {/* Ultimas noticias */}
 <div className="mx-auto max-w-6xl font-medium text-4xl mb-10 flex items-center justify-center bg-mainc text-white pl-10 h-20 text-center mt-20">ULTIMAS NOTICIAS</div>
 <div className="mx-auto max-w-6xl grid grid-cols-3 gap-10">
-  <div className="flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-150 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+  <div className="flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
     <img className='object-cover h-full w-full' src={'/images/noticias/not1.jpeg'} width={600} height={600} alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
       <p className="p-4 text-black hover:text-blue-900 ">Distriseguridad fomenta el cuidado ambiental y el sentido de pertenencia en el Caño Juan Angola</p>
@@ -339,7 +339,7 @@ export default function Home() {
     </div>
   </div>
 
-  <div className="flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-150 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+  <div className="flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
     <img className='object-cover h-full w-full' src={'/images/noticias/not2.jpeg'} width={600} height={600} alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
       <p className="p-4 text-black hover:text-blue-900">Distriseguridad fomenta el cuidado ambiental y el sentido de pertenencia en el Caño Juan Angola</p>
@@ -349,7 +349,7 @@ export default function Home() {
     </div>
   </div>
 
-  <div className="flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-150 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+  <div className="flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
     <img className='object-cover h-full w-full' src={'/images/noticias/not3.jpeg'} width={600} height={600} alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
       <p className="p-4 text-black hover:text-blue-900 ">Brigada Cívica de la Alcaldía Mayor de Cartagena recibe certificación en competencias ciudadanas</p>
@@ -359,7 +359,7 @@ export default function Home() {
     </div>
   </div>
 
-  <div className="flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-150 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+  <div className="flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
     <img className='object-cover h-full w-full' src={'/images/noticias/not4.jpeg'} width={600} height={600} alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
       <p className="p-4 text-black hover:text-blue-900 ">Con Brigada Cívica, Distriseguridad fomenta la sana convivencia en Corredores Universitarios de Cartagena</p>
@@ -369,7 +369,7 @@ export default function Home() {
     </div>
   </div>
 
-  <div className="flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-150 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+  <div className="flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
     <img className='object-cover h-full w-full' src={'/images/noticias/not5.jpeg'} width={600} height={600} alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
       <p className="p-4 text-black hover:text-blue-900 ">Distriseguridad, celebra el día del niño con Jornada de Rescate de Juegos Tradicionales</p>
@@ -379,7 +379,7 @@ export default function Home() {
     </div>
   </div>
 
-  <div className="flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-150 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+  <div className="flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
     <img className='object-cover h-full w-full' src={'/images/noticias/not6.jpeg'} width={600} height={600} alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
       <p className="p-4 text-black hover:text-blue-900 ">Distriseguridad continúa atendiendo el llamado de las comunidades con trabajo articulado por la seguridad</p>
