@@ -32,7 +32,8 @@ import {
 import Autoplay from "embla-carousel-autoplay"
 import { TypewriterEffectSmooth } from "@/components/global/typewriter-effect";
 import Weather from "@/components/global/weather";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
+import { Map, Pin, APIProvider, InfoWindow, AdvancedMarker,   Marker, useAdvancedMarkerRef,} from "@vis.gl/react-google-maps"
 
 
 
@@ -56,6 +57,73 @@ function getDate() {
 
 
 export default function Home() {
+
+
+  const [markerRef, marker] = useAdvancedMarkerRef();
+  const [markerRef2, marker2] = useAdvancedMarkerRef();
+  const [markerRef3, marker3] = useAdvancedMarkerRef();
+  const [markerRef4, marker4] = useAdvancedMarkerRef();
+  const [markerRef5, marker5] = useAdvancedMarkerRef();
+  const [markerRef6, marker6] = useAdvancedMarkerRef();
+  const [markerRef7, marker7] = useAdvancedMarkerRef();
+  const [markerRef8, marker8] = useAdvancedMarkerRef();
+
+  const [infoWindowShown, setInfoWindowShown] = useState(false);
+  const [infoWindowShown2, setInfoWindowShown2] = useState(false);
+  const [infoWindowShown3, setInfoWindowShown3] = useState(false);
+  const [infoWindowShown4, setInfoWindowShown4] = useState(false);
+  const [infoWindowShown5, setInfoWindowShown5] = useState(false);
+  const [infoWindowShown6, setInfoWindowShown6] = useState(false);
+  const [infoWindowShown7, setInfoWindowShown7] = useState(false);
+  const [infoWindowShown8, setInfoWindowShown8] = useState(false);
+   8 
+  // // clicking the marker will toggle the infowindow
+  const handleMarkerClick = useCallback(
+    () => setInfoWindowShown(isShown => !isShown),
+    []
+  );
+
+  const handleMarkerClick2 = useCallback(
+    () => setInfoWindowShown2(isShown => !isShown),
+    []
+  );
+  const handleMarkerClick3 = useCallback(
+    () => setInfoWindowShown3(isShown => !isShown),
+    []
+  );
+  const handleMarkerClick4 = useCallback(
+    () => setInfoWindowShown4(isShown => !isShown),
+    []
+  );
+  const handleMarkerClick5 = useCallback(
+    () => setInfoWindowShown5(isShown => !isShown),
+    []
+  );
+  const handleMarkerClick6 = useCallback(
+    () => setInfoWindowShown6(isShown => !isShown),
+    []
+  );
+  const handleMarkerClick7 = useCallback(
+    () => setInfoWindowShown7(isShown => !isShown),
+    []
+  );
+
+  const handleMarkerClick8 = useCallback(
+    () => setInfoWindowShown8(isShown => !isShown),
+    []
+  );
+
+  // // if the maps api closes the infowindow, we have to synchronize our state
+  const handleClose = useCallback(() => setInfoWindowShown(false), []);
+  const handleClose2 = useCallback(() => setInfoWindowShown2(false), []);
+  const handleClose3 = useCallback(() => setInfoWindowShown3(false), []);
+  const handleClose4 = useCallback(() => setInfoWindowShown4(false), []);
+  const handleClose5 = useCallback(() => setInfoWindowShown5(false), []);
+  const handleClose6 = useCallback(() => setInfoWindowShown6(false), []);
+  const handleClose7 = useCallback(() => setInfoWindowShown7(false), []);
+  const handleClose8 = useCallback(() => setInfoWindowShown8(false), []);
+  
+  
     const [data, setData] = useState(null)
   const [isLoading, setLoading] = useState(true)
   const [currentDate, setCurrentDate] = useState(getDate());
@@ -125,7 +193,7 @@ export default function Home() {
                   <img src="/images/banners/sat-banner2.png" className="absolute block w-full -translate-x-1/2 -translate-y-2/2 top-2/2 left-1/2" alt="..." />
               </div>
               <div className="hidden duration-300" data-carousel-item>
-                  <img src="/images/home1.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/3 top-1/3 left-1/2" alt="..." />
+                  <img src="/images/home1.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-2/3 top-2/3 left-1/2" alt="..." />
               </div>
               <div className="hidden duration-300" data-carousel-item>
               <p className="relative z-30 w-full mx-auto  mr-3  pr-9 block font-bold items-end text-1xl md:text-1xl text-center py-2 bg-gray-50 opacity-70">
@@ -194,92 +262,127 @@ export default function Home() {
     </div> */}
 
 {/* Download the app */}
-<div className="w-full text-center bg-white border border-gray-200 sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-    <h5 className="mb-4 mt-10 text-5xl font-bold text-gray-900 dark:text-white">Descarga nuestra aplicacion</h5>
-    <p className="mb-10 text-base text-gray-500 sm:text-lg dark:text-gray-400">Esta atento a todas nuestras actualizaciones y mantente alerta de manera temprana</p>
+<div className="w-full text-center bg-gray-50 border border-gray-200 dark:bg-gray-800 dark:border-gray-700 pt-10 pb-20">
+    <h5 className="mb-4 mt-10 text-5xl font-bold text-mainc dark:text-white">DESCARGA NUESTRA APLICACIÓN</h5>
+    <p className="mb-20 text-base text-gray-500 sm:text-lg dark:text-gray-500">Esta atento a todas nuestras actualizaciones y novedades de alerta de manera temprana</p>
     <div className="flex flex-col gap-4 items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
        
 
 {/* celphone */}
-    <div className="mb-10 relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
-        <div className="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
-        <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
-        <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
-        <div className="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
-        <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
-            <img src="/images/app-image.jpeg" className="dark:hidden w-[272px] h-[572px]" alt="" />
-            <img src="/images/app-image.jpeg" className="hidden dark:block w-[272px] h-[572px]" alt="" />
+    <div className="flex">
+        <div className=" relative l-10 mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-2xl -rotate-45">
+            <div className="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
+            <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
+            <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
+            <div className="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
+            <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
+                <img src="/images/app-image2.jpeg" className="dark:hidden w-[272px] h-[572px]" alt="" />
+                <img src="/images/app-image2.jpeg" className="hidden dark:block w-[272px] h-[572px]" alt="" />
+            </div>
         </div>
+
+        <div className=" z-10 relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-2xl">
+            <div className="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
+            <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
+            <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
+            <div className="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
+            <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
+                <img src="/images/app-image.jpeg" className="dark:hidden w-[272px] h-[572px]" alt="" />
+                <img src="/images/app-image.jpeg" className="hidden dark:block w-[272px] h-[572px]" alt="" />
+            </div>
+        </div>
+
+        <div className=" relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-2xl rotate-45">
+            <div className="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
+            <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
+            <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
+            <div className="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
+            <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
+                <img src="/images/app-image3.jpeg" className="dark:hidden w-[272px] h-[572px]" alt="" />
+                <img src="/images/app-image3.jpeg" className="hidden dark:block w-[272px] h-[572px]" alt="" />
+            </div>
+        </div>
+
     </div>
-
-
-        <a href="#" className="md:mt-10 w-full sm:w-auto bg-mainc hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
+    <div className="flex flex-row gap-10">
+        <a href="#" className="md:mt-10 w-full sm:w-auto bg-mainc shadow-2xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
             <svg className="me-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"></path></svg>
             <div className="text-left rtl:text-right">
                 <div className="mb-1 text-base">Descargala en</div>
                 <div className="-mt-1 font-sans text-lg font-semibold">Google Play</div>
             </div>
         </a>
+        <a href="#" className="md:mt-10 border w-full sm:w-auto shadow-2xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
+            {/* <img src={'/images/'} alt="app store image"/> */}
+            <svg  className="me-3 w-8 h-8" fill="#23234c"  viewBox="-52.01 0 560.035 560.035" xmlns="http://www.w3.org/2000/svg"><path d="M380.844 297.529c.787 84.752 74.349 112.955 75.164 113.314-.622 1.988-11.754 40.191-38.756 79.652-23.343 34.117-47.568 68.107-85.731 68.811-37.499.691-49.557-22.236-92.429-22.236-42.859 0-56.256 21.533-91.753 22.928-36.837 1.395-64.889-36.891-88.424-70.883-48.093-69.53-84.846-196.475-35.496-282.165 24.516-42.554 68.328-69.501 115.882-70.192 36.173-.69 70.315 24.336 92.429 24.336 22.1 0 63.59-30.096 107.208-25.676 18.26.76 69.517 7.376 102.429 55.552-2.652 1.644-61.159 35.704-60.523 106.559M310.369 89.418C329.926 65.745 343.089 32.79 339.498 0 311.308 1.133 277.22 18.785 257 42.445c-18.121 20.952-33.991 54.487-29.709 86.628 31.421 2.431 63.52-15.967 83.078-39.655"/></svg>
+            <div className="text-left rtl:text-right">
+                <div className="mb-1 text-base text-mainc">Descargala en</div>
+                <div className="-mt-1 font-sans text-lg font-semibold text-mainc">App Play</div>
+            </div>
+        </a>
+        </div>
     </div>
+
+    
 </div>
 
 {/* Ultimas noticias */}
-<div className="mx-auto max-w-6xl text-2xl mb-10 flex items-center justify-center bg-mainc text-white pl-10 h-20 text-center mt-20">ULTIMAS NOTICIAS</div>
+<div className="mx-auto max-w-6xl font-medium text-4xl mb-10 flex items-center justify-center bg-mainc text-white pl-10 h-20 text-center mt-20">ULTIMAS NOTICIAS</div>
 <div className="mx-auto max-w-6xl grid grid-cols-3 gap-10">
-  <div className="flex flex-col text-justify border items-center justify-center transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+  <div className="flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-150 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
     <img className='object-cover h-full w-full' src={'/images/noticias/not1.jpeg'} width={600} height={600} alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
-      <p className="p-4 text-gray-800 ">Distriseguridad fomenta el cuidado ambiental y el sentido de pertenencia en el Caño Juan Angola</p>
+      <p className="p-4 text-black hover:text-blue-900 ">Distriseguridad fomenta el cuidado ambiental y el sentido de pertenencia en el Caño Juan Angola</p>
       <div className="text-center">
         <button className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</button>
       </div>
     </div>
   </div>
 
-  <div className="flex flex-col text-justify border items-center justify-center transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+  <div className="flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-150 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
     <img className='object-cover h-full w-full' src={'/images/noticias/not2.jpeg'} width={600} height={600} alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
-      <p className="p-4 text-gray-800 ">Distriseguridad fomenta el cuidado ambiental y el sentido de pertenencia en el Caño Juan Angola</p>
+      <p className="p-4 text-black hover:text-blue-900">Distriseguridad fomenta el cuidado ambiental y el sentido de pertenencia en el Caño Juan Angola</p>
       <div className="text-center">
         <button className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</button>
       </div>
     </div>
   </div>
 
-  <div className="flex flex-col text-justify border items-center justify-center transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+  <div className="flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-150 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
     <img className='object-cover h-full w-full' src={'/images/noticias/not3.jpeg'} width={600} height={600} alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
-      <p className="p-4 text-gray-800 ">Brigada Cívica de la Alcaldía Mayor de Cartagena recibe certificación en competencias ciudadanas</p>
+      <p className="p-4 text-black hover:text-blue-900 ">Brigada Cívica de la Alcaldía Mayor de Cartagena recibe certificación en competencias ciudadanas</p>
       <div className="text-center">
         <button className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</button>
       </div>
     </div>
   </div>
 
-  <div className="flex flex-col text-justify border items-center justify-center transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+  <div className="flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-150 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
     <img className='object-cover h-full w-full' src={'/images/noticias/not4.jpeg'} width={600} height={600} alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
-      <p className="p-4 text-gray-800 ">Con Brigada Cívica, Distriseguridad fomenta la sana convivencia en Corredores Universitarios de Cartagena</p>
+      <p className="p-4 text-black hover:text-blue-900 ">Con Brigada Cívica, Distriseguridad fomenta la sana convivencia en Corredores Universitarios de Cartagena</p>
       <div className="text-center">
         <button className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</button>
       </div>
     </div>
   </div>
 
-  <div className="flex flex-col text-justify border items-center justify-center transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+  <div className="flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-150 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
     <img className='object-cover h-full w-full' src={'/images/noticias/not5.jpeg'} width={600} height={600} alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
-      <p className="p-4 text-gray-800 ">Distriseguridad, celebra el día del niño con Jornada de Rescate de Juegos Tradicionales</p>
+      <p className="p-4 text-black hover:text-blue-900 ">Distriseguridad, celebra el día del niño con Jornada de Rescate de Juegos Tradicionales</p>
       <div className="text-center">
         <button className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</button>
       </div>
     </div>
   </div>
 
-  <div className="flex flex-col text-justify border items-center justify-center transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+  <div className="flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-150 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
     <img className='object-cover h-full w-full' src={'/images/noticias/not6.jpeg'} width={600} height={600} alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
-      <p className="p-4 text-gray-800 ">Distriseguridad continúa atendiendo el llamado de las comunidades con trabajo articulado por la seguridad</p>
+      <p className="p-4 text-black hover:text-blue-900 ">Distriseguridad continúa atendiendo el llamado de las comunidades con trabajo articulado por la seguridad</p>
       <div className="text-center">
         <button className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</button>
       </div>
@@ -293,9 +396,10 @@ export default function Home() {
 initial={{ opacity: 0 }} 
 whileInView={{ opacity: 1 }} 
 transition={{ ease: "circInOut",
-    duration: 2,
+    duration: 
+    1,
     x: { duration: 1 }}} 
-    className="mt-20 mx-auto max-w-6xl flex flex-col">
+    className="mt-20 mx-auto max-w-6xl flex flex-col bg-gray-50">
     <span className="text-2xl font-medium mb-4 text-center bg-mainc text-white p-3">El tiempo en Cartagena de Indias hoy - {currentDate}</span>
     <div className="flex flex-row items-center max-w-6xl mb-20 bg-gray-100 dark:bg-gray-900 max-w-screen-2x border border-gray-150 rounded-lg  dark:border-gray-700 mx-auto">
     <div className="flex flex-col bg-white h-40 w-[370px] text-center items-center justify-center p-4">
@@ -336,11 +440,11 @@ transition={{ ease: "circInOut",
 <motion.div  
 // animate={{ rotate: 360 }}
 style={{ rotate: 0 }} 
-initial={{ opacity: 0, x: "30%"}}
+initial={{ opacity: 0, x: "20%"}}
 whileInView={{ opacity: 1, x: 0 }}
 animate={{ x: 100 }}
 transition={{ ease: "linear",
-    duration: 2,
+    duration: 1,
     x: { duration: 1 }}}
     className="w-3/4 -x-100 mx-auto items-center block mb-20">
 
@@ -561,9 +665,126 @@ transition={{ ease: "linear",
 
 
 
-
+{/* maps sensors */}
    
+    {/* google maps */}
+    <div className="max-w-full mx-auto flex flex-col bg-gray-50 py-20 h"> 
+      <span className="text-3xl  max-w-full text-center text-mainc font-bold mb-4">RED DE SENSORES OAGRD</span>
+      <div className='w-2/3 mx-auto rounded-md bg-white block p-3'>
+              <APIProvider apiKey='AIzaSyB2MmtCCU1GIWkoblto0sjSQrN_91XTL3U' >
+                  <div className='h-[800px] w-full rounded'>
+                      <Map       
+                          // style={{width: '100vw', height: '100vh'}}
+                          // draggableCursor="false"
+                          id={'oagrd-address'}
+                          mapId='oagrd-address'
+                          defaultCenter={{lat: 10.462644, lng: -75.438986}}
+                          defaultZoom={12}
+                          gestureHandling={'greedy'}
+                          disableDefaultUI={true}>
 
+                          <AdvancedMarker position={{lat: 10.40319876, lng: -75.47509139}} ref={markerRef} onClick={handleMarkerClick}>
+                              <img src={'/images/riesgos/inundacion.png'} width={60} height={60} />
+                          </AdvancedMarker>
+                          <AdvancedMarker position={{lat: 10.39705322, lng: -75.50693394}} ref={markerRef2} onClick={handleMarkerClick2}>
+                              <img src={'/images/riesgos/remocion_en_masa.png'} width={60} height={60} />
+                          </AdvancedMarker>
+                          <AdvancedMarker position={{lat: 10.36121077, lng: -75.49175337}} ref={markerRef3} onClick={handleMarkerClick3}>
+                              <img src={'/images/riesgos/remocion_en_masa.png'} width={60} height={60} />
+                          </AdvancedMarker>
+                          <AdvancedMarker position={{lat: 10.54593654, lng: -75.39060164}} ref={markerRef4} onClick={handleMarkerClick4}>
+                              <img src={'/images/riesgos/inundacion.png'} width={60} height={60} />
+                          </AdvancedMarker>
+                          <AdvancedMarker position={{lat: 10.33611111, lng: -75.47592}} ref={markerRef5} onClick={handleMarkerClick5}>
+                              <img src={'/images/riesgos/diapirisimo.png'} width={60} height={60} />
+                          </AdvancedMarker>
+                          <AdvancedMarker position={{lat: 10.434277, lng: -75.517607}} ref={markerRef6} onClick={handleMarkerClick6}>
+                              <img src={'/images/riesgos/inundacion.png'} width={60} height={60} />
+                          </AdvancedMarker>
+                          <AdvancedMarker position={{lat: 10.4239965, lng: -75.53118258}} ref={markerRef7} onClick={handleMarkerClick7}>
+                              <img src={'/images/riesgos/remocion_en_masa.png'} width={60} height={60} />
+                          </AdvancedMarker>
+                          <AdvancedMarker position={{lat: 10.346996, lng: -75.487664}} ref={markerRef8} onClick={handleMarkerClick8}>
+                              <img src={'/images/riesgos/inundacion.png'} width={60} height={60} />
+                          </AdvancedMarker>
+
+                          {/* <AdvancedMarker
+                          ref={markerRef}
+                          position={{lat: 10.4105093, lng: -75.5330098}}
+                          onClick={handleMarkerClick}
+                          >
+                          <Pin background={'#FBBC04'} glyphColor={'#000'} borderColor={'#000'} />
+                          </AdvancedMarker>
+                   */}
+                          {infoWindowShown && ( 
+                          <InfoWindow anchor={marker} onCloseClick={handleClose}>
+                              <h2 className='text-xl font-bold'>Sensor Fredonia</h2>
+                              <br/>
+                              <p className='text-lg'>Inundacion</p>
+                              <br/>
+                          </InfoWindow> 
+                          )} 
+                              {infoWindowShown2 && ( 
+                          <InfoWindow anchor={marker2} onCloseClick={handleClose2}>
+                              <h2 className='text-xl font-bold'>Sensor Lomas del Marion</h2>
+                              <br/>
+                              <p className='text-lg'>Remocion en masa</p>
+                              <br/>
+                          </InfoWindow> 
+                          )} 
+                              {infoWindowShown3 && ( 
+                          <InfoWindow anchor={marker3} onCloseClick={handleClose3}>
+                              <h2 className='text-xl font-bold'>Sensor Cerro de Albornoz</h2>
+                              <br/>
+                              <p className='text-lg'>Remocion en masa</p>
+                              <br/>
+                          </InfoWindow> 
+                          )} 
+                              {infoWindowShown4 && ( 
+                          <InfoWindow anchor={marker4} onCloseClick={handleClose4}>
+                              <h2 className='text-xl font-bold'>Sensor Bayunca</h2>
+                              <br/>
+                              <p className='text-lg'>Inundacion</p>
+                              <br/>
+                          </InfoWindow> 
+                          )} 
+                              {infoWindowShown5 && ( 
+                          <InfoWindow anchor={marker5} onCloseClick={handleClose5}>
+                              <h2 className='text-xl font-bold'>Sensor Membrillal</h2>
+                              <br/>
+                              <p className='text-lg'>Inundacion</p>
+                              <br/>
+                          </InfoWindow> 
+                          )} 
+                              {infoWindowShown6 && ( 
+                          <InfoWindow anchor={marker6} onCloseClick={handleClose6}>
+                              <h2 className='text-xl font-bold'>Sensor San Francisco</h2>
+                              <br/>
+                              <p className='text-lg'>Inundacion</p>
+                              <br/>
+                          </InfoWindow> 
+                          )} 
+                              {infoWindowShown7 && ( 
+                          <InfoWindow anchor={marker7} onCloseClick={handleClose7}>
+                              <h2 className='text-xl font-bold'>Sensor San Francisco</h2>
+                              <br/>
+                              <p className='text-lg'>Remocion en masa</p>
+                              <br/>
+                          </InfoWindow> 
+                          )} 
+                              {infoWindowShown8 && ( 
+                          <InfoWindow anchor={marker8} onCloseClick={handleClose8}>
+                              <h2 className='text-xl font-bold'>Sensor Policarpa</h2>
+                              <br/>
+                              <p className='text-md'>Inundacion</p>
+                              <br/>
+                          </InfoWindow> 
+                          )} 
+                      </Map>
+                  </div>
+              </APIProvider>
+          </div>
+        </div>
 
 
 

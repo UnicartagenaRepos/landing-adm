@@ -7,7 +7,7 @@ import { TbHeartRateMonitor } from "react-icons/tb";
 
 function sat() {
     const images = [
-        "/images/sat/sat1.jpeg",
+        // "/images/sat/sat1.jpeg",
         "/images/sat/sat2.jpeg",
         "/images/sat/sat3.jpeg",
         "/images/sat/sat4.jpeg",
@@ -32,8 +32,8 @@ function sat() {
                 }}
                 className="z-50 flex flex-col justify-center items-center drop-shadow-2xl"
             >
-                <motion.p className="font-bold  drop-shadow-2xl text-4xl md:text-4xl text-center bg-grey bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-200 py-4">
-                Sistema Alerta Temprana <br /> de Cartagena
+                <motion.p className="font-bold  text-6xl md:text-6xl drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-gray-800 text-center bg-grey bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-200 py-4">
+                Sistema de Alerta Temprana <br /> de Cartagena
                 </motion.p>
                 {/* <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
                 <span>Join now →</span>
@@ -64,8 +64,8 @@ function sat() {
                         <img className=" w-32 h-32" src="/sat_ventaja.jpeg" alt="sat ventajas"/>
 
                         {/* <img className="rounded-full w-96 h-96 md:h-48 md:w-48 md:rounded-full" src="/sat.jpeg" alt="" /> */}
-                        <h5 className="mt-4 mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Ventajas de un SAT</h5>
-                        <p className="mb-4 font-light text-gray-700 dark:text-gray-400">Un SAT proporciona información valiosa que puede ser utilizada para mejorar la planificación y la toma de decisiones. Al contar con datos y alertas precisas sobre riesgos potenciales</p>
+                        <h5 className="mt-4 mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Importancia del Sistema de Alertas Tempranas</h5>
+                        <p className="mb-4 font-light text-gray-700 dark:text-gray-400">El Sistema de Alertas Tempranas de la OAGRD es una herramienta vital para reducir el impacto de los desastres en Cartagena. Al brindar información oportuna a la población, permite que las personas tomen medidas para protegerse a sí mismas y a sus familias, y para evacuar las zonas de riesgo si es necesario.</p>
                     </div>
                 </div>
             </div>
@@ -74,8 +74,8 @@ function sat() {
 
             {/* <div className="w-full flex fle-col h-[800px] mt-20 mb-20 text-center relative justify-center"> */}
             <div  className="mx-auto max-w-6xl mb-20 items-center justify-center object-center text-center align-middle " >
-                <h5 className="m-6 text-4xl font-extrabold dark:text-white rounded-2xl bg-mainc text-white p-1 items-center text-center">Ventajas de un SAT</h5>
-                <img className="h-[400px] mx-auto object-fit rounded-xl" src="/ventajas_personas.jpeg" alt="" />
+                <h5 className="m-6 text-4xl font-extrabold dark:text-white rounded-md bg-mainc text-white p-1 items-center text-center">Ventajas de un SAT</h5>
+                <img className="h-[400px] mx-auto object-fit rounded-xl shadow-2xl my-8" src="/ventajas_personas.jpeg" alt="" />
                 <div className="p-4">
                     <div id="accordion-collapse" data-accordion="collapse" className='w-6xl max-w-6xl'>
                         <h2 id="accordion-collapse-heading-1">
@@ -83,7 +83,7 @@ function sat() {
                             <span>Reducción del riesgo de desastres</span>
                             <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
-                            </svg>
+                            </svg>  
                             </button>
                         </h2>
                         <div id="accordion-collapse-body-1" className="hidden" aria-labelledby="accordion-collapse-heading-1">
@@ -175,52 +175,59 @@ function sat() {
             <div className='bg-gray-50 p-10'>
                 <span className='w-full mx-auto block text-center text-3xl font-medium mb-5'> Funcionamiento de los sistemas de alertas tempranas</span>
                 <div className=' md:flex md:flex-col flex-row items-center justify-center relative mb-10 '>
-                    <a href="#" className="m-3 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row max-w-60 h-[420px] hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <a href="#" className="m-3 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row max-w-72 h-[420px] hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                         <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
-                        <img className="w-32 h-32" src="/monitoreo.png" alt="sat objetivos"/>
-                            <h5 className="mt-4 mb-2 text-lg font-semibold tracking-tight text-gray-900 dark:text-white">Monitoreo y recopilacion de datos</h5>
-                            <p className="mb-4 text-sm text-gray-700 dark:text-gray-400">Los sistemas de alertas tempranas recopilan datos relevantes de diversas fuentes, como sensores, estaciones meteorológicas y redes sociales.</p>
+                        <img className="w-32 h-32" src="/images/sat/monitoring.png" alt="sat objetivos"/>
+                        <div>
+                            <h5 className="mt-4 mb-2 text-lg font-semibold tracking-tight text-gray-900 dark:text-white">Monitoreo y vigilancia</h5>
+                            <p className="mb-4 text-sm text-gray-700 dark:text-gray-400">La OAGRD recibe información sobre un posible peligro a través de su red de monitoreo o de otras fuentes.</p>
+                        </div>
                         </div>
                     </a> 
-                    <a href="#" className="m-3 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row max-w-60 h-[420px] hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <a href="#" className="m-3 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row max-w-72 h-[420px] hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                         <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
-                        <img className="w-32 h-32" src="/analitica.png" alt="sat objetivos"/>
-                            <h5 className="mt-4 mb-2 text-lg font-semibold tracking-tight text-gray-900 dark:text-white">Analisis de datos</h5>
-                            <p className="mb-4 text-sm text-gray-700 dark:text-gray-400">Los datos recopilados se analizan utilizando algoritmos y modelos para identificar patrones y determinar si se cumplen condiciones de alerta.</p>
+                        <img className="w-32 h-32" src="/images/sat/analisis.png" alt="sat objetivos"/>
+                        <div>
+                            <h5 className="mt-4 mb-2 text-lg font-semibold tracking-tight text-gray-900 dark:text-white">Análisis y pronóstico</h5>
+                            <p className="mb-4 text-sm text-gray-700 dark:text-gray-400">La información es analizada por un equipo de expertos, quienes determinan el nivel de riesgo y la necesidad de emitir una alerta.</p>
+                        </div>
                         </div>
                     </a>
-                    <a href="#" className="m-3 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row max-w-60 h-[420px] hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <a href="#" className="m-3 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row max-w-72 h-[420px] hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                         <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
 
-                            <img className="w-auto h-36" src="/evaluacion.png" alt="sat ventajas"/>
+                            <img className="w-32 h-32" src="/images/sat/emitir.png" alt="sat ventajas"/>
 
                             {/* <img className="rounded-full w-96 h-96 md:h-48 md:w-48 md:rounded-full" src="/sat.jpeg" alt="" /> */}
-                            <h5 className="mt-4 mb-2 text-lg font-semibold tracking-tight text-gray-900 dark:text-white">Evaluacion de riesgos</h5>
-                            <p className="mb-4 text-sm text-gray-700 dark:text-gray-400">Se evalúa el nivel de riesgo asociado con los eventos o situaciones detectadas, considerando la probabilidad y magnitud de los impactos.</p>
+                            <div>
+                                <h5 className="mt-4 mb-2 text-lg font-semibold tracking-tight text-gray-900 dark:text-white">Comunicación y alerta</h5>
+                                <p className="mb-4 text-sm text-gray-700 dark:text-gray-400">Si se emite una alerta, la OAGRD activa los canales de comunicación para difundirla a la población lo antes posible.</p>
+                            </div>
                         </div>
                     </a>
 
-                    <a href="#" className="m-3 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row max-w-60 h-[420px] hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    <a href="#" className="m-3 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row max-w-72 h-[420px] hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                         <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
 
-                            <img className=" w-32 h-32" src="/megaphone.webp" alt="Difucion de alertas"/>
+                            <img className=" w-32 h-32" src="/images/sat/megaphone.png" alt="Difucion de alertas"/>
 
                             {/* <img className="rounded-full w-96 h-96 md:h-48 md:w-48 md:rounded-full" src="/sat.jpeg" alt="" /> */}
-                            <h5 className="mt-4 mb-2 text-lg font-semibold tracking-tight text-gray-900 dark:text-white">Generacion y difucion de alertas</h5>
-                            <p className="mb-4 text-sm text-gray-700 dark:text-gray-400">Si se identifica un riesgo significativo, se generan alertas que se difunden a través de diversos medios para informar a las autoridades y personas afectadas</p>
+                            <div>
+                                <h5 className="mt-4 mb-2 text-lg font-semibold tracking-tight text-gray-900 dark:text-white text-center">Medios de comunicación</h5>
+                                <p className="mb-4 text-sm text-gray-700 dark:text-gray-400">La población recibe la alerta y toma las medidas de precaución necesarias para protegerse.</p>
+                            </div>
                         </div>
                     </a>
 
-                    <a href="#" className="m-3 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row max-w-60 h-[420px] hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                    {/* <a href="#" className="m-3 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row max-w-60 h-[420px] hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                         <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
 
                             <img className=" w-32 h-32" src="/respuesta.png" alt="Respuesta y seguimiento"/>
 
-                            {/* <img className="rounded-full w-96 h-96 md:h-48 md:w-48 md:rounded-full" src="/sat.jpeg" alt="" /> */}
                             <h5 className="mt-4 mb-2 text-lg font-semibold tracking-tight text-gray-900 dark:text-white">Respuesta y seguimiento</h5>
                             <p className="mb-4 text-sm text-gray-700 dark:text-gray-400">Las autoridades y las personas involucradas toman acciones de acuerdo con los protocolos de respuesta establecidos, y se realiza un seguimiento continuo de la situación para evaluar la efectividad de las medidas tomadas</p>
                         </div>
-                    </a>
+                    </a> */}
                 </div>
             </div>
 

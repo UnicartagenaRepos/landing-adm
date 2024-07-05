@@ -4,8 +4,9 @@ import Link from 'next/link'
 import React from 'react'
 import { MenuIcon } from 'lucide-react'
 import { usePathname } from 'next/navigation';
-import { FaFacebook, FaPhone, FaYoutube } from 'react-icons/fa'
-import { BsLinkedin } from 'react-icons/bs'
+import { FaFacebook, FaInstagramSquare, FaPhone, FaYoutube } from 'react-icons/fa'
+import { BsLinkedin, BsTwitterX } from 'react-icons/bs'
+import { FaTiktok } from "react-icons/fa";
 
 
 type Props = {}
@@ -15,18 +16,20 @@ const Navbar = (props: Props) => {
   
   return (
     <header className='z-[100] flex flex-col items-center justify-between'>
-        <div className='bg-mainc h-14 w-full flex flex-row gap-4'>
+        <div className='bg-mainc h-12 w-full flex flex-row gap-4'>
             <div className='w-full flex justify-around items-center'>
               <Image className="" src="/images/gov.png" width={150} height={2} alt="gov Logo" />
               <div className='flex flex-row items-center justify-center p-10 gap-6'>
-                <Link href="#"><FaFacebook  size={20} className='hover:scale-125 transition duration-500 cursor-pointer text-white'/></Link>
-                <Link href="#"><FaYoutube size={20} className='hover:scale-125 transition duration-500 cursor-pointer text-white'/></Link>
-                <Link href="#"><FaPhone size={20} className='hover:scale-125 transition duration-500 cursor-pointer text-white'/></Link>
-                <Link href="#"><BsLinkedin size={20} className='hover:scale-125 transition duration-500 cursor-pointer text-white'/></Link>
+                <Link href="https://www.facebook.com/gestiondelriesgoctg"><FaFacebook  size={20} className='hover:scale-125 transition duration-500 cursor-pointer text-white'/></Link>
+                <Link href="https://x.com/oagrdcartagena"><BsTwitterX  size={20} className='hover:scale-125 transition duration-500 cursor-pointer text-white'/></Link>
+                {/* <Link href="#"><FaYoutube size={20} className='hover:scale-125 transition duration-500 cursor-pointer text-white'/></Link> */}
+                <Link href="https://www.instagram.com/gestiondelriesgoctg"><FaInstagramSquare size={20} className='hover:scale-125 transition duration-500 cursor-pointer text-white'/></Link>
+                <Link href="https://www.tiktok.com/@gestiondelriesgoctg"><FaTiktok size={20} className='hover:scale-125 transition duration-500 cursor-pointer text-white'/></Link>
+                <Link href="cel:3175030465"><FaPhone size={20} className='hover:scale-125 transition duration-500 cursor-pointer text-white'/></Link>
               </div>
             </div>
           </div>
-        <nav className="bg-white dark:bg-gray-900 w-full !z-1000 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
+        <nav className="bg-white h-22 dark:bg-gray-900 w-full !z-1000 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
         <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-1">
         <Link href="https://localhost:3000/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <Image src="/oagrd-logo.png" width={104} height={30} className="h-24" alt="oagrd Logo" />
@@ -43,22 +46,22 @@ const Navbar = (props: Props) => {
         <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 text-lg  border border-gray-100 rounded-lg bg-gray-50 md:space-x-10 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-              <a href="/" className="block py-2 px-3 hover:underline rounded md:bg-transparent md:text-gray-600 md:hover:text-mainc md:p-0 md:dark:text-blue-500" aria-current="page">Inicio</a>
+              <a href="/" className="block py-2 px-3 hover:underline rounded md:bg-transparent md:text-gray-700 hover:text-mainc hover:font-bold md:hover:text-mainc hover:-translate-y-2 transition ease-in-out delay-80  hover:scale-110 md:p-0 md:dark:text-blue-500" aria-current="page">Inicio</a>
             </li>
             <li>
-              <Link href="/sat" className="block py-2 px-3 text-gray-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-mainc hover:underline md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">SAT</Link>
+              <a href="/sat" className="block py-2 px-3 text-gray-700 hover:text-mainc hover:font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-mainc  hover:-translate-y-2 transition ease-in-out delay-80  hover:scale-110 hover:underline md:p-0 ">SAT</a>
             </li>
             <li>
-              <Link href="/quienes-somos" className="block py-2 px-3 text-gray-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-mainc hover:underline md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Quienes Somos</Link>
+              <a href="/quienes-somos" className="block py-2 px-3 text-gray-700 hover:text-mainc hover:font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-mainc  hover:-translate-y-2 transition ease-in-out delay-80  hover:scale-110hover:underline md:p-0 ">Quienes Somos</a>
             </li>
             <li>
-              <Link href="/reportes" className="block py-2 px-3 text-gray-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-mainc hover:underline md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Reportes</Link>
+              <a href="/reportes" className="block py-2 px-3 text-gray-700 hover:text-mainc hover:font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-mainc  hover:-translate-y-2 transition ease-in-out delay-80  hover:scale-110hover:underline md:p-0 ">Reportes</a>
             </li>
             <li>
-              <Link href="https://www.cartagena.gov.co/Atencion-y-Servicio-a-la-Ciudadania/PQRSDF" className="block py-2 px-3 text-gray-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-mainc hover:underline md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">PQRS</Link>
+              <a href="https://www.cartagena.gov.co/Atencion-y-Servicio-a-la-Ciudadania/PQRSDF" className="block py-2 px-3 text-gray-700 hover:text-mainc hover:font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-mainc hover:-translate-y-2 transition ease-in-out delay-80  hover:scale-110 hover:underline md:p-0 ">PQRS</a>
             </li>
             <li>
-              <Link href="/contactanos" className="block py-2 px-3 text-gray-600 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-mainc hover:underline md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contactanos</Link>
+              <a href="/contactanos" className="block py-2 px-3 text-gray-700 hover:text-mainc hover:font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-mainc hover:-translate-y-2 transition ease-in-out delay-80  hover:scale-110 hover:underline md:p-0 ">Contactanos</a>
             </li>
           </ul>
         </div>
