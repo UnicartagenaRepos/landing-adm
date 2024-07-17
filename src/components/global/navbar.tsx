@@ -31,10 +31,10 @@ const Navbar = (props: Props) => {
           </div>
         <nav className="bg-white h-22 dark:bg-gray-900 w-full !z-1000 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
         <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-1">
-        <Link href="https://localhost:3000/" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <a href="https://localhost:3000/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <Image src="/oagrd-logo.png" width={104} height={30} className="h-24" alt="oagrd Logo" />
             {/* <span className="self-center text-4xl font-semibold whitespace-nowrap dark:text-white">OAGRD</span> */}
-        </Link>
+        </a>
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <button type="button" className="text-white bg-mainc hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"></button>
             <button data-collapse-toggle="navbar-sticky" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
@@ -52,16 +52,16 @@ const Navbar = (props: Props) => {
               <a href="/sat" className="block py-2 px-3 text-gray-700 hover:text-mainc hover:font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-mainc  hover:-translate-y-2 transition ease-in-out delay-80  hover:scale-110 hover:underline md:p-0 ">SAT</a>
             </li>
             <li>
-              <a href="/quienes-somos" className="block py-2 px-3 text-gray-700 hover:text-mainc hover:font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-mainc  hover:-translate-y-2 transition ease-in-out delay-80  hover:scale-110hover:underline md:p-0 ">Quienes Somos</a>
+              <a href="/quienes-somos" className="block py-2 px-3 text-gray-700 hover:text-mainc hover:font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-mainc  hover:-translate-y-2 transition ease-in-out delay-80  hover:scale-110hover:underline md:p-0 ">Quiénes Somos</a>
             </li>
-            <li>
+            {/* <li>
               <a href="/reportes" className="block py-2 px-3 text-gray-700 hover:text-mainc hover:font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-mainc  hover:-translate-y-2 transition ease-in-out delay-80  hover:scale-110hover:underline md:p-0 ">Reportes</a>
-            </li>
+            </li> */}
             <li>
               <a href="https://www.cartagena.gov.co/Atencion-y-Servicio-a-la-Ciudadania/PQRSDF" className="block py-2 px-3 text-gray-700 hover:text-mainc hover:font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-mainc hover:-translate-y-2 transition ease-in-out delay-80  hover:scale-110 hover:underline md:p-0 ">PQRS</a>
             </li>
             <li>
-              <a href="/contactanos" className="block py-2 px-3 text-gray-700 hover:text-mainc hover:font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-mainc hover:-translate-y-2 transition ease-in-out delay-80  hover:scale-110 hover:underline md:p-0 ">Contactanos</a>
+              <a href="/contactanos" className="block py-2 px-3 text-gray-700 hover:text-mainc hover:font-bold rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-mainc hover:-translate-y-2 transition ease-in-out delay-80  hover:scale-110 hover:underline md:p-0 ">Contáctanos</a>
             </li>
           </ul>
         </div>

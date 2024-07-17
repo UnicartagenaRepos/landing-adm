@@ -9,8 +9,8 @@ function Footer() {
     {/* footer  */}
 
 
-    <footer className="bg-mainc text-white dark:bg-gray-900">
-        <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+    <footer className="bg-mainc  text-white dark:bg-gray-900">
+        <div className="mx-auto max-w-7xl max-w-screen-x p-4 py-6 lg:py-8">
             <div className="flex justify-between">
             <div className="">
                 <a href="https://www.satoagrdcartagena.gov.co/" className="flex p-2 items-center mr-20 bg-white w-36 rounded-full">
@@ -36,7 +36,7 @@ function Footer() {
                             <a href="https://www.facebook.com/gestiondelriesgoctg" className="hover:underline ">Facebook</a>
                         </li>
                         <li>
-                            <a href="https://x.com/oagrdcartagena" className="hover:underline">X (Twitter)</a>
+                            <a href="https://x.com/oagrdcartagena" className="hover:underline">X</a>
                         </li>
                         <li>
                             <a href="https://www.instagram.com/gestiondelriesgoctg" className="hover:underline">Instagram</a>

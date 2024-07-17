@@ -34,6 +34,7 @@ import { TypewriterEffectSmooth } from "@/components/global/typewriter-effect";
 import Weather from "@/components/global/weather";
 import { useCallback, useEffect, useState } from "react";
 import { Map, Pin, APIProvider, InfoWindow, AdvancedMarker,   Marker, useAdvancedMarkerRef,} from "@vis.gl/react-google-maps"
+import Link from "next/link";
 
 
 
@@ -207,9 +208,9 @@ export default function Home() {
               <div className="hidden duration-300" data-carousel-item>
                   <img src="/images/banners/ban2.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/3 top-1/3  left-1/2" alt="..." />
               </div>
-              <div className="hidden duration-300" data-carousel-item>
+              {/* <div className="hidden duration-300" data-carousel-item>
                   <img src="/images/banners/ban3.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/3 top-1/3  left-1/2" alt="..." />
-              </div>
+              </div> */}
               <div className="hidden duration-300" data-carousel-item>
                   <img src="/images/banners/ban4.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/3 top-1/3  left-1/2" alt="..." />
               </div>
@@ -327,14 +328,14 @@ export default function Home() {
 </div>
 
 {/* Ultimas noticias */}
-<div className="mx-auto max-w-6xl font-medium text-4xl mb-10 flex items-center justify-center bg-mainc text-white pl-10 h-20 text-center mt-20">ULTIMAS NOTICIAS</div>
+<div id="news" className="mx-auto max-w-6xl font-medium text-4xl mb-10 flex items-center justify-center bg-mainc text-white pl-10 h-20 text-center mt-20">ULTIMAS NOTICIAS</div>
 <div className="mx-auto max-w-6xl grid grid-cols-3 gap-10">
   <div className="flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
     <img className='object-cover h-full w-full' src={'/images/noticias/not1.jpeg'} width={600} height={600} alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
       <p className="p-4 text-black hover:text-blue-900 ">Distriseguridad fomenta el cuidado ambiental y el sentido de pertenencia en el Caño Juan Angola</p>
-      <div className="text-center">
-        <button className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</button>
+      <div className="text-center hover:underline">
+        <Link  href="/news" className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</Link>
       </div>
     </div>
   </div>
@@ -343,8 +344,8 @@ export default function Home() {
     <img className='object-cover h-full w-full' src={'/images/noticias/not2.jpeg'} width={600} height={600} alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
       <p className="p-4 text-black hover:text-blue-900">Distriseguridad fomenta el cuidado ambiental y el sentido de pertenencia en el Caño Juan Angola</p>
-      <div className="text-center">
-        <button className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</button>
+      <div className="text-center hover:underline">
+        <Link  href="/news" className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</Link>
       </div>
     </div>
   </div>
@@ -353,8 +354,8 @@ export default function Home() {
     <img className='object-cover h-full w-full' src={'/images/noticias/not3.jpeg'} width={600} height={600} alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
       <p className="p-4 text-black hover:text-blue-900 ">Brigada Cívica de la Alcaldía Mayor de Cartagena recibe certificación en competencias ciudadanas</p>
-      <div className="text-center">
-        <button className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</button>
+      <div className="text-center hover:underline">
+        <Link  href="/news" className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</Link>
       </div>
     </div>
   </div>
@@ -363,8 +364,8 @@ export default function Home() {
     <img className='object-cover h-full w-full' src={'/images/noticias/not4.jpeg'} width={600} height={600} alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
       <p className="p-4 text-black hover:text-blue-900 ">Con Brigada Cívica, Distriseguridad fomenta la sana convivencia en Corredores Universitarios de Cartagena</p>
-      <div className="text-center">
-        <button className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</button>
+      <div className="text-center hover:underline">
+        <Link  href="/news" className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</Link>
       </div>
     </div>
   </div>
@@ -373,8 +374,8 @@ export default function Home() {
     <img className='object-cover h-full w-full' src={'/images/noticias/not5.jpeg'} width={600} height={600} alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
       <p className="p-4 text-black hover:text-blue-900 ">Distriseguridad, celebra el día del niño con Jornada de Rescate de Juegos Tradicionales</p>
-      <div className="text-center">
-        <button className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</button>
+      <div className="text-center hover:underline">
+        <Link  href="/news" className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</Link>
       </div>
     </div>
   </div>
@@ -383,8 +384,8 @@ export default function Home() {
     <img className='object-cover h-full w-full' src={'/images/noticias/not6.jpeg'} width={600} height={600} alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
       <p className="p-4 text-black hover:text-blue-900 ">Distriseguridad continúa atendiendo el llamado de las comunidades con trabajo articulado por la seguridad</p>
-      <div className="text-center">
-        <button className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</button>
+      <div className="text-center hover:underline">
+        <Link  href="/news" className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</Link>
       </div>
     </div>
   </div>
@@ -406,6 +407,7 @@ transition={{ ease: "circInOut",
         <img className="block justify-center items-center text-center" width={50} height={50} src={"https:" + data?.current.condition.icon} alt="Icono del clima" />
         <div className="flex flex-row justify-center mb-1"><h1 className="text-5xl">{Math.ceil(data?.current.temp_c)}</h1><span className="text-2xl">°C</span></div>
         <div className="first-letter:uppercase text-gray-500">{data?.current.condition.text}</div>    
+        <div>Fuente: alslsa,sl</div>
     </div>
 
     <div className="flex flex-col w-5xl p-2 h-32 w-44 bg-red-400 rounded-xl  text-center m-3 ">
@@ -668,9 +670,9 @@ transition={{ ease: "linear",
 {/* maps sensors */}
    
     {/* google maps */}
-    <div className="max-w-full mx-auto flex flex-col bg-gray-50 py-20 h"> 
+    <div className="max-w-full mx-auto flex flex-col bg-gray-100 py-20 shadow-2xl border"> 
       <span className="text-3xl  max-w-full text-center text-mainc font-bold mb-4">RED DE SENSORES OAGRD</span>
-      <div className='w-2/3 mx-auto rounded-md bg-white block p-3'>
+      <div className='w-2/3 mx-auto rounded-md bg-mainc block p-3 '>
               <APIProvider apiKey='AIzaSyB2MmtCCU1GIWkoblto0sjSQrN_91XTL3U' >
                   <div className='h-[800px] w-full rounded'>
                       <Map       
