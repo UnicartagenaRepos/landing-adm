@@ -1,0 +1,60 @@
+name: Deploy to Cloud Run
+on:
+    push:
+
+jobs:
+    deploy_cloudrun:
+        runs-on: ubuntu-latest
+        name: Deploy to cloudrun
+    #     Add "id-token" with the intended permissions.
+        permissions:
+            contents: "read"
+            actions: "read"
+            id-token: "write"
+            security-events: "write"
+        env:
+            PROJECT_ID: sistema-alertas-tempranas
+            SERVICE: web-land
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+              with:
+                ref: ${{ github.ref }}
+
+            - uses: 'google-github-actions/auth@v2'
+              with:
+                workload_identity_provider: 'projects/62423473472/locations/global/workloadIdentityPools/all-pull/providers/pool-github-provider'
+                service_account: 'cloudrun@sistema-alertas-tempranas.iam.gserviceaccount.com'
+        
+            - name: Setup Cloud SDK 
+              uses: google-github-actions/setup-gcloud@v1
+
+            - name: Authorize Docker Push
+              run: gcloud auth configure-docker
+
+            - name: Build and Push Container
+              env:
+                  NPMJS_TOKEN: ${{ secrets.NPMJS_TOKEN }}
+              run: |-
+                  docker build -t us.gcr.io/${{ env.PROJECT_ID }}/${{ env.SERVICE }}:${{  github.sha }} .
+                  docker push us.gcr.io/${{ env.PROJECT_ID }}/${{ env.SERVICE }}:${{  github.sha }}
+
+            - name: Deploy to Cloud Run ${{ steps.variables.outputs.ENV }}
+              id: deploy
+              uses: google-github-actions/deploy-cloudrun@v2
+              with:
+                  service: ${{ env.SERVICE }}
+                  image: us.gcr.io/${{ env.PROJECT_ID }}/${{ env.SERVICE }}:${{ github.sha }}
+                  region: us-east1
+                  flags: >
+                    --service-account cloudrun@${{ env.PROJECT_ID }}.iam.gserviceaccount.com
+                    --platform=managed
+                    --no-use-http2
+                    --allow-unauthenticated
+                    --port=3000
+                    --concurrency=120
+                    --timeout=300 
+                    --min-instances=1
+                    --max-instances=2
+                    --cpu=1 
+                    --memory=1Gi

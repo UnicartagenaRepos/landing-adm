@@ -31,7 +31,6 @@ import {
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
 import { TypewriterEffectSmooth } from "@/components/global/typewriter-effect";
-import Weather from "@/components/global/weather";
 import { useCallback, useEffect, useState } from "react";
 import { Map, Pin, APIProvider, InfoWindow, AdvancedMarker,   Marker, useAdvancedMarkerRef,} from "@vis.gl/react-google-maps"
 import Link from "next/link";
@@ -191,28 +190,28 @@ export default function Home() {
       {/* <!-- Carousel wrapper --> */}
           <div className="relative overflow-hidden md:h-[800px]">
               <div className="hidden duration-3000" data-carousel-item>
-                  <img src="/images/banners/sat-banner2.png" className="absolute block w-full -translate-x-1/2 -translate-y-2/2 top-2/2 left-1/2" alt="..." />
+                  <Image src="/images/banners/sat-banner2.png" className="absolute block w-full -translate-x-1/2 -translate-y-2/2 top-2/2 left-1/2" alt="..." />
               </div>
               <div className="hidden duration-300" data-carousel-item>
-                  <img src="/images/home1.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-2/3 top-2/3 left-1/2" alt="..." />
+                  <Image src="/images/home1.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-2/3 top-2/3 left-1/2" alt="..." />
               </div>
               <div className="hidden duration-300" data-carousel-item>
               <p className="relative z-30 w-full mx-auto  mr-3  pr-9 block font-bold items-end text-1xl md:text-1xl text-center py-2 bg-gray-50 opacity-70">
               Comités Barriales de Emergencias del Distrito de Cartagena
                 </p>
-                  <img src="/images/home2.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/3 top-1/3 left-1/2" alt="..." />
+                  <Image src="/images/home2.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/3 top-1/3 left-1/2" alt="..." />
               </div>
               <div className="hidden duration-300" data-carousel-item>
-                  <img src="/images/banners/ban1.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/3 top-1/3  left-1/2" alt="..." />
+                  <Image src="/images/banners/ban1.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/3 top-1/3  left-1/2" alt="..." />
               </div>
               <div className="hidden duration-300" data-carousel-item>
-                  <img src="/images/banners/ban2.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/3 top-1/3  left-1/2" alt="..." />
+                  <Image src="/images/banners/ban2.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/3 top-1/3  left-1/2" alt="..." />
               </div>
               {/* <div className="hidden duration-300" data-carousel-item>
-                  <img src="/images/banners/ban3.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/3 top-1/3  left-1/2" alt="..." />
+                  <Image src="/images/banners/ban3.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/3 top-1/3  left-1/2" alt="..." />
               </div> */}
               <div className="hidden duration-300" data-carousel-item>
-                  <img src="/images/banners/ban4.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/3 top-1/3  left-1/2" alt="..." />
+                  <Image src="/images/banners/ban4.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-1/3 top-1/3  left-1/2" alt="..." />
               </div>
           </div>
           {/* <!-- Slider indicators --> */}
@@ -277,8 +276,8 @@ export default function Home() {
             <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
             <div className="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
             <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
-                <img src="/images/app-image2.jpeg" className="dark:hidden w-[272px] h-[572px]" alt="" />
-                <img src="/images/app-image2.jpeg" className="hidden dark:block w-[272px] h-[572px]" alt="" />
+                <Image src="/images/app-image2.jpeg" className="dark:hidden w-[272px] h-[572px]" alt="" />
+                <Image src="/images/app-image2.jpeg" className="hidden dark:block w-[272px] h-[572px]" alt="" />
             </div>
         </div>
 
@@ -288,8 +287,8 @@ export default function Home() {
             <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
             <div className="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
             <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
-                <img src="/images/home-app.jpeg" className="dark:hidden w-[272px] h-[572px]" alt="" />
-                <img src="/images/home-app.jpeg" className="hidden dark:block w-[272px] h-[572px]" alt="" />
+                <Image src="/images/home-app.jpeg" className="dark:hidden w-[272px] h-[572px]" alt="" />
+                <Image src="/images/home-app.jpeg" className="hidden dark:block w-[272px] h-[572px]" alt="" />
             </div>
         </div>
 
@@ -299,22 +298,22 @@ export default function Home() {
             <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
             <div className="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
             <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
-                <img src="/images/app-image3.jpeg" className="dark:hidden w-[272px] h-[572px]" alt="" />
-                <img src="/images/app-image3.jpeg" className="hidden dark:block w-[272px] h-[572px]" alt="" />
+                <Image src="/images/app-image3.jpeg" className="dark:hidden w-[272px] h-[572px]" alt="" />
+                <Image src="/images/app-image3.jpeg" className="hidden dark:block w-[272px] h-[572px]" alt="" />
             </div>
         </div>
 
     </div>
     <div className="flex flex-row gap-10">
         <a href="#" className="md:mt-10 w-full sm:w-auto bg-mainc shadow-2xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-            <svg className="me-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"></path></svg>
+            <svg className="me-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-play" role="Image height={420} width={600}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"></path></svg>
             <div className="text-left rtl:text-right">
                 <div className="mb-1 text-base">Descargala en</div>
                 <div className="-mt-1 font-sans text-lg font-semibold">Google Play</div>
             </div>
         </a>
         <a href="#" className="md:mt-10 border w-full sm:w-auto shadow-2xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700">
-            {/* <img src={'/images/'} alt="app store image"/> */}
+            {/* <Image src={'/images/'} alt="app store image"/> */}
             <svg  className="me-3 w-8 h-8" fill="#23234c"  viewBox="-52.01 0 560.035 560.035" xmlns="http://www.w3.org/2000/svg"><path d="M380.844 297.529c.787 84.752 74.349 112.955 75.164 113.314-.622 1.988-11.754 40.191-38.756 79.652-23.343 34.117-47.568 68.107-85.731 68.811-37.499.691-49.557-22.236-92.429-22.236-42.859 0-56.256 21.533-91.753 22.928-36.837 1.395-64.889-36.891-88.424-70.883-48.093-69.53-84.846-196.475-35.496-282.165 24.516-42.554 68.328-69.501 115.882-70.192 36.173-.69 70.315 24.336 92.429 24.336 22.1 0 63.59-30.096 107.208-25.676 18.26.76 69.517 7.376 102.429 55.552-2.652 1.644-61.159 35.704-60.523 106.559M310.369 89.418C329.926 65.745 343.089 32.79 339.498 0 311.308 1.133 277.22 18.785 257 42.445c-18.121 20.952-33.991 54.487-29.709 86.628 31.421 2.431 63.52-15.967 83.078-39.655"/></svg>
             <div className="text-left rtl:text-right">
                 <div className="mb-1 text-base text-mainc">Descargala en</div>
@@ -328,64 +327,68 @@ export default function Home() {
 </div>
 
 {/* Ultimas noticias */}
-<div id="news" className="mx-auto max-w-6xl font-medium text-4xl mb-10 flex items-center justify-center bg-mainc text-white pl-10 h-20 text-center mt-20">ULTIMAS NOTICIAS</div>
-<div className="mx-auto max-w-6xl grid grid-cols-3 gap-10">
-  <div className="flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
-    <img className='object-cover h-full w-full' src={'/images/noticias/not1.jpeg'} width={600} height={600} alt='Noticia 1'/>
+<div id="news" className="mx-auto max-w-6xl font-medium text-4xl mb-32 flex items-center justify-center bg-mainc text-white pl-10 h-20 text-center mt-20">NOTICIAS</div>
+<div className="mx-auto max-w-6xl grid grid-cols-3 gap-10 mb-32">
+  <div className="h-60 object-cover mb-32 flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+    <Image  className=' object-cover h-full w-full' src={'/images/noticias/not1.jpeg'} width={600} height={600} alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
-      <p className="p-4 text-black hover:text-blue-900 ">Distriseguridad fomenta el cuidado ambiental y el sentido de pertenencia en el Caño Juan Angola</p>
+      <p className="p-4 text-black hover:text-blue-900 ">Con éxito se realizó en Cartagena el simulacro de la operación binacional de Cartagena y Estados Unidos: Promesa Continua 2024</p>
       <div className="text-center hover:underline">
-        <Link  href="/news" className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</Link>
+        <Link  href="/news/oficina-gestion-riesgo-noticias-001" className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</Link>
       </div>
     </div>
   </div>
 
-  <div className="flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
-    <img className='object-cover h-full w-full' src={'/images/noticias/not2.jpeg'} width={600} height={600} alt='Noticia 1'/>
+  <div className="h-60 object-cover flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+    <Image className=' object-cover h-full w-full' src={'/images/noticias/not2.jpeg'} width={600} height={600} alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
-      <p className="p-4 text-black hover:text-blue-900">Distriseguridad fomenta el cuidado ambiental y el sentido de pertenencia en el Caño Juan Angola</p>
+      <p className="p-4 text-black hover:text-blue-900">Se reactiva pago de $500 mil dirigido a afectados por el Fenómeno de La Niña, en 2022, que presentaron errores en su registro de nombre o cédula</p>
       <div className="text-center hover:underline">
-        <Link  href="/news" className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</Link>
+        <Link  href="/news/oficina-gestion-riesgo-noticias-002" className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</Link>
       </div>
     </div>
   </div>
 
-  <div className="flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
-    <img className='object-cover h-full w-full' src={'/images/noticias/not3.jpeg'} width={600} height={600} alt='Noticia 1'/>
-    <div className="bg-gray-50 pb-6">
-      <p className="p-4 text-black hover:text-blue-900 ">Brigada Cívica de la Alcaldía Mayor de Cartagena recibe certificación en competencias ciudadanas</p>
-      <div className="text-center hover:underline">
-        <Link  href="/news" className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</Link>
-      </div>
-    </div>
-  </div>
 
-  <div className="flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
-    <img className='object-cover h-full w-full' src={'/images/noticias/not4.jpeg'} width={600} height={600} alt='Noticia 1'/>
+
+  <div className="h-60 object-cover flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+    <Image className=' object-cover h-full w-full' src={'/images/noticias/not4.jpeg'} width={600} height={600} alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
       <p className="p-4 text-black hover:text-blue-900 ">Con Brigada Cívica, Distriseguridad fomenta la sana convivencia en Corredores Universitarios de Cartagena</p>
       <div className="text-center hover:underline">
-        <Link  href="/news" className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</Link>
+        <Link  href="/news/oficina-gestion-riesgo-noticias-004" className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</Link>
       </div>
     </div>
   </div>
 
-  <div className="flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
-    <img className='object-cover h-full w-full' src={'/images/noticias/not5.jpeg'} width={600} height={600} alt='Noticia 1'/>
+  <div className="h-60 object-cover flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+    <Image className='object-cover h-full w-full' src={'/images/noticias/not5.jpeg'} width={600} height={600} alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
-      <p className="p-4 text-black hover:text-blue-900 ">Distriseguridad, celebra el día del niño con Jornada de Rescate de Juegos Tradicionales</p>
+      <p className="p-4 text-black hover:text-blue-900 ">La Onda Tropical No. 27 ha disminuido su formación ciclónica en un 10%, se prevén lluvias leves a intensas en amplios sectores de la ciudad</p>
       <div className="text-center hover:underline">
-        <Link  href="/news" className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</Link>
+        <Link  href="/news/oficina-gestion-riesgo-noticias-005" className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</Link>
       </div>
     </div>
   </div>
 
-  <div className="flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
-    <img className='object-cover h-full w-full' src={'/images/noticias/not6.jpeg'} width={600} height={600} alt='Noticia 1'/>
+
+
+  <div className="h-60 object-cover  flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+    <Image className='object-cover h-full w-full' src={'/images/noticias/not6.jpeg'} width={600} height={600} alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
       <p className="p-4 text-black hover:text-blue-900 ">Distriseguridad continúa atendiendo el llamado de las comunidades con trabajo articulado por la seguridad</p>
       <div className="text-center hover:underline">
-        <Link  href="/news" className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</Link>
+        <Link  href="/news/oficina-gestion-riesgo-noticias-006" className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</Link>
+      </div>
+    </div>
+  </div>
+
+    <div className="h-60 object-cover  flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ">
+    <Image className=' object-cover h-full w-full' src={'/images/noticias/not3.jpeg'} width={600} height={600} alt='Noticia 1'/>
+    <div className="bg-gray-50 pb-6">
+      <p className="p-4 text-black hover:text-blue-900 ">OAGRD insta a la ciudadanía a estar alerta ante posible desarrollo ciclónico en el Atlántico</p>
+      <div className="text-center hover:underline">
+        <Link  href="/news/oficina-gestion-riesgo-noticias-003" className="bg-mainc text-white rounded-xl px-4 py-1">Leer más</Link>
       </div>
     </div>
   </div>
@@ -404,10 +407,10 @@ transition={{ ease: "circInOut",
     <span className="text-2xl font-medium mb-4 text-center bg-mainc text-white p-3">El tiempo en Cartagena de Indias hoy - {currentDate}</span>
     <div className="flex flex-row items-center max-w-6xl mb-20 bg-gray-100 dark:bg-gray-900 max-w-screen-2x border border-gray-150 rounded-lg  dark:border-gray-700 mx-auto">
     <div className="flex flex-col bg-white h-40 w-[370px] text-center items-center justify-center p-4">
-        <img className="block justify-center items-center text-center" width={50} height={50} src={"https:" + data?.current.condition.icon} alt="Icono del clima" />
+        <Image className="block justify-center items-center text-center" width={50} height={50} src={"https:" + data?.current.condition.icon} alt="Icono del clima" />
         <div className="flex flex-row justify-center mb-1"><h1 className="text-5xl">{Math.ceil(data?.current.temp_c)}</h1><span className="text-2xl">°C</span></div>
         <div className="first-letter:uppercase text-gray-500">{data?.current.condition.text}</div>    
-        <div>Fuente: alslsa,sl</div>
+        <div>Fuente: weatherapi.com</div>
     </div>
 
     <div className="flex flex-col w-5xl p-2 h-32 w-44 bg-red-400 rounded-xl  text-center m-3 ">
@@ -686,28 +689,28 @@ transition={{ ease: "linear",
                           disableDefaultUI={true}>
 
                           <AdvancedMarker position={{lat: 10.40319876, lng: -75.47509139}} ref={markerRef} onClick={handleMarkerClick}>
-                              <img src={'/images/riesgos/inundacion.png'} width={60} height={60} />
+                              <Image alt=""  src={'/images/riesgos/inundacion.png'} width={60} height={60} />
                           </AdvancedMarker>
                           <AdvancedMarker position={{lat: 10.39705322, lng: -75.50693394}} ref={markerRef2} onClick={handleMarkerClick2}>
-                              <img src={'/images/riesgos/remocion_en_masa.png'} width={60} height={60} />
+                              <Image alt="" src={'/images/riesgos/remocion_en_masa.png'} width={60} height={60} />
                           </AdvancedMarker>
                           <AdvancedMarker position={{lat: 10.36121077, lng: -75.49175337}} ref={markerRef3} onClick={handleMarkerClick3}>
-                              <img src={'/images/riesgos/remocion_en_masa.png'} width={60} height={60} />
+                              <Image alt="" src={'/images/riesgos/remocion_en_masa.png'} width={60} height={60} />
                           </AdvancedMarker>
                           <AdvancedMarker position={{lat: 10.54593654, lng: -75.39060164}} ref={markerRef4} onClick={handleMarkerClick4}>
-                              <img src={'/images/riesgos/inundacion.png'} width={60} height={60} />
+                              <Image alt="" src={'/images/riesgos/inundacion.png'} width={60} height={60} />
                           </AdvancedMarker>
                           <AdvancedMarker position={{lat: 10.33611111, lng: -75.47592}} ref={markerRef5} onClick={handleMarkerClick5}>
-                              <img src={'/images/riesgos/diapirisimo.png'} width={60} height={60} />
+                              <Image alt="" src={'/images/riesgos/diapirisimo.png'} width={60} height={60} />
                           </AdvancedMarker>
                           <AdvancedMarker position={{lat: 10.434277, lng: -75.517607}} ref={markerRef6} onClick={handleMarkerClick6}>
-                              <img src={'/images/riesgos/inundacion.png'} width={60} height={60} />
+                              <Image alt="" src={'/images/riesgos/inundacion.png'} width={60} height={60} />
                           </AdvancedMarker>
                           <AdvancedMarker position={{lat: 10.4239965, lng: -75.53118258}} ref={markerRef7} onClick={handleMarkerClick7}>
-                              <img src={'/images/riesgos/remocion_en_masa.png'} width={60} height={60} />
+                              <Image alt="" src={'/images/riesgos/remocion_en_masa.png'} width={60} height={60} />
                           </AdvancedMarker>
                           <AdvancedMarker position={{lat: 10.346996, lng: -75.487664}} ref={markerRef8} onClick={handleMarkerClick8}>
-                              <img src={'/images/riesgos/inundacion.png'} width={60} height={60} />
+                              <Image alt="" src={'/images/riesgos/inundacion.png'} width={60} height={60} />
                           </AdvancedMarker>
 
                           {/* <AdvancedMarker

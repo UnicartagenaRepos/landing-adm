@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import React from 'react'
 import { FaCheck } from "react-icons/fa6";
 import { TbHeartRateMonitor } from "react-icons/tb";
+import Image from "next/image";
 
 function sat() {
     const images = [
@@ -46,14 +47,14 @@ function sat() {
             <div className=' md:flex md:flex-col flex-row items-center justify-center relative -mt-20  w-full '>
                 <div className="m-5 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl h-[380px] dark:border-gray-700 dark:bg-gray-800">
                     <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
-                        <img className=" w-32 h-32" src="/sat_icon.jpeg" alt="sat que es"/>
+                        <Image height={420} width={600} className=" w-32 h-32" src="/sat_icon.jpeg" alt="sat que es"/>
                         <h5 className="mt-4 mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">¿Que es un SAT?</h5>
                         <p className="mb-4 font-light text-gray-700 dark:text-gray-400">El Sistema de Alertas Tempranas de la Oficina Asesora para la Gestión del Riesgo de Desastres de Cartagena de Indias (OAGRD) es una herramienta fundamental para la prevención y atención de emergencias en la ciudad. Su objetivo principal es <b className='font-bold'>brindar información oportuna y veraz a la población sobre la ocurrencia de posibles desastres naturales o eventos que puedan poner en riesgo la vida e integridad física de las personas.</b></p>
                     </div>
                 </div> 
                 <div className="m-5 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl h-[380px] dark:border-gray-700 dark:bg-gray-800">
                     <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
-                    <img className="w-32 h-32" src="/sat_obj_icon.png" alt="sat objetivos"/>
+                    <Image height={420} width={600} className="w-32 h-32" src="/sat_obj_icon.png" alt="sat objetivos"/>
                         <h5 className="mt-4 mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">¿Cuál es su objetivo principal?</h5>
                         <p className="mb-4 font-light text-gray-700 dark:text-gray-400">El objetivo principal de un SAT es proporcionar información anticipada y precisa sobre eventos adversos para que las autoridades, organizaciones y personas puedan tomar medidas preventivas o mitigadoras.</p>
                     </div>
@@ -61,9 +62,9 @@ function sat() {
                 <div className="m-5 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl h-[380px]  dark:border-gray-700 dark:bg-gray-800">
                     <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
 
-                        <img className=" w-32 h-32" src="/sat_ventaja.jpeg" alt="sat ventajas"/>
+                        <Image height={420} width={600} className=" w-32 h-32" src="/sat_ventaja.jpeg" alt="sat ventajas"/>
 
-                        {/* <img className="rounded-full w-96 h-96 md:h-48 md:w-48 md:rounded-full" src="/sat.jpeg" alt="" /> */}
+                        {/* <Image height={420} width={600} className="rounded-full w-96 h-96 md:h-48 md:w-48 md:rounded-full" src="/sat.jpeg" alt="" /> */}
                         <h5 className="mt-4 mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Importancia del Sistema de Alertas Tempranas</h5>
                         <p className="mb-4 font-light text-gray-700 dark:text-gray-400">El Sistema de Alertas Tempranas de la OAGRD es una herramienta vital para reducir el impacto de los desastres en Cartagena. Al brindar información oportuna a la población, permite que las personas tomen medidas para protegerse a sí mismas y a sus familias, y para evacuar las zonas de riesgo si es necesario.</p>
                     </div>
@@ -75,7 +76,7 @@ function sat() {
             {/* <div className="w-full flex fle-col h-[800px] mt-20 mb-20 text-center relative justify-center"> */}
             <div  className="mx-auto max-w-6xl mb-20 items-center justify-center object-center text-center align-middle " >
                 <h5 className="m-6 text-4xl font-extrabold dark:text-white rounded-md bg-mainc text-white p-1 items-center text-center">Ventajas de un SAT</h5>
-                <img className="h-[400px] mx-auto object-fit rounded-xl shadow-2xl my-8" src="/ventajas_personas.jpeg" alt="" />
+                <Image height={420} width={600} className="h-[400px] mx-auto object-fit rounded-xl shadow-2xl my-8" src="/ventajas_personas.jpeg" alt="" />
                 <div className="p-4">
                     <div id="accordion-collapse" data-accordion="collapse" className='w-6xl max-w-6xl'>
                         <h2 id="accordion-collapse-heading-1">
@@ -177,7 +178,7 @@ function sat() {
                 <div className=' md:flex md:flex-col flex-row items-center justify-center relative mb-10 '>
                     <a href="#" className="m-3 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row max-w-72 h-[420px] hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                         <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
-                        <img className="w-32 h-32" src="/images/sat/monitoring.png" alt="sat objetivos"/>
+                        <Image height={420} width={600} className="w-32 h-32" src="/images/sat/monitoring.png" alt="sat objetivos"/>
                         <div>
                             <h5 className="mt-4 mb-2 text-lg font-semibold tracking-tight text-gray-900 dark:text-white">Monitoreo y vigilancia</h5>
                             <p className="mb-4 text-sm text-gray-700 dark:text-gray-400">La OAGRD recibe información sobre un posible peligro a través de su red de monitoreo o de otras fuentes.</p>
@@ -186,7 +187,7 @@ function sat() {
                     </a> 
                     <a href="#" className="m-3 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row max-w-72 h-[420px] hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                         <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
-                        <img className="w-32 h-32" src="/images/sat/analisis.png" alt="sat objetivos"/>
+                        <Image height={420} width={600} className="w-32 h-32" src="/images/sat/analisis.png" alt="sat objetivos"/>
                         <div>
                             <h5 className="mt-4 mb-2 text-lg font-semibold tracking-tight text-gray-900 dark:text-white">Análisis y pronóstico</h5>
                             <p className="mb-4 text-sm text-gray-700 dark:text-gray-400">La información es analizada por un equipo de expertos, quienes determinan el nivel de riesgo y la necesidad de emitir una alerta.</p>
@@ -196,9 +197,9 @@ function sat() {
                     <a href="#" className="m-3 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row max-w-72 h-[420px] hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                         <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
 
-                            <img className="w-32 h-32" src="/images/sat/emitir.png" alt="sat ventajas"/>
+                            <Image height={420} width={600} className="w-32 h-32" src="/images/sat/emitir.png" alt="sat ventajas"/>
 
-                            {/* <img className="rounded-full w-96 h-96 md:h-48 md:w-48 md:rounded-full" src="/sat.jpeg" alt="" /> */}
+                            {/* <Image height={420} width={600} className="rounded-full w-96 h-96 md:h-48 md:w-48 md:rounded-full" src="/sat.jpeg" alt="" /> */}
                             <div>
                                 <h5 className="mt-4 mb-2 text-lg font-semibold tracking-tight text-gray-900 dark:text-white">Comunicación y alerta</h5>
                                 <p className="mb-4 text-sm text-gray-700 dark:text-gray-400">Si se emite una alerta, la OAGRD activa los canales de comunicación para difundirla a la población lo antes posible.</p>
@@ -209,9 +210,9 @@ function sat() {
                     <a href="#" className="m-3 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row max-w-72 h-[420px] hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                         <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
 
-                            <img className=" w-32 h-32" src="/images/sat/megaphone.png" alt="Difucion de alertas"/>
+                            <Image height={420} width={600} className=" w-32 h-32" src="/images/sat/megaphone.png" alt="Difucion de alertas"/>
 
-                            {/* <img className="rounded-full w-96 h-96 md:h-48 md:w-48 md:rounded-full" src="/sat.jpeg" alt="" /> */}
+                            {/* <Image height={420} width={600} className="rounded-full w-96 h-96 md:h-48 md:w-48 md:rounded-full" src="/sat.jpeg" alt="" /> */}
                             <div>
                                 <h5 className="mt-4 mb-2 text-lg font-semibold tracking-tight text-gray-900 dark:text-white text-center">Medios de comunicación</h5>
                                 <p className="mb-4 text-sm text-gray-700 dark:text-gray-400">La población recibe la alerta y toma las medidas de precaución necesarias para protegerse.</p>
@@ -222,7 +223,7 @@ function sat() {
                     {/* <a href="#" className="m-3 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row max-w-60 h-[420px] hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                         <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
 
-                            <img className=" w-32 h-32" src="/respuesta.png" alt="Respuesta y seguimiento"/>
+                            <Image height={420} width={600} className=" w-32 h-32" src="/respuesta.png" alt="Respuesta y seguimiento"/>
 
                             <h5 className="mt-4 mb-2 text-lg font-semibold tracking-tight text-gray-900 dark:text-white">Respuesta y seguimiento</h5>
                             <p className="mb-4 text-sm text-gray-700 dark:text-gray-400">Las autoridades y las personas involucradas toman acciones de acuerdo con los protocolos de respuesta establecidos, y se realiza un seguimiento continuo de la situación para evaluar la efectividad de las medidas tomadas</p>
