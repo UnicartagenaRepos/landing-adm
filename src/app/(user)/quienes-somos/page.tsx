@@ -10,7 +10,7 @@ import {
     CarouselNext,
     CarouselPrevious,
   } from "@/components/ui/carousel"
-import Image from "next/image";
+import img from "next/image";
 import Autoplay from "embla-carousel-autoplay"
 
 function quienesSomos() {
@@ -24,16 +24,16 @@ whileInView={{ opacity: 1 }}
 transition={{ ease: "circInOut",
     duration: 1,
     x: { duration: 1 }}} >
-<section className="max-w-full bg-gray-50 p-20  dark:bg-gray-900 border border-gray-100 rounded-lg  dark:border-gray-700 mx-auto  justify-center items-center">
+<section className="max-w-full bg-gray-50 p-20  border border-gray-100 rounded-lg   mx-auto  justify-center items-center">
     <div className="flex flex-row gap-20 px-8 py-8 mx-auto">
         <div className="mr-1 place-self-center lg:col-span-7">
           
-            <h1 className="flex flex-row  items-center gap-1 mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-3xl xl:text-3xl dark:text-white text-secondc">Objetivo General <Image height={128} width={128} className="h-32 w-32" src="/images/objetivo-general.png" alt="" /></h1>
-            <p className="max-w-2xl mb-6 font-light text-slate-700 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400 text-justify"> La Oficina Asesora Para la Gestión del Riesgo de Desastres, tendrá como objetivo facilitar la labor del alcalde como responsable y principal ejecutor de los procesos para la gestión del riesgo en el Distrito, coordinar el desempeño del Consejo Distrital de Gestión del Riesgo de Desastres, coordinar la continuidad de los procesos de la gestión del riesgo, en cumplimiento de la política nacional de gestión del riesgo y de forma articulada con la planificación del desarrollo y el ordenamiento territorial distrital, asesorar, aconsejar y asistir en el seguimiento y evaluación de políticas, estrategias, planes, programas, regulaciones y acciones permanentes para el conocimiento y la reducción del riesgo y para el manejo de desastres del Distrito de Cartagena, con el propósito explícito de contribuir a la seguridad, el bienestar, la calidad de vida de las personas y al desarrollo sostenible.</p>
+            <h1 className="flex flex-row  items-center gap-1 mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-3xl xl:text-3x text-secondc">Objetivo General <img height={128} width={128} className="h-32 w-32" src="/images/objetivo-general.png" alt="" /></h1>
+            <p className="max-w-2xl mb-6 font-light text-slate-700 lg:mb-8 md:text-lg lg:text-xl  text-justify"> La Oficina Asesora Para la Gestión del Riesgo de Desastres, tendrá como objetivo facilitar la labor del alcalde como responsable y principal ejecutor de los procesos para la gestión del riesgo en el Distrito, coordinar el desempeño del Consejo Distrital de Gestión del Riesgo de Desastres, coordinar la continuidad de los procesos de la gestión del riesgo, en cumplimiento de la política nacional de gestión del riesgo y de forma articulada con la planificación del desarrollo y el ordenamiento territorial distrital, asesorar, aconsejar y asistir en el seguimiento y evaluación de políticas, estrategias, planes, programas, regulaciones y acciones permanentes para el conocimiento y la reducción del riesgo y para el manejo de desastres del Distrito de Cartagena, con el propósito explícito de contribuir a la seguridad, el bienestar, la calidad de vida de las personas y al desarrollo sostenible.</p>
             
         </div>
         <div className="hidden lg:mt-0 lg:col-span-5 lg:flex ">
-            <Image height={420} width={600} className="object-cover rounded-lg shadow-2xl max-w-[800px]" src="/images/sat/objetivo.jpeg" alt="mockup" />
+            <img height={420} width={600} className="object-cover rounded-lg shadow-2xl max-w-[800px]" src="/images/sat/objetivo.jpeg" alt="mockup" />
         </div>                
     </div>
 </section>
@@ -55,9 +55,9 @@ transition={{ ease: "linear",
 <section  className="items-center bg-white">
     <div className='flex flex-row items-center justify-center  mb-4'>
         <h5 className="mb-2 text-4xl font-bold tracking-tight text-mainc text-center">Funciones generales de OAGRD</h5>
-        {/* <Image priority={true} width={"150"} height={"150"} src="/oagrd-logo.png" alt="oagrd Logo" /> */}
+        {/* <img priority={true} width={"150"} height={"150"} src="/oagrd-logo.png" alt="oagrd Logo" /> */}
     </div>
-    <Image height={420} width={600} className="object-cover w-full rounded-xl h-2/2 shadow-2xl" src="/images/sat/funcion.jpeg" alt="" />
+    <img height={420} width={600} className="object-cover w-full rounded-xl h-2/2 shadow-2xl" src="/images/sat/funcion.jpeg" alt="" />
     <div className="flex flex-col items-center p-4 leading-normal mx-0">
         
         
@@ -93,11 +93,11 @@ transition={{ ease: "linear",
 
     <p className="text-4xl font-bold mb-5 text-mainc">Jefe Oficina Asesora para la Gestión del Riesgo de Desastres</p>
     {/* alinear admins */}
-    <div className="shadow-2xl flex flex-col items-center mx-auto justify-center p-6 bg-white border border-gray-200 rounded-lg md:flex-row md:max-w-6xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
-    <Image width={400} height={400} className="object-cover rounded-full" src="/images/jefe-oagrd.jpeg" alt="" />
+    <div className="shadow-2xl flex flex-col items-center mx-auto justify-center p-6 bg-white border border-gray-200 rounded-lg md:flex-row md:max-w-6xl ">
+    <img width={400} height={400} className="object-cover rounded-full" src="/images/jefe-oagrd.jpeg" alt="" />
     <div className="flex flex-col justify-between p-6 leading-normal ">
-        <h5 className="mb-4 text-3xl font-bold tracking-tight text-mainc dark:text-white">Daniel Vargas Díaz</h5>
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 text-xl text-justify">Administrador de Empresas, especialista en Gobierno y Gestión del Desarrollo Regional y Municipal de la Universidad Católica de Bogotá, con magíster en Ciencia Política y Gobierno de la Universidad del Norte. 
+        <h5 className="mb-4 text-3xl font-bold tracking-tight text-mainc ">Daniel Vargas Díaz</h5>
+        <p className="mb-3 font-normal text-gray-700 text-xl text-justify">Administrador de Empresas, especialista en Gobierno y Gestión del Desarrollo Regional y Municipal de la Universidad Católica de Bogotá, con magíster en Ciencia Política y Gobierno de la Universidad del Norte. 
         Tiene experiencia como Asesor de la Secretaría del Interior, Asesor de planeación y Director de Juventudes de la Gobernación de Bolívar.
         Es un profesional comprometido y responsable que se destaca por su liderazgo, adaptabilidad y aprendizaje continuo.
         </p>

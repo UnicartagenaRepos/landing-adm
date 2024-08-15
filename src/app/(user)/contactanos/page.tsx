@@ -46,7 +46,7 @@ function Contactanos() {
       <div className='flex flex-row justify-center items-center  bg-gray-50 p-24'>
         {/* social medias */}
         <div className='bg-yellow-200 shadow flex flex-col w-10 items-center justify-center p-10 gap-3'>
-        <Link href="https://www.facebook.com/gestiondelriesgoctg"><FaFacebook  size={32} className='hover:scale-125 transition duration-500 cursor-pointer'/></Link>
+                <Link href="https://www.facebook.com/gestiondelriesgoctg"><FaFacebook  size={32} className='hover:scale-125 transition duration-500 cursor-pointer'/></Link>
                 <Link href="https://x.com/oagrdcartagena"><BsTwitterX  size={32} className='hover:scale-125 transition duration-500 cursor-pointer'/></Link>
                 {/* <Link href="#"><FaYoutube size={32} className='hover:scale-125 transition duration-500 cursor-pointer'/></Link> */}
                 <Link href="https://www.instagram.com/gestiondelriesgoctg"><FaInstagramSquare size={32} className='hover:scale-125 transition duration-500 cursor-pointer'/></Link>
@@ -59,16 +59,16 @@ function Contactanos() {
         <div className='border shadow h-auto w-80 p-5 rounded-md grid gap-1 mb-6 md:grid-cols-1 bg-white'>
             <span className='text-xl font-semibold mb-10'>Contactanos</span>
             <div>
-                <label htmlFor="first_name" className="block mb-2 text-sm font-semibold text-gray-900 dark:text-white">Nombre</label>
-                <input type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="John" required />
+                <label htmlFor="first_name" className="block mb-2 text-sm font-semibold text-gray-900">Nombre</label>
+                <input type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="John" required />
             </div>   
             <div className="mb-6">
-                <label htmlFor="email" className="block mb-2 text-sm font-semibold text-gray-900 dark:text-white">Email</label>
-                <input type="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="john.doe@company.com" required />
+                <label htmlFor="email" className="block mb-2 text-sm font-semibold text-gray-900 ">Email</label>
+                <input type="email" id="email" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " placeholder="john.doe@company.com" required />
             </div> 
-            <label htmlFor="message" className="block mb-2 text-sm font-semibold text-gray-900 dark:text-white">Mensaje</label>
-            <textarea id="message" rows={4} className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Deja tu mensaje aqui..."></textarea>
-            <p className="ms-auto text-xs text-gray-500 dark:text-gray-400 mb-10">Recuerda, este formulario ayuda a que puedas reportar de manera oportunida una incidencia, no lo uses para en caso contrario.</p>
+            <label htmlFor="message" className="block mb-2 text-sm font-semibold text-gray-900 ">Mensaje</label>
+            <textarea id="message" rows={4} className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 " placeholder="Deja tu mensaje aqui..."></textarea>
+            <p className="ms-auto text-xs text-gray-500 mb-10">Recuerda, este formulario ayuda a que puedas reportar de manera oportunida una incidencia, no lo uses para en caso contrario.</p>
             <button type="submit" className="items-center px-4 text-lg font-semibold text-center text-white bg-blue-900 rounded-lg focus:ring-4 h-10 ">
                         Enviar
            </button>       

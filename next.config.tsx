@@ -1,5 +1,16 @@
 module.exports = {
-    
+  reactStrictMode: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '*.weatherapi.com',
+        port: '',
+        pathname: '/v1/**',
+      },
+      
+    ],
+  },
 
     //avoiding CORS error, more here: https://vercel.com/support/articles/how-to-enable-cors
     async headers() {

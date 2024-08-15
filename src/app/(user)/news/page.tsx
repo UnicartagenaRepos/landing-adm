@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import Image from "next/image";
+import img from "next/image";
 
 function News({params}: {params: {newsId: string}}) {
   return (
@@ -11,7 +11,7 @@ function News({params}: {params: {newsId: string}}) {
         {/* <p className='text-white text-sm relative -bottom-10 left-2'>Mayo 18, 2024</p> */}
         </div>
       <div className='mb-32 mx-auto bg-white max-w-6xl '> 
-        <Image height={420} width={600} className='mx-auto h-[420px] rounded shadow-2xl relative -top-40 -mb-20' src="/images/noticias/not1.jpeg" alt="noticias1" />
+        <img height={420} width={600} className='mx-auto h-[420px] rounded shadow-2xl relative -top-40 -mb-20' src="/images/noticias/not1.jpeg" alt="noticias1" />
         <h1 className='font-bold text-4xl mb-10 text-center text-mainc'>Con éxito se realizó en Cartagena el simulacro de la operación binacional de Cartagena y Estados Unidos: Promesa Continua 2024</h1>
         <p className='mb-4'>El simulacro se realizó en la Institución Educativa Fernández Baena y en ella se articularon miembros de la Armada Nacional, Bomberos y Ejército de Colombia y Estados Unidos.</p>
 

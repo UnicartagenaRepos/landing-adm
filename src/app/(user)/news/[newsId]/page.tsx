@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import Image from "next/image";
+import img from "next/image";
 
 function News({params}: {params: {newsId: string}}) {
   // return (
@@ -11,11 +11,11 @@ function News({params}: {params: {newsId: string}}) {
     <div>
       {/* header */}
       <div className='h-72 w-full bg-mainc'>
-        <Link className='text-white hover:underline m-20 relative top-10' href="/#news">Volver a las noticias</Link>
+        <a className='text-white hover:underline m-20 relative top-10' href="/#news">Volver a las noticias</a>
         {/* <p className='text-white text-sm relative -bottom-10 left-2'>Mayo 18, 2024</p> */}
         </div>
       <div className='mb-32 mx-auto bg-white max-w-6xl '> 
-        <Image  height={420} width={600} className='mx-auto h-[420px] rounded shadow-2xl relative -top-40 -mb-20' src="/images/noticias/not1.jpeg" alt="noticias1"/>
+        <img  height={420} width={600} className='mx-auto h-[420px] rounded shadow-2xl relative -top-40 -mb-20' src="/images/noticias/not1.jpeg" alt="noticias1"/>
       <h5 className='max-w-xl mx-auto -mt-10 mb-10 absolute text-center'>13 de agosto, 2024</h5>
       <h1 className='font-bold text-4xl mt-2 mb-10 text-justify text-mainc'>Con éxito se realizó en Cartagena el simulacro de la operación binacional de Cartagena y Estados Unidos: Promesa Continua 2024</h1>
         <p className='mb-4'>El simulacro se realizó en la Institución Educativa Fernández Baena y en ella se articularon miembros de la Armada Nacional, Bomberos y Ejército de Colombia y Estados Unidos.</p>
@@ -37,10 +37,11 @@ if (params.newsId == "oficina-gestion-riesgo-noticias-002"){
   <div>
     {/* header */}
     <div className='h-72 w-full bg-mainc'>
-      <Link className='text-white hover:underline m-20 relative top-10' href="/#news">Volver a las noticias</Link>
+      <a className='text-white hover:underline m-20 relative top-10' href="/#news">Volver a las noticias</a>
       {/* <p className='text-white text-sm relative -bottom-10 left-2'>Mayo 18, 2024</p> */}
       </div>
     <div className='mb-32 mx-auto bg-white max-w-6xl '> 
+    <img  height={420} width={600} className='mx-auto h-[420px] rounded shadow-2xl relative -top-40 -mb-20' src="/images/noticias/not2.jpeg" alt="noticias1"/>
       <h5 className='max-w-xl mx-auto -mt-10 mb-10 absolute text-center'>12 de agosto, 2024</h5>
       <h1 className='font-bold text-4xl mt-2 mb-10 text-justify text-mainc'>Se reactiva pago de $500 mil dirigido a afectados por el Fenómeno de La Niña, en 2022, que presentaron errores en su registro de nombre o cédula</h1>
       <p className='mb-4'>      -La Unidad Nacional para la Gestión del Riesgo de Desastres (UNGRD) ha anunciado que hoy comienza en Cartagena el Ciclo de Pago No. 16 del beneficio económico de $500,000.</p>
@@ -63,11 +64,11 @@ if (params.newsId == "oficina-gestion-riesgo-noticias-002"){
   <div>
     {/* header */}
     <div className='h-72 w-full bg-mainc'>
-      <Link className='text-white hover:underline m-20 relative top-10' href="/#news">Volver a las noticias</Link>
+      <a className='text-white hover:underline m-20 relative top-10' href="/#news">Volver a las noticias</a>
       {/* <p className='text-white text-sm relative -bottom-10 left-2'>Mayo 18, 2024</p> */}
       </div>
     <div className='mb-32 mx-auto bg-white max-w-6xl '> 
-      <Image  height={420} width={600} className='mx-auto h-[420px] rounded shadow-2xl relative -top-40 -mb-20' src="/images/noticias/not3.jpeg" alt="noticias1"/>
+      <img  height={420} width={600} className='mx-auto h-[420px] rounded shadow-2xl relative -top-40 -mb-20' src="/images/noticias/not3.jpeg" alt="noticias1"/>
     <h5 className='max-w-xl mx-auto -mt-10 mb-10 absolute text-center'>13 de agosto, 2024</h5>
       <h1 className='font-bold text-4xl mt-2 mb-10 text-justify text-mainc'>OAGRD insta a la ciudadanía a estar alerta ante posible desarrollo ciclónico en el Atlántico</h1>
       <p className='mb-4'>Cartagena, 9 de agosto de 2024 - La Oficina Asesora para la Gestión del Riesgo de Desastres (OAGRD) informa a la comunidad que una amplia onda tropical ubicada al oeste-suroeste de las Islas de Cabo Verde, proveniente de África, ha incrementado su probabilidad de desarrollo ciclónico al 60% en los próximos siete días, según el más reciente pronóstico emitido por el Centro Nacional de Huracanes de Estados Unidos.</p>
@@ -84,11 +85,11 @@ if (params.newsId == "oficina-gestion-riesgo-noticias-004"){
   <div>
     {/* header */}
     <div className='h-72 w-full bg-mainc'>
-      <Link className='text-white hover:underline m-20 relative top-10' href="/#news">Volver a las noticias</Link>
+      <a className='text-white hover:underline m-20 relative top-10' href="/#news">Volver a las noticias</a>
       {/* <p className='text-white text-sm relative -bottom-10 left-2'>Mayo 18, 2024</p> */}
       </div>
     <div className='mb-32 mx-auto bg-white max-w-6xl '> 
-      <Image  height={420} width={600} className='mx-auto h-[420px] rounded shadow-2xl relative -top-40 -mb-20' src="/images/noticias/not1.jpeg" alt="noticias1"/>
+      <img  height={420} width={600} className='mx-auto h-[420px] rounded shadow-2xl relative -top-40 -mb-20' src="/images/noticias/not4.jpeg" alt="noticias1"/>
     <h5 className='max-w-xl mx-auto -mt-10 mb-10 absolute text-center'>7 de agosto, 2024</h5>
       <h1 className='font-bold text-4xl mt-2 mb-10 text-justify text-mainc'>La Onda Tropical No. 27 ha disminuido su formación ciclónica en un 10%, se prevén lluvias leves a intensas en amplios sectores de la ciudad</h1>
       <p className='mb-4'>El simulacro se realizó en la Institución Educativa Fernández Baena y en ella se articularon miembros de la Armada Nacional, Bomberos y Ejército de Colombia y Estados Unidos.</p>
@@ -109,11 +110,11 @@ if (params.newsId == "oficina-gestion-riesgo-noticias-005"){
   <div>
     {/* header */}
     <div className='h-72 w-full bg-mainc'>
-      <Link className='text-white hover:underline m-20 relative top-10' href="/#news">Volver a las noticias</Link>
+      <a className='text-white hover:underline m-20 relative top-10' href="/#news">Volver a las noticias</a>
       {/* <p className='text-white text-sm relative -bottom-10 left-2'>Mayo 18, 2024</p> */}
       </div>
     <div className='mb-32 mx-auto bg-white max-w-6xl '> 
-      <Image  height={420} width={600} className='mx-auto h-[420px] rounded shadow-2xl relative -top-40 -mb-20' src="/images/noticias/not1.jpeg" alt="noticias1"/>
+      <img  height={420} width={600} className='mx-auto h-[420px] rounded shadow-2xl relative -top-40 -mb-20' src="/images/noticias/not5.jpeg" alt="noticias1"/>
     <h5 className='max-w-xl mx-auto -mt-10 mb-10 absolute text-center'>13 de agosto, 2024</h5>
       <h1 className='font-bold text-4xl mt-2 mb-10 text-justify text-mainc'>Con éxito se realizó en Cartagena el simulacro de la operación binacional de Cartagena y Estados Unidos: Promesa Continua 2024</h1>
       <p className='mb-4'>El simulacro se realizó en la Institución Educativa Fernández Baena y en ella se articularon miembros de la Armada Nacional, Bomberos y Ejército de Colombia y Estados Unidos.</p>
@@ -134,11 +135,11 @@ if (params.newsId == "oficina-gestion-riesgo-noticias-006"){
   <div>
     {/* header */}
     <div className='h-72 w-full bg-mainc'>
-      <Link className='text-white hover:underline m-20 relative top-10' href="/#news">Volver a las noticias</Link>
+      <a className='text-white hover:underline m-20 relative top-10' href="/#news">Volver a las noticias</a>
       {/* <p className='text-white text-sm relative -bottom-10 left-2'>Mayo 18, 2024</p> */}
       </div>
     <div className='mb-32 mx-auto bg-white max-w-6xl '> 
-      <Image  height={420} width={600} className='mx-auto h-[420px] rounded shadow-2xl relative -top-40 -mb-20' src="/images/noticias/not1.jpeg" alt="noticias1"/>
+      <img  height={420} width={600} className='mx-auto h-[420px] rounded shadow-2xl relative -top-40 -mb-20' src="/images/noticias/not6.jpeg" alt="noticias1"/>
     <h5 className='max-w-xl mx-auto -mt-10 mb-10 absolute text-center'>13 de agosto, 2024</h5>
       <h1 className='font-bold text-4xl mt-2 mb-10 text-justify text-mainc'>Con éxito se realizó en Cartagena el simulacro de la operación binacional de Cartagena y Estados Unidos: Promesa Continua 2024</h1>
       <p className='mb-4'>El simulacro se realizó en la Institución Educativa Fernández Baena y en ella se articularon miembros de la Armada Nacional, Bomberos y Ejército de Colombia y Estados Unidos.</p>
