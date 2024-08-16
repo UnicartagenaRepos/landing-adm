@@ -5,6 +5,15 @@ import React from 'react'
 import { FaCheck } from "react-icons/fa6";
 import { TbHeartRateMonitor } from "react-icons/tb";
 import Image from "next/image";
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+  } from "@/components/ui/carousel"
+  import Autoplay from "embla-carousel-autoplay"
+
 
 function sat() {
     const images = [
@@ -82,98 +91,25 @@ function sat() {
 
             <div  className="mx-auto max-w-6xl mb-20 items-center justify-center object-center text-center align-middle " >
                 <h5 className="m-6 text-4xl font-extrabold  rounded-md bg-mainc text-white p-1 items-center text-center">Ventajas de un SAT</h5>
-                <Image height={420} width={600} className="h-[400px] mx-auto object-fit rounded-xl shadow-2xl my-8" src="/ventajas_personas.jpeg" alt="" />
-                <div className="p-4">
-                    <div id="accordion-collapse" data-accordion="collapse" className='w-6xl max-w-6xl'>
-                        <h2 id="accordion-collapse-heading-1">
-                            <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200  hover:bg-gray-100  gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
-                            <span>Reducción del riesgo de desastres</span>
-                            <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
-                            </svg>  
-                            </button>
-                        </h2>
-                        <div id="accordion-collapse-body-1" className="hidden" aria-labelledby="accordion-collapse-heading-1">
-                            <div className="p-5 border border-b-0 border-gray-200 text-start">
-                            <p className="mb-2 text-gray-500 ">El sistema permite identificar y alertar a la población sobre posibles peligros con anticipación, lo que les da tiempo para tomar medidas de precaución y reducir su vulnerabilidad.</p>
-                            {/* <p className="text-gray-500 ">Check out this guide to learn how to <a href="/docs/getting-started/introduction/" className="text-blue-600  hover:underline">get started</a> and start developing websites even faster with components on top of Tailwind CSS.</p> */}
-                            </div>
-                        </div>
-                        <h2 id="accordion-collapse-heading-2">
-                            <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200  gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
-                            <span>Protección de vidas</span>
-                            <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
-                            </svg>
-                            </button>
-                        </h2>
-                        <div id="accordion-collapse-body-2" className="hidden" aria-labelledby="accordion-collapse-heading-2">
-                            <div className="p-5 border border-b-0 border-gray-200  text-start">
-                            <p className="mb-2 text-gray-500 ">Al brindar información oportuna sobre los riesgos, las personas pueden tomar decisiones informadas para protegerse a sí mismas y a sus familias, lo que puede salvar vidas.</p>
-                            {/* <p className="text-gray-500 ">Check out the <a href="https://flowbite.com/figma/" className="text-blue-600  hover:underline">Figma design system</a> based on the utility classNamees from Tailwind CSS and components from Flowbite.</p> */}
-                            </div>
-                        </div>
-                        <h2 id="accordion-collapse-heading-3">
-                            <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-gray-200 focus:ring-4 focus:ring-gray-200  gap-3" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
-                            <span>Minimización de daños</span>
-                            <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
-                            </svg>
-                            </button>
-                        </h2>
-                        <div id="accordion-collapse-body-3" className="hidden" aria-labelledby="accordion-collapse-heading-3">
-                            <div className="p-5 border border-t-0 border-gray-200  text-start">
-                            <p className="mb-2 text-gray-500 ">La alerta temprana permite a las autoridades y a la población tomar medidas para reducir los daños materiales y económicos causados por los desastres.</p>
-                            </div>
-                        </div>
+                <Image height={420} width={600} className="h-[400px] mx-auto object-fit rounded-xl my-8" src="/ventajas_personas.jpeg" alt="" />
+                <div className="flex flex-col items-center p-4 leading-normal mx-auto bg-blue-50 rounded-xl">
+                        <Carousel   plugins={[
+                        Autoplay({
+                        delay: 5000,
+                        }),
+                    ]}>
+                    <CarouselContent className="text-2xl text-left max-w-6xl mt-4 text-wrap">
+                        <CarouselItem className="pl-32 flex flex-col items-center justify-center gap-4 px-10"><div className='flex gap-3 justify-center items-center'><span className='bg-secondc text-center h-10 w-10 rounded-full font-bold'>1</span><span className='text-2xl font-bold'>Reducción del riesgo de desastres</span></div><p className='text-xl text-wrap'>Asesorar en la formulación, seguimiento y evaluación de la política pública de gestión de riesgo de emergencia y desastres del Distrito de Cartagena ajustada a los lineamientos de esta materia.</p></CarouselItem>
+                        <CarouselItem className="pl-32 flex flex-col items-center justify-center gap-4 px-10"><div className='flex gap-3 justify-center items-center'><span className='bg-secondc text-center h-10 w-10 rounded-full font-bold'>2</span><span className='text-2xl font-bold'>Protección de vidas</span></div><p className='text-xl text-wrap'>Al brindar información oportuna sobre los riesgos, las personas pueden tomar decisiones informadas para protegerse a sí mismas y a sus familias, lo que puede salvar vidas.</p></CarouselItem>
+                        <CarouselItem className="pl-32 flex flex-col items-center justify-center gap-4 px-10"><div className='flex gap-3 justify-center items-center'><span className='bg-secondc text-center h-10 w-10 rounded-full  font-bold'>3</span><span className='text-2xl  font-bold'>Minimización de daños</span></div><p className='text-xl text-wrap'>La alerta temprana permite a las autoridades y a la población tomar medidas para reducir los daños materiales y económicos causados por los desastres.</p></CarouselItem>
+                        <CarouselItem className="pl-32 flex flex-col items-center justify-start gap-4 px-10"><div className='flex gap-3 justify-center items-center'><span className='bg-secondc text-center h-10 w-10 rounded-full  font-bold'>4</span><span className='text-2xl  font-bold'>Aumento de la resiliencia</span></div><p className='text-xl text-wrap'>La resiliencia es la capacidad de una comunidad para recuperarse de un desastre.</p><p className='text-xl'>El sistema de alertas tempranas es una herramienta fundamental para fortalecer la resiliencia de las comunidades.</p></CarouselItem>
+                        <CarouselItem className="pl-32 flex flex-col items-center justify-start gap-4 px-10"><div className='flex gap-3 justify-center items-center'><span className='bg-secondc text-center h-10 w-10 rounded-full  font-bold'>5</span><span className='text-2xl  font-bold'>Mejoramiento de la respuesta a emergencias</span></div><p className='text-xl text-wrap'>El sistema facilita la coordinación de la respuesta a emergencias entre las diferentes entidades gubernamentales y organizaciones de ayuda humanitaria.</p></CarouselItem>
+                        <CarouselItem className="pl-32 flex flex-col items-center justify-center gap-4 px-10"><div className='flex gap-3 justify-center items-center'><span className='bg-secondc text-center h-10 w-10 rounded-full  font-bold'>6</span><span className='text-2xl  font-bold'>Promoción de una cultura de prevención</span></div><p className='text-xl text-wrap'>El sistema ayuda a crear conciencia sobre los riesgos de desastres y la importancia de estar preparados para afrontarlos.</p></CarouselItem>
+                    
+                    </CarouselContent>
+                    </Carousel>
+                </div>                
 
-                        <h2 id="accordion-collapse-heading-4">
-                            <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200  gap-3" data-accordion-target="#accordion-collapse-body-4" aria-expanded="false" aria-controls="accordion-collapse-body-4">
-                            <span>Aumento de la resiliencia</span>
-                            <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
-                            </svg>
-                            </button>
-                        </h2>
-                        <div id="accordion-collapse-body-4" className="hidden" aria-labelledby="accordion-collapse-heading-4">
-                            <div className="p-5 border border-b-0 border-gray-200  text-start">
-                            <p className="text-gray-500 ">La resiliencia es la capacidad de una comunidad para recuperarse de un desastre. </p>
-                            <p className="text-gray-500 ">El sistema de alertas tempranas es una herramienta fundamental para fortalecer la resiliencia de las comunidades.</p>
-                            </div>
-                        </div>
-
-                        <h2 id="accordion-collapse-heading-5">
-                            <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200  gap-3" data-accordion-target="#accordion-collapse-body-5" aria-expanded="false" aria-controls="accordion-collapse-body-5">
-                            <span>Mejoramiento de la respuesta a emergencias</span>
-                            <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
-                            </svg>
-                            </button>
-                        </h2>
-                        <div id="accordion-collapse-body-5" className="hidden" aria-labelledby="accordion-collapse-heading-5">
-                            <div className="p-5 border border-b-0 border-gray-200  text-start">
-                            <p className="mb-2 text-gray-500 ">El sistema facilita la coordinación de la respuesta a emergencias entre las diferentes entidades gubernamentales y organizaciones de ayuda humanitaria.</p>
-                            {/* <p className="text-gray-500 ">Check out the <a href="https://flowbite.com/figma/" className="text-blue-600  hover:underline">Figma design system</a> based on the utility classNamees from Tailwind CSS and components from Flowbite.</p> */}
-                            </div>
-                        </div>
-
-                        <h2 id="accordion-collapse-heading-6">
-                            <button type="button" className="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200  gap-3" data-accordion-target="#accordion-collapse-body-6" aria-expanded="false" aria-controls="accordion-collapse-body-6">
-                            <span>Promoción de una cultura de prevención</span>
-                            <svg data-accordion-icon className="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5 5 1 1 5"/>
-                            </svg>
-                            </button>
-                        </h2>
-                        <div id="accordion-collapse-body-6" className="hidden" aria-labelledby="accordion-collapse-heading-6">
-                            <div className="p-5 border border-b-0 border-gray-200  text-start">
-                            <p className="mb-2 text-gray-500 ">El sistema ayuda a crear conciencia sobre los riesgos de desastres y la importancia de estar preparados para afrontarlos.</p>
-                            {/* <p className="text-gray-500 ">Check out the <a href="https://flowbite.com/figma/" className="text-blue-600  hover:underline">Figma design system</a> based on the utility classNamees from Tailwind CSS and components from Flowbite.</p> */}
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
             </div>
             {/* </div> */}
 
