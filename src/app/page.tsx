@@ -38,7 +38,7 @@ import Link from "next/link";
 
 
 
-export const myArray = [
+const myArray = [
   {
     "NOMBRE": "ANTONIO JOSE DE SUCRE",
     "UCG": 11,
@@ -781,34 +781,6 @@ export default function Home() {
   }, [])
 
   console.log(data);
- 
-//   if (isLoading) return <p>Loading...</p>
-//   if (!data) return <p>No profile data</p>
-
-
-    
-  // const words = [
-  //   {
-  //       text: "SAT ",
-  //        className: "text-6xl",
-  //     },
-  //   {
-  //     text: "Sistema ",
-  //      className: "text-5xl",
-  //   },
-  //   {
-  //     text: "de Alertas ",
-  //      className: "text-5xl",
-  //   },
-  //   {
-  //     text: "Temprana ",
-  //      className: "text-5xl",
-  //   },
-  //   {
-  //       text: "de Cartagena de Indias",
-  //        className: "text-5xl ",
-  //     },
-  // ];
 
 
 
@@ -817,16 +789,6 @@ export default function Home() {
   
   return (
     <main>
-   
-{/* <div >
-   
-      </div> */}
-
-
-
-
-   
-    {/* carrousel */}
     <div className="w-full justify-center items-center ">
       <div id="default-carousel" className="" data-carousel="slide">
       {/* <!-- Carousel wrapper --> */}
@@ -1438,8 +1400,8 @@ transition={{ ease: "linear",
                                   gestureHandling={'greedy'}
                                   disableDefaultUI={true}>
                           {myArray.map((item)=> (
-                            <div>
-                                  <AdvancedMarker title={'AdvancedMarker with custom html content.'} position={{lat: item.LATITUD, lng: item.LONGITUD}} ref={markerRef} onClick={() => setInfoWindowShown8(true)}></AdvancedMarker>
+                            <div key={item.NOMBRE}>
+                                  <AdvancedMarker position={{lat: item.LATITUD, lng: item.LONGITUD}} ref={markerRef} onClick={() => setInfoWindowShown8(true)}></AdvancedMarker>
                                   {/* {infoWindowCombasShown && ( 
                                   <InfoWindow anchor={marker} onCloseClick={() => setInfoWindowCombasShown(false)}>
                                       <h2 className='text-lg font-bold'>{item.NOMBRE}</h2>
