@@ -241,13 +241,13 @@ export default function Home() {
 
 {/* Download the app */}
 <div className="w-full text-center bg-gray-50 border border-gray-200 pt-10 pb-20">
-    <h5 className="mb-4 mt-10 text-5xl font-bold text-mainc ">DESCARGA NUESTRA APLICACIÓN</h5>
+    <h5 className="mb-4 mt-10 text-4xl md:text-5xl font-bold text-mainc ">DESCARGA NUESTRA APLICACIÓN</h5>
     <p className="mb-20 text-base text-gray-500 sm:text-lg ">Esta atento a todas nuestras actualizaciones y novedades de alerta de manera temprana</p>
     <div className="flex flex-col gap-4 items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
        
 
 {/* celphone */}
-    <div className="flex">
+    <div className="block md:flex">
         <div className=" relative l-10 mx-auto border-gray-800  bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-2xl -rotate-45">
             <div className="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
             <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
@@ -282,7 +282,7 @@ export default function Home() {
         </div>
 
     </div>
-    <div className="flex flex-row gap-10">
+    <div className="flex flex-row gap-4">
         <a href="#" className="md:mt-10 w-full sm:w-auto bg-mainc shadow-2xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 ">
             <svg className="me-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-play" role="Image height={420} width={600}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"></path></svg>
             <div className="text-left rtl:text-right">
@@ -306,9 +306,9 @@ export default function Home() {
 
 {/* Ultimas noticias */}
 <div id="news" className="mx-auto max-w-6xl font-medium text-4xl mb-32 flex items-center justify-center bg-mainc text-white pl-10 h-20 text-center mt-20">NOTICIAS</div>
-<div className="mx-auto max-w-6xl grid grid-cols-3 gap-10 mb-32">
+<div className=" max-w-6xl grid gap-10 mb-32 md:grid-cols-3 md:mx-auto">
   <div className="h-60 object-cover mb-32 flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
-    <Image width={400} height={600} className=' object-cover h-full w-full' src={'/images/noticias/not1.jpeg'}  alt='Noticia 1'/>
+    <Image width={300} height={600} className=' object-cover h-full w-full' src={'/images/noticias/not1.jpeg'}  alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
       <p className="p-4 text-black hover:text-blue-900 ">Con éxito se realizó en Cartagena el simulacro de la operación binacional de Cartagena y Estados Unidos: Promesa Continua 2024</p>
       <div className="text-center hover:underline">
@@ -317,7 +317,9 @@ export default function Home() {
     </div>
   </div>
 
-  <div className="h-60 object-cover flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+  
+
+  <div className="h-60 object-cover mb-32 flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
     <Image width={400} height={600} className=' object-cover h-full w-full' src={'/images/noticias/not2.jpeg'}  alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
       <p className="p-4 text-black hover:text-blue-900">Se reactiva pago de $500 mil dirigido a afectados por el Fenómeno de La Niña, en 2022, que presentaron errores en su registro de nombre o cédula</p>
@@ -329,7 +331,7 @@ export default function Home() {
 
 
 
-  <div className="h-60 object-cover flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+  <div className="h-60 object-cover mb-32 flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
     <Image width={400} height={600} className=' object-cover h-full w-full' src={'/images/noticias/not4.jpeg'}  alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
       <p className="p-4 text-black hover:text-blue-900 ">Con Brigada Cívica, Distriseguridad fomenta la sana convivencia en Corredores Universitarios de Cartagena</p>
@@ -339,7 +341,7 @@ export default function Home() {
     </div>
   </div>
 
-  <div className="h-60 object-cover flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+  <div className="h-60 object-cover mb-32 flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
     <Image width={400} height={600} className='object-cover h-full w-full' src={'/images/noticias/not5.jpeg'}  alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
       <p className="p-4 text-black hover:text-blue-900 ">La Onda Tropical No. 27 ha disminuido su formación ciclónica en un 10%, se prevén lluvias leves a intensas en amplios sectores de la ciudad</p>
@@ -351,7 +353,7 @@ export default function Home() {
 
 
 
-  <div className="h-60 object-cover  flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+  <div className="h-60 object-cover  mb-32 flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
     <Image width={400} height={600} className='object-cover h-full w-full' src={'/images/noticias/not6.jpeg'}  alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
       <p className="p-4 text-black hover:text-blue-900 ">Distriseguridad continúa atendiendo el llamado de las comunidades con trabajo articulado por la seguridad</p>
@@ -361,7 +363,7 @@ export default function Home() {
     </div>
   </div>
 
-    <div className="h-60 object-cover  flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ">
+    <div className="h-60 object-cover flex flex-col text-justify hover:shadow-2xl border items-center justify-center transition ease-in-out delay-100 cursor-pointer bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 ">
     <Image width={400} height={600} className=' object-cover h-full w-full' src={'/images/noticias/not3.jpeg'} alt='Noticia 1'/>
     <div className="bg-gray-50 pb-6">
       <p className="p-4 text-black hover:text-blue-900 ">OAGRD insta a la ciudadanía a estar alerta ante posible desarrollo ciclónico en el Atlántico</p>
@@ -381,8 +383,8 @@ transition={{ ease: "circInOut",
     duration: 
     1,
     x: { duration: 1 }}} 
-    className="mt-20 mb-10 mx-auto max-w-6xl flex flex-col bg-gray-50">
-    <span className="text-2xl font-medium mb-4 text-center bg-mainc text-white p-3">El tiempo en Cartagena de Indias hoy - {currentDate}</span>
+    className="w-full mt-20 mb-10 mx-auto md:max-w-6xl md:flex md:flex-col bg-gray-50">
+    <span className="text-3xl md:text-4-xl font-medium mb-4 text-center bg-mainc text-white p-3">El tiempo en Cartagena de Indias hoy - {currentDate}</span>
     <div className="flex flex-row items-center max-w-6xl mb-20 bg-gray-100 max-w-screen-2x border border-gray-150 rounded-lg   mx-auto">
     <div className="flex flex-col bg-white h-44 w-[370px] text-center items-center justify-center p-4">
         <img className="block justify-center items-center text-center" src={"https:" + data?.current.condition.icon} alt="Icono del clima" />
