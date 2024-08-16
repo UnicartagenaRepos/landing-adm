@@ -53,22 +53,22 @@ function sat() {
             </ImagesSlider>
 
 
-            <div className=' md:flex md:flex-col flex-row items-center justify-center relative -mt-20  w-full '>
-                <div className="m-5 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl h-[380px] ">
+            <div className='block lg:flex lg:flex-col flex-row items-center justify-center relative -mt-20  w-full '>
+                <div className="m-5 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row lg:w-[400px] lg:max-w-lg lg:w-400 lg:h-[500px] ">
                     <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
-                        <Image height={420} width={600} className=" w-32 h-32" src="/sat_icon.jpeg" alt="sat que es"/>
+                        <Image height={420} width={600} className=" w-32 h-32" src="/sat_icon.jpeg" alt="que es un sat?"/>
                         <h5 className="mt-4 mb-2 text-2xl font-bold tracking-tight text-gray-900 ">¿Que es un SAT?</h5>
                         <p className="mb-4 font-light text-gray-700 ">El Sistema de Alertas Tempranas de la Oficina Asesora para la Gestión del Riesgo de Desastres de Cartagena de Indias (OAGRD) es una herramienta fundamental para la prevención y atención de emergencias en la ciudad. Su objetivo principal es <b className='font-bold'>brindar información oportuna y veraz a la población sobre la ocurrencia de posibles desastres naturales o eventos que puedan poner en riesgo la vida e integridad física de las personas.</b></p>
                     </div>
                 </div> 
-                <div className="m-5 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl h-[380px] ">
+                <div className="m-5 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row lg:w-[400px]  lg:max-w-xl lg:w-400 lg:h-[500px] ">
                     <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
                     <Image height={420} width={600} className="w-32 h-32" src="/sat_obj_icon.png" alt="sat objetivos"/>
                         <h5 className="mt-4 mb-2 text-2xl font-bold tracking-tight text-gray-900 ">¿Cuál es su objetivo principal?</h5>
                         <p className="mb-4 font-light text-gray-700 ">El objetivo principal de un SAT es proporcionar información anticipada y precisa sobre eventos adversos para que las autoridades, organizaciones y personas puedan tomar medidas preventivas o mitigadoras.</p>
                     </div>
                 </div>
-                <div className="m-5 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl h-[380px]  ">
+                <div className="m-5 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow lg:flex-row lg:w-[400px] lg:max-w-xl lg:w-400 lg:h-[500px]  ">
                     <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
 
                         <Image height={420} width={600} className=" w-32 h-32" src="/sat_ventaja.jpeg" alt="sat ventajas"/>
