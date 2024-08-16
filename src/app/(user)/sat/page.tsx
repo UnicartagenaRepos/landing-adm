@@ -53,7 +53,7 @@ function sat() {
             </ImagesSlider>
 
 
-            <div className='block lg:flex lg:flex-col flex-row items-center justify-center relative -mt-20  w-full '>
+            <div className='block lg:flex lg:flex-col flex-row items-center justify-center relative -mt-40  w-full '>
                 <div className="m-5 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row lg:w-[400px] lg:max-w-lg lg:w-400 lg:h-[500px] ">
                     <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
                         <Image height={420} width={600} className=" w-32 h-32" src="/sat_icon.jpeg" alt="que es un sat?"/>
