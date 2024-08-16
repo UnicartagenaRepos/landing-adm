@@ -383,9 +383,9 @@ transition={{ ease: "circInOut",
     duration: 
     1,
     x: { duration: 1 }}} 
-    className="w-full mt-20 mb-10 mx-auto md:max-w-6xl md:flex md:flex-col bg-gray-50">
-    <span className="text-3xl md:text-4-xl font-medium mb-4 text-center bg-mainc text-white p-3">El tiempo en Cartagena de Indias hoy - {currentDate}</span>
-    <div className="flex flex-row items-center max-w-6xl mb-20 bg-gray-100 max-w-screen-2x border border-gray-150 rounded-lg   mx-auto">
+    className="md:max-w-6xl md:mx-auto">
+    <div className="text-2xl font-medium mb-4 text-center bg-mainc text-white p-3 md:text-4xl">El tiempo en Cartagena de Indias hoy - {currentDate}</div>
+    <div className="md:flex items-center max-w-6xl mb-20 bg-gray-100 max-w-screen-2x border border-gray-150 rounded-lg   mx-auto md:flex-row">
     <div className="flex flex-col bg-white h-44 w-[370px] text-center items-center justify-center p-4">
         <img className="block justify-center items-center text-center" src={"https:" + data?.current.condition.icon} alt="Icono del clima" />
         <div className="flex flex-row justify-center mb-1"><h1 className="text-5xl">{Math.ceil(data?.current.temp_c)}</h1><span className="text-2xl">°C</span></div>
@@ -393,16 +393,16 @@ transition={{ ease: "circInOut",
         <div>Fuente: weatherapi.com</div>
     </div>
 
-    <div className="flex flex-col w-5xl p-2 h-32 w-44 bg-red-400 rounded-xl  text-center m-3 ">
+    <div className="w-screen-sm p-2 h-32  bg-red-400 rounded-xl  text-center m-3 md:w-44 md:w-5xl md:flex md:flex-col ">
         <div className="text-white drop-shadow-lg">Sensacion térmica</div>
         <div className="flex flex-row justify-center mb-2 mt-6"><h1 className="text-4xl">{Math.ceil(data?.current.feelslike_c)}</h1><span className="text-1xl">°C</span></div>
     </div>       
 
-    <div className="flex flex-col w-5xl p-2 h-32 w-44 bg-teal-400 rounded-xl  text-center m-3 ">
+    <div className="w-screen-sm p-2 h-32 bg-teal-400 rounded-xl  text-center m-3 md:w-44 md:w-5xl md:flex md:flex-col">
         <div className="text-white drop-shadow-lg">Humedad</div>
         <div className="flex flex-row justify-center mb-2 mt-6"><h1 className="text-4xl">{Math.ceil(data?.current.humidity)}</h1><span className="text-1xl">%</span></div>
     </div>    
-    <div className="flex flex-col w-5xl p-2 h-32 w-44 bg-gray-400 rounded-xl  text-center m-3 ">
+    <div className="w-screen-sm p-2 h-32 bg-gray-400 rounded-xl  text-center m-3 md:w-44 md:w-5xl md:flex md:flex-col">
         <div className="text-white drop-shadow-lg">Viento</div>
         <div className="flex flex-row justify-center mb-2 mt-6"><h1 className="text-4xl">{Math.ceil(data?.current.wind_kph)}</h1><span className="text-1xl"> km/h</span></div>
     </div>     
@@ -431,12 +431,12 @@ animate={{ x: 100 }}
 transition={{ ease: "linear",
     duration: 1,
     x: { duration: 1 }}}
-    className="w-3/4 -x-100 mx-auto items-center block mb-20">
+    className=" mx-auto items-center block mb-20">
 
 
 
 
-<div className="mx-auto max-w-6xl text-6xl mb-10 flex items-center justify-between bg-mainc text-white pl-10 h-20 text-center">LINEAS DE EMERGENCIAS <Image className="h-auto rounded-full relative -right-6" src={'/images/lineas/phone247.jpg'} width={200} height={200} alt="Telefono 24 horas"/></div>
+<div className="w-screen-sm text-2xl mb-10 flex items-center justify-between bg-mainc text-white pl-10 h-20 text-center md:max-w-6xl md:text-5xl md:mx-auto">LINEAS DE EMERGENCIAS <Image className="h-auto -right-3 rounded-full relative md:-right-6" src={'/images/lineas/phone247.jpg'} width={200} height={200} alt="Telefono 24 horas"/></div>
 <div> 
     <button data-popover-target="popover-oagrd" type="button" className="select-none flex flex-col items-center gab-2 space-y-2 border h-62 w-62 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto mb-10 hover:bg-slate-50">
       <div><Image className="mb-1" src={'/oagrd-logo.png'} width={150} height={150} alt={""} /></div>
@@ -457,7 +457,7 @@ transition={{ ease: "linear",
   </div>
 
 
-<div className="mx-auto max-w-6xl grid grid-cols-4 gap-10 ">
+<div className="mx-auto max-w-6xl gap-4 md:grid grid-cols-4 md:gap-10 ">
   <div> 
     <button data-popover-target="popover-policia" type="button" className="select-none flex flex-col items-center gab-2 space-y-2 border h-56 w-56 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto hover:bg-slate-50">
       <div><Image className="mb-3" src={'/images/lineas/policia.png'} width={100} height={100} alt={""} /></div>
