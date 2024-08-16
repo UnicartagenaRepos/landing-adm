@@ -698,7 +698,7 @@ export default function Home() {
   // );
 
 
-  const [infoWindowCombasShown, setInfoWindowCombasShown] = useState(false);
+  // const [infoWindowCombasShown, setInfoWindowCombasShown] = useState(false);
 
 
   const [markerRef, marker] = useAdvancedMarkerRef();
@@ -1354,7 +1354,7 @@ transition={{ ease: "linear",
                           <InfoWindow anchor={marker} onCloseClick={handleClose}>
                               <h2 className='text-lg font-bold'>Sensor Fredonia</h2>
                               <br/>
-                              <p className='text-lg'>Inundacion</p>
+                              <p className='text-md'>Inundacion</p>
                               <br/>
                           </InfoWindow> 
                           )} 
@@ -1362,7 +1362,7 @@ transition={{ ease: "linear",
                           <InfoWindow anchor={marker2} onCloseClick={handleClose2}>
                               <h2 className='text-lg font-bold'>Sensor Lomas del Marion</h2>
                               <br/>
-                              <p className='text-lg'>Remocion en masa</p>
+                              <p className='text-md'>Remocion en masa</p>
                               <br/>
                           </InfoWindow> 
                           )} 
@@ -1370,7 +1370,7 @@ transition={{ ease: "linear",
                           <InfoWindow anchor={marker3} onCloseClick={handleClose3}>
                               <h2 className='text-lg font-bold'>Sensor Cerro de Albornoz</h2>
                               <br/>
-                              <p className='text-lg'>Remocion en masa</p>
+                              <p className='text-md'>Remocion en masa</p>
                               <br/>
                           </InfoWindow> 
                           )} 
@@ -1378,7 +1378,7 @@ transition={{ ease: "linear",
                           <InfoWindow anchor={marker4} onCloseClick={handleClose4}>
                               <h2 className='text-lg font-bold'>Sensor Bayunca</h2>
                               <br/>
-                              <p className='text-lg'>Inundacion</p>
+                              <p className='text-md'>Inundacion</p>
                               <br/>
                           </InfoWindow> 
                           )} 
@@ -1386,7 +1386,7 @@ transition={{ ease: "linear",
                           <InfoWindow anchor={marker5} onCloseClick={handleClose5}>
                               <h2 className='text-lg font-bold'>Sensor Membrillal</h2>
                               <br/>
-                              <p className='text-lg'>Inundacion</p>
+                              <p className='text-md'>Inundacion</p>
                               <br/>
                           </InfoWindow> 
                           )} 
@@ -1394,7 +1394,7 @@ transition={{ ease: "linear",
                           <InfoWindow anchor={marker6} onCloseClick={handleClose6}>
                               <h2 className='text-lg font-bold'>Sensor San Francisco</h2>
                               <br/>
-                              <p className='text-lg'>Inundacion</p>
+                              <p className='text-md'>Inundacion</p>
                               <br/>
                           </InfoWindow> 
                           )} 
@@ -1402,7 +1402,7 @@ transition={{ ease: "linear",
                           <InfoWindow anchor={marker7} onCloseClick={handleClose7}>
                               <h2 className='text-lg font-bold'>Sensor San Francisco</h2>
                               <br/>
-                              <p className='text-lg'>Remocion en masa</p>
+                              <p className='text-md'>Remocion en masa</p>
                               <br/>
                           </InfoWindow> 
                           )} 
@@ -1439,8 +1439,8 @@ transition={{ ease: "linear",
                                   disableDefaultUI={true}>
                           {myArray.map((item)=> (
                             <div>
-                                  <AdvancedMarker title={'AdvancedMarker with custom html content.'} position={{lat: item.LATITUD, lng: item.LONGITUD}} ref={markerRef} onClick={() => setInfoWindowCombasShown(true)}></AdvancedMarker>
-                                  {infoWindowCombasShown && ( 
+                                  <AdvancedMarker title={'AdvancedMarker with custom html content.'} position={{lat: item.LATITUD, lng: item.LONGITUD}} ref={markerRef} onClick={() => setInfoWindowShown8(true)}></AdvancedMarker>
+                                  {/* {infoWindowCombasShown && ( 
                                   <InfoWindow anchor={marker} onCloseClick={() => setInfoWindowCombasShown(false)}>
                                       <h2 className='text-lg font-bold'>{item.NOMBRE}</h2>
                                       <br/>
@@ -1448,7 +1448,7 @@ transition={{ ease: "linear",
                                       <p className='text-md'><span className="font-bold">ucg:</span> {item.UCG}</p>
                                       </div>
                                   </InfoWindow> 
-                                  )} 
+                                  )}  */}
                               </div>
                            ))}
                               </Map>
