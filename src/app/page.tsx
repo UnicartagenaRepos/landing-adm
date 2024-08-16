@@ -459,7 +459,7 @@ transition={{ ease: "linear",
 
 <div className="mx-auto max-w-6xl gap-4 md:grid grid-cols-4 md:gap-10 ">
   <div> 
-    <button data-popover-target="popover-policia" type="button" className="select-none flex flex-col items-center gab-2 space-y-2 border h-56 w-56 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto hover:bg-slate-50">
+    <button data-popover-target="popover-policia" type="button" className="mb-10 select-none flex flex-col items-center gab-2 space-y-2 border h-56 w-56 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto hover:bg-slate-50">
       <div><Image className="mb-3" src={'/images/lineas/policia.png'} width={100} height={100} alt={""} /></div>
       <p className="hover:underline">POLICIA NACIONAL</p>
       <a href="tel:123" className="hover:no-underline text-4xl">123</a>
@@ -478,7 +478,7 @@ transition={{ ease: "linear",
   </div>
 
   <div> 
-    <button data-popover-target="popover-bomberos" type="button" className="select-none flex flex-col items-center gab-2 space-y-2 border h-56 w-56 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto hover:bg-slate-50">
+    <button data-popover-target="popover-bomberos" type="button" className="mb-10 select-none flex flex-col items-center gab-2 space-y-2 border h-56 w-56 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto hover:bg-slate-50">
       <div><Image className="mb-3" src={'/images/lineas/bomberos.jpg'} width={100} height={100} alt={""} /></div>
       <p className="hover:underline">BOMBEROS</p>
       <a href="tel:119"  className="hover:no-underline text-4xl">119</a>
@@ -498,7 +498,7 @@ transition={{ ease: "linear",
 
 
   <div> 
-    <button data-popover-target="popover-cruz-roja" type="button" className="select-none flex flex-col items-center gab-2 space-y-2 border h-56 w-56 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto hover:bg-slate-50">
+    <button data-popover-target="popover-cruz-roja" type="button" className="mb-10 select-none flex flex-col items-center gab-2 space-y-2 border h-56 w-56 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto hover:bg-slate-50">
       <div><Image className="mb-3" src={'/images/lineas/cruz-roja.png'} width={100} height={100} alt={""} /></div>
       <p className="hover:underline">CRUZ ROJA</p>
       <a href="tel:132"  className="hover:no-underline text-4xl">132</a>
@@ -518,7 +518,7 @@ transition={{ ease: "linear",
   
   
   <div> 
-    <button data-popover-target="popover-surtigas" type="button" className="select-none flex flex-col items-center gab-2 space-y-2 border h-56 w-56 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto hover:bg-slate-50">
+    <button data-popover-target="popover-surtigas" type="button" className="mb-10 select-none flex flex-col items-center gab-2 space-y-2 border h-56 w-56 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto hover:bg-slate-50">
       <div><Image className="mb-3" src={'/images/lineas/surtigas.png'} width={100} height={100} alt={""} /></div>
       <p className="hover:underline">SURTIGAS</p>
       <a href="tel:164"  className="hover:no-underline text-4xl">164</a>
@@ -538,7 +538,7 @@ transition={{ ease: "linear",
   
 
   <div> 
-    <button data-popover-target="popover-afinia" type="button" className="select-none flex flex-col items-center gab-2 space-y-2 border h-56 w-56 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto hover:bg-slate-50">
+    <button data-popover-target="popover-afinia" type="button" className="mb-10 select-none flex flex-col items-center gab-2 space-y-2 border h-56 w-56 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto hover:bg-slate-50">
       <div><Image className="mb-3" src={'/images/lineas/afinia.webp'} width={100} height={100} alt={""} /></div>
       <p className="hover:underline">AFINIA</p>
       <a href="tel:115" className="hover:no-underline text-4xl">115</a>
@@ -559,7 +559,7 @@ transition={{ ease: "linear",
 
 
   <div> 
-    <button data-popover-target="popover-aguas" type="button" className="select-none flex flex-col items-center gab-2 space-y-2 border h-56 w-56 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto hover:bg-slate-50">
+    <button data-popover-target="popover-aguas" type="button" className="mb-10 select-none flex flex-col items-center gab-2 space-y-2 border h-56 w-56 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto hover:bg-slate-50">
       <div><Image className="mb-3" src={'/images/lineas/aguas.png'} width={100} height={100} alt={""} /></div>
       <p className="hover:underline">AGUAS</p>
       <a href="tel:116"  className="hover:no-underline text-4xl">116</a>
@@ -579,7 +579,7 @@ transition={{ ease: "linear",
   
 
   <div> 
-    <button data-popover-target="popover-defensa" type="button" className="select-none flex flex-col items-center gab-2 space-y-2 border h-56 w-56 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto hover:bg-slate-50">
+    <button data-popover-target="popover-defensa" type="button" className="mb-10 select-none flex flex-col items-center gab-2 space-y-2 border h-56 w-56 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto hover:bg-slate-50">
       <div><Image className="mb-3" src={'/images/lineas/defensa.png'} width={100} height={100} alt={""} /></div>
       <p className="hover:underline">DEFENSA CIVIL</p>
       <a href="tel:144"  className="hover:no-underline text-4xl">144</a>
@@ -600,7 +600,7 @@ transition={{ ease: "linear",
 
 
   <div> 
-    <button data-popover-target="popover-crued" type="button" className="select-none flex flex-col items-center gab-2 space-y-2 border h-56 w-56 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto hover:bg-slate-50">
+    <button data-popover-target="popover-crued" type="button" className="mb-10 select-none flex flex-col items-center gab-2 space-y-2 border h-56 w-56 justify-center text-black bg-transparent  font-medium rounded-lg text-lg px-5 py-2.5 text-center mx-auto hover:bg-slate-50">
       <div><Image className="mb-3" src={'/images/lineas/crued.png'} width={100} height={100} alt={""} /></div>
       <p className="hover:underline">CRUED</p>
       <a href="tel:125"  className="hover:no-underline text-4xl">125</a>
