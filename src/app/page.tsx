@@ -38,6 +38,633 @@ import Link from "next/link";
 
 
 
+export const myArray = [
+  {
+    "NOMBRE": "ANTONIO JOSE DE SUCRE",
+    "UCG": 11,
+    "LOCALIDAD": "LI",
+    "LATITUD": 10.370012,
+    "LONGITUD": -75.496282
+  },
+  {
+    "NOMBRE": "ARARCA",
+    "UCG": 20,
+    "LOCALIDAD": "LH",
+    "LATITUD": 10.261297,
+    "LONGITUD": -75.555584
+  },
+  {
+    "NOMBRE": "ARCHIPIELAGO SAN BERNARDO",
+    "UCG": 20,
+    "LOCALIDAD": "LH",
+    "LATITUD": 9.785936,
+    "LONGITUD": -75.859085
+  },
+  {
+    "NOMBRE": "ARROYO DE LAS CANOAS",
+    "UCG": 20,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.640209,
+    "LONGITUD": -75.406602
+  },
+  {
+    "NOMBRE": "ARROYO DE PIEDRA",
+    "UCG": 20,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.6085,
+    "LONGITUD": -75.446674
+  },
+  {
+    "NOMBRE": "ARROYO GRANDE",
+    "UCG": 20,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.65623,
+    "LONGITUD": -75.347855
+  },
+  {
+    "NOMBRE": "ARROZ BARATO",
+    "UCG": 11,
+    "LOCALIDAD": "LI",
+    "LATITUD": 10.357049,
+    "LONGITUD": -75.491568
+  },
+  {
+    "NOMBRE": "BARRIO CHINO",
+    "UCG": 9,
+    "LOCALIDAD": "LH",
+    "LATITUD": 10.4131,
+    "LONGITUD": -75.525694
+  },
+  {
+    "NOMBRE": "BARU",
+    "UCG": 20,
+    "LOCALIDAD": "LH",
+    "LATITUD": 10.142596,
+    "LONGITUD": -75.684575
+  },
+  {
+    "NOMBRE": "BAYUNCA",
+    "UCG": 20,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.534871,
+    "LONGITUD": -75.396508
+  },
+  {
+    "NOMBRE": "BOCACHICA",
+    "UCG": 20,
+    "LOCALIDAD": "LH",
+    "LATITUD": 10.32473,
+    "LONGITUD": -75.580879
+  },
+  {
+    "NOMBRE": "BOSTON",
+    "UCG": 4,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.411827,
+    "LONGITUD": -75.508197
+  },
+  {
+    "NOMBRE": "BUENOS AIRES",
+    "UCG": 8,
+    "LOCALIDAD": "LH",
+    "LATITUD": 10.392496,
+    "LONGITUD": -75.492168
+  },
+  {
+    "NOMBRE": "CAMILO TORRES",
+    "UCG": 14,
+    "LOCALIDAD": "LI",
+    "LATITUD": 10.372893,
+    "LONGITUD": -75.47914
+  },
+  {
+    "NOMBRE": "CAÑO DEL ORO",
+    "UCG": 20,
+    "LOCALIDAD": "LH",
+    "LATITUD": 10.340671,
+    "LONGITUD": -75.547344
+  },
+  {
+    "NOMBRE": "CEBALLOS",
+    "UCG": 11,
+    "LOCALIDAD": "LI",
+    "LATITUD": 10.386007,
+    "LONGITUD": -75.504888
+  },
+  {
+    "NOMBRE": "Cerro de Albornoz",
+    "UCG": "",
+    "LOCALIDAD": "",
+    "LATITUD": 10.364107,
+    "LONGITUD": -75.494891
+  },
+  {
+    "NOMBRE": "Cerro de la Popa",
+    "UCG": "",
+    "LOCALIDAD": "",
+    "LATITUD": 10.424396,
+    "LONGITUD": -75.525254
+  },
+  {
+    "NOMBRE": "CERRO DE LA POPA",
+    "UCG": 2,
+    "LOCALIDAD": "LH",
+    "LATITUD": 10.423069,
+    "LONGITUD": -75.525215
+  },
+  {
+    "NOMBRE": "CHAPACUA",
+    "UCG": 7,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.400851,
+    "LONGITUD": -75.479247
+  },
+  {
+    "NOMBRE": "CHIQUINQUIRA",
+    "UCG": 5,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.403135,
+    "LONGITUD": -75.492137
+  },
+  {
+    "NOMBRE": "CIUDADELA 2000",
+    "UCG": 14,
+    "LOCALIDAD": "LI",
+    "LATITUD": 10.371813,
+    "LONGITUD": -75.472012
+  },
+  {
+    "NOMBRE": "CRESPO",
+    "UCG": 1,
+    "LOCALIDAD": "LH",
+    "LATITUD": 10.446421,
+    "LONGITUD": -75.516646
+  },
+  {
+    "NOMBRE": "DANIEL LEMAITRE",
+    "UCG": 3,
+    "LOCALIDAD": "LH",
+    "LATITUD": 10.437485,
+    "LONGITUD": -75.520205
+  },
+  {
+    "NOMBRE": "EL EDUCADOR",
+    "UCG": 15,
+    "LOCALIDAD": "LI",
+    "LATITUD": 10.373664,
+    "LONGITUD": -75.483487
+  },
+  {
+    "NOMBRE": "EL POZON",
+    "UCG": 6,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.413374,
+    "LONGITUD": -75.460108
+  },
+  {
+    "NOMBRE": "EL PRADO",
+    "UCG": 9,
+    "LOCALIDAD": "LH",
+    "LATITUD": 10.409427,
+    "LONGITUD": -75.519736
+  },
+  {
+    "NOMBRE": "FLOR DEL CAMPO",
+    "UCG": 6,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.419287,
+    "LONGITUD": -75.44828
+  },
+  {
+    "NOMBRE": "FREDONIA",
+    "UCG": 6,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.408296,
+    "LONGITUD": -75.473993
+  },
+  {
+    "NOMBRE": "HENEQUEN",
+    "UCG": 11,
+    "LOCALIDAD": "LI",
+    "LATITUD": 10.365167,
+    "LONGITUD": -75.495915
+  },
+  {
+    "NOMBRE": "ISLA FUERTE",
+    "UCG": 20,
+    "LOCALIDAD": "LH",
+    "LATITUD": 9.380491,
+    "LONGITUD": -76.179115
+  },
+  {
+    "NOMBRE": "ISLA MUCURA",
+    "UCG": 20,
+    "LOCALIDAD": "LH",
+    "LATITUD": 9.78174,
+    "LONGITUD": -75.872449
+  },
+  {
+    "NOMBRE": "ISLAS DEL ROSARIO",
+    "UCG": 20,
+    "LOCALIDAD": "LH",
+    "LATITUD": 10.176826,
+    "LONGITUD": -75.74269
+  },
+  {
+    "NOMBRE": "LA BOQUILLA",
+    "UCG": 20,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.475328,
+    "LONGITUD": -75.496534
+  },
+  {
+    "NOMBRE": "LA CAMPIÑA",
+    "UCG": 8,
+    "LOCALIDAD": "LH",
+    "LATITUD": 10.394003,
+    "LONGITUD": -75.502073
+  },
+  {
+    "NOMBRE": "LA CANDELARIA",
+    "UCG": 4,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.413274,
+    "LONGITUD": -75.512847
+  },
+  {
+    "NOMBRE": "LA ESPERANZA",
+    "UCG": 4,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.415311,
+    "LONGITUD": -75.51791
+  },
+  {
+    "NOMBRE": "LA MARIA",
+    "UCG": 4,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.421586,
+    "LONGITUD": -75.519124
+  },
+  {
+    "NOMBRE": "LA QUINTA",
+    "UCG": 4,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.416599,
+    "LONGITUD": -75.525284
+  },
+  {
+    "NOMBRE": "LA VICTORIA",
+    "UCG": 15,
+    "LOCALIDAD": "LI",
+    "LATITUD": 10.376234,
+    "LONGITUD": -75.48595
+  },
+  {
+    "NOMBRE": "LAS BRISAS",
+    "UCG": 9,
+    "LOCALIDAD": "LH",
+    "LATITUD": 10.397044,
+    "LONGITUD": -75.508404
+  },
+  {
+    "NOMBRE": "LAS PALMERAS",
+    "UCG": 7,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.400016,
+    "LONGITUD": -75.472439
+  },
+  {
+    "NOMBRE": "LO AMADOR",
+    "UCG": 2,
+    "LOCALIDAD": "LH",
+    "LATITUD": 10.422205,
+    "LONGITUD": -75.531397
+  },
+  {
+    "NOMBRE": "LOMAS DEL MARION",
+    "UCG": "",
+    "LOCALIDAD": "",
+    "LATITUD": 10.396418,
+    "LONGITUD": -75.506943
+  },
+  {
+    "NOMBRE": "LOS CARACOLES",
+    "UCG": 12,
+    "LOCALIDAD": "LI",
+    "LATITUD": 10.387956,
+    "LONGITUD": -75.492221
+  },
+  {
+    "NOMBRE": "MANZANILLO DEL MAR",
+    "UCG": 20,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.515287,
+    "LONGITUD": -75.497479
+  },
+  {
+    "NOMBRE": "MARIA CANO",
+    "UCG": 14,
+    "LOCALIDAD": "LI",
+    "LATITUD": 10.373243,
+    "LONGITUD": -75.480279
+  },
+  {
+    "NOMBRE": "MEMBRILLAL",
+    "UCG": 20,
+    "LOCALIDAD": "LI",
+    "LATITUD": 10.334275,
+    "LONGITUD": -75.477898
+  },
+  {
+    "NOMBRE": "NARIÑO",
+    "UCG": 2,
+    "LOCALIDAD": "LH",
+    "LATITUD": 10.425177,
+    "LONGITUD": -75.53007
+  },
+  {
+    "NOMBRE": "NELSON MANDELA",
+    "UCG": 14,
+    "LOCALIDAD": "LI",
+    "LATITUD": 10.365139,
+    "LONGITUD": -75.478918
+  },
+  {
+    "NOMBRE": "NUEVO BOSQUE",
+    "UCG": 10,
+    "LOCALIDAD": "LH",
+    "LATITUD": 10.390572,
+    "LONGITUD": -75.506824
+  },
+  {
+    "NOMBRE": "NUEVO PARAISO",
+    "UCG": 6,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.40682,
+    "LONGITUD": -75.470569
+  },
+  {
+    "NOMBRE": "OLAYA ST. LA MAGDALENA",
+    "UCG": 6,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.405078,
+    "LONGITUD": -75.476717
+  },
+  {
+    "NOMBRE": "OLAYA ST. LA PUNTILLA",
+    "UCG": 6,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.408889,
+    "LONGITUD": -75.480317
+  },
+  {
+    "NOMBRE": "OLAYA ST. PLAYA BLANCA",
+    "UCG": 6,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.407298,
+    "LONGITUD": -75.478893
+  },
+  {
+    "NOMBRE": "OLAYA ST. PROGRESO",
+    "UCG": 6,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.408685,
+    "LONGITUD": -75.482472
+  },
+  {
+    "NOMBRE": "OLAYA ST. RAFAEL NUÑEZ",
+    "UCG": 5,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.411708,
+    "LONGITUD": -75.499043
+  },
+  {
+    "NOMBRE": "OLAYA ST. RICAURTE",
+    "UCG": 5,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.410869,
+    "LONGITUD": -75.4905
+  },
+  {
+    "NOMBRE": "OLAYA ST. ZARABANDA",
+    "UCG": 6,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.409491,
+    "LONGITUD": -75.476917
+  },
+  {
+    "NOMBRE": "OLAYA ST.11 DE NOVIEMBRE",
+    "UCG": 5,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.410354,
+    "LONGITUD": -75.494667
+  },
+  {
+    "NOMBRE": "PABLO VI - II",
+    "UCG": 2,
+    "LOCALIDAD": "LH",
+    "LATITUD": 10.435149,
+    "LONGITUD": -75.524289
+  },
+  {
+    "NOMBRE": "PASACABALLOS",
+    "UCG": 20,
+    "LOCALIDAD": "LI",
+    "LATITUD": 10.283854,
+    "LONGITUD": -75.515986
+  },
+  {
+    "NOMBRE": "PETARE",
+    "UCG": 2,
+    "LOCALIDAD": "LH",
+    "LATITUD": 10.433307,
+    "LONGITUD": -75.525843
+  },
+  {
+    "NOMBRE": "PIEDRA DE BOLIVAR",
+    "UCG": 9,
+    "LOCALIDAD": "LH",
+    "LATITUD": 10.401904,
+    "LONGITUD": -75.508695
+  },
+  {
+    "NOMBRE": "POLICARPA",
+    "UCG": 11,
+    "LOCALIDAD": "LI",
+    "LATITUD": 10.346264,
+    "LONGITUD": -75.490561
+  },
+  {
+    "NOMBRE": "PONTEZUELA",
+    "UCG": 20,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.543737,
+    "LONGITUD": -75.439687
+  },
+  {
+    "NOMBRE": "PUERTA DE HIERRO",
+    "UCG": 11,
+    "LOCALIDAD": "LI",
+    "LATITUD": 10.356236,
+    "LONGITUD": -75.501542
+  },
+  {
+    "NOMBRE": "PUERTO BELLO",
+    "UCG": 20,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.48266,
+    "LONGITUD": -75.474679
+  },
+  {
+    "NOMBRE": "PUNTA ARENAS",
+    "UCG": 20,
+    "LOCALIDAD": "LH",
+    "LATITUD": 10.363899,
+    "LONGITUD": -75.54896
+  },
+  {
+    "NOMBRE": "PUNTA CANOA",
+    "UCG": 20,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.557165,
+    "LONGITUD": -75.500354
+  },
+  {
+    "NOMBRE": "REPUBLICA DEL LIBANO",
+    "UCG": 5,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.4124,
+    "LONGITUD": -75.504276
+  },
+  {
+    "NOMBRE": "SAN BERNARDO",
+    "UCG": 3,
+    "LOCALIDAD": "LH",
+    "LATITUD": 10.428803,
+    "LONGITUD": -75.520033
+  },
+  {
+    "NOMBRE": "SAN FRANCISCO",
+    "UCG": 3,
+    "LOCALIDAD": "LH",
+    "LATITUD": 10.430546,
+    "LONGITUD": -75.516332
+  },
+  {
+    "NOMBRE": "SAN JOSE DE LOS CAMPANOS",
+    "UCG": 13,
+    "LOCALIDAD": "LI",
+    "LATITUD": 10.385955,
+    "LONGITUD": -75.457749
+  },
+  {
+    "NOMBRE": "SAN PEDRO MARTIR",
+    "UCG": 15,
+    "LOCALIDAD": "LI",
+    "LATITUD": 10.371353,
+    "LONGITUD": -75.489391
+  },
+  {
+    "NOMBRE": "SIETE DE AGOSTO",
+    "UCG": 3,
+    "LOCALIDAD": "LH",
+    "LATITUD": 10.438995,
+    "LONGITUD": -75.514957
+  },
+  {
+    "NOMBRE": "TIERRA BOMBA",
+    "UCG": 20,
+    "LOCALIDAD": "LH",
+    "LATITUD": 10.376369,
+    "LONGITUD": -75.574046
+  },
+  {
+    "NOMBRE": "TORICES",
+    "UCG": 2,
+    "LOCALIDAD": "LH",
+    "LATITUD": 10.43017,
+    "LONGITUD": -75.533272
+  },
+  {
+    "NOMBRE": "TRECE DE JUNIO",
+    "UCG": 7,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.402919,
+    "LONGITUD": -75.484218
+  },
+  {
+    "NOMBRE": "URBANIZACION SIMON BOLIVAR",
+    "UCG": 14,
+    "LOCALIDAD": "LI",
+    "LATITUD": 10.378211,
+    "LONGITUD": -75.46587
+  },
+  {
+    "NOMBRE": "VEINTE DE JULIO SUR",
+    "UCG": 11,
+    "LOCALIDAD": "LI",
+    "LATITUD": 10.373743,
+    "LONGITUD": -75.499012
+  },
+  {
+    "NOMBRE": "VILLA ESTRELLA",
+    "UCG": 6,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.40428,
+    "LONGITUD": -75.464522
+  },
+  {
+    "NOMBRE": "VILLA HERMOSA",
+    "UCG": 14,
+    "LOCALIDAD": "LI",
+    "LATITUD": 10.354933,
+    "LONGITUD": -75.485253
+  },
+  {
+    "NOMBRE": "VILLA ROSA",
+    "UCG": 11,
+    "LOCALIDAD": "LI",
+    "LATITUD": 10.366366,
+    "LONGITUD": -75.499125
+  },
+  {
+    "NOMBRE": "VILLA ROSITA",
+    "UCG": 13,
+    "LOCALIDAD": "LI",
+    "LATITUD": 10.397162,
+    "LONGITUD": -75.469562
+  },
+  {
+    "NOMBRE": "VILLAS DE ARANJUEZ",
+    "UCG": 6,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.41999,
+    "LONGITUD": -75.443561
+  },
+  {
+    "NOMBRE": "VILLAS DE LA CANDELARIA",
+    "UCG": 6,
+    "LOCALIDAD": "LV",
+    "LATITUD": 10.404658,
+    "LONGITUD": -75.461486
+  },
+  {
+    "NOMBRE": "VISTA HERMOSA",
+    "UCG": 15,
+    "LOCALIDAD": "LI",
+    "LATITUD": 10.377442,
+    "LONGITUD": -75.494996
+  },
+  {
+    "NOMBRE": "ZARAGOCILLA",
+    "UCG": 8,
+    "LOCALIDAD": "LH",
+    "LATITUD": 10.400358,
+    "LONGITUD": -75.503419
+  }
+];
+
+
 
 // export async function getServerSideProps() {
 //     const res = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=10.4195841&lon=-75.5271224&lang=es&units=metric&appid=cc8411344583128d1ea0437c84b2f589`);
@@ -57,6 +684,23 @@ function getDate() {
 
 
 export default function Home() {
+  // const [markerRef, marker] = useAdvancedMarkerRef();
+  for (var i=0; i < myArray.length; i++) {
+    console.log(myArray[i]['NOMBRE']); 
+    var combasMref = "combasMarkerRef" + [i]
+    var combasM ="combasMarker" + [i]
+    var [combasMref, combasM] = useAdvancedMarkerRef();
+    console.log(combasM); 
+    var handleCombasMarkerClick = useCallback(
+      () => setInfoWindowCombasShown(isShown => !isShown),
+      []
+    );
+    
+    var combasHandleClose = useCallback(() => setInfoWindowShown(false), []);
+    // <button>myArray[i]</button>
+  } 
+
+  const [infoWindowCombasShown, setInfoWindowCombasShown] = useState(false);
 
 
   const [markerRef, marker] = useAdvancedMarkerRef();
@@ -76,7 +720,7 @@ export default function Home() {
   const [infoWindowShown6, setInfoWindowShown6] = useState(false);
   const [infoWindowShown7, setInfoWindowShown7] = useState(false);
   const [infoWindowShown8, setInfoWindowShown8] = useState(false);
-   8 
+  
   // // clicking the marker will toggle the infowindow
   const handleMarkerClick = useCallback(
     () => setInfoWindowShown(isShown => !isShown),
@@ -425,7 +1069,7 @@ transition={{ ease: "circInOut",
 <motion.div  
 // animate={{ rotate: 360 }}
 // style={{ rotate: 0 }} 
-initial={{ opacity: 0, x: "20%"}}
+initial={{ opacity: 0, x: "0%"}}
 whileInView={{ opacity: 1, x: 0 }}
 animate={{ x: 100 }}
 transition={{ ease: "linear",
@@ -650,17 +1294,33 @@ transition={{ ease: "linear",
 
 
 
+
+
 {/* maps sensors */}
    
     {/* google maps */}
-    <div className="max-w-full mx-auto flex flex-col bg-gray-100 py-20 shadow-2xl border"> 
+
+
+<div>
+  <div className="mb-4 border-b border-gray-200 dark:border-gray-700 max-w-sm mx-auto">
+      <ul className="flex flex-wrap -mb-px text-2xl font-medium text-center" id="default-tab" data-tabs-toggle="#default-tab-content" role="tablist">
+          <li className="me-2" role="presentation">
+              <button className="inline-block p-4 border-b-2 rounded-t-lg" id="sensor-tab" data-tabs-target="#sensor" type="button" role="tab" aria-controls="sensor" aria-selected="false">Red de Sensores</button>
+          </li>
+          <li className="me-2" role="presentation">
+              <button className="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="combas-tab" data-tabs-target="#combas" type="button" role="tab" aria-controls="combas" aria-selected="false">Combas</button>
+          </li>
+        
+      </ul>
+  </div>
+  <div id="default-tab-content">
+
+    <div className="max-w-full mx-auto flex flex-col bg-gray-100 py-20 shadow-2xl border" id="sensor" role="tabpanel" aria-labelledby="sensor-tab"> 
       <span className="text-3xl  max-w-full text-center text-mainc font-bold mb-4">RED DE SENSORES OAGRD</span>
       <div className='w-2/3 mx-auto rounded-md bg-mainc block p-3 '>
               <APIProvider apiKey='AIzaSyB2MmtCCU1GIWkoblto0sjSQrN_91XTL3U' >
                   <div className='h-[800px] w-full rounded'>
                       <Map       
-                          // style={{width: '100vw', height: '100vh'}}
-                          // draggableCursor="false"
                           id={'oagrd-address'}
                           mapId='oagrd-address'
                           defaultCenter={{lat: 10.462644, lng: -75.438986}}
@@ -692,15 +1352,6 @@ transition={{ ease: "linear",
                           <AdvancedMarker position={{lat: 10.346996, lng: -75.487664}} ref={markerRef8} onClick={handleMarkerClick8}>
                               <Image alt="" src={'/images/riesgos/inundacion.png'} width={60} height={60} />
                           </AdvancedMarker>
-
-                          {/* <AdvancedMarker
-                          ref={markerRef}
-                          position={{lat: 10.4105093, lng: -75.5330098}}
-                          onClick={handleMarkerClick}
-                          >
-                          <Pin background={'#FBBC04'} glyphColor={'#000'} borderColor={'#000'} />
-                          </AdvancedMarker>
-                   */}
                           {infoWindowShown && ( 
                           <InfoWindow anchor={marker} onCloseClick={handleClose}>
                               <h2 className='text-xl font-bold'>Sensor Fredonia</h2>
@@ -770,7 +1421,48 @@ transition={{ ease: "linear",
               </APIProvider>
           </div>
         </div>
+      {/* <div className="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="sensor" role="tabpanel" aria-labelledby="sensor-tab">
+          <p className="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong className="font-medium text-gray-800 dark:text-white">Profile tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classNamees to control the content visibility and styling.</p>
+       </div> */}
+      <div className="max-w-full mx-auto flex flex-col bg-gray-100 py-20 shadow-2xl border" id="combas" role="tabpanel" aria-labelledby="combas-tab"> 
+        <span className="text-3xl  max-w-full text-center text-mainc font-bold mb-4">COMBAS</span>
+        <div className='w-2/3 mx-auto rounded-md bg-mainc block p-3 '>
 
+                <div>
+              
+                  <APIProvider apiKey='AIzaSyB2MmtCCU1GIWkoblto0sjSQrN_91XTL3U' >
+                          <div className='h-[800px] w-full rounded'>
+                              <Map       
+                                  id={'combas'}
+                                  mapId='combas'
+                                  defaultCenter={{lat: 10.462644, lng: -75.438986}}
+                                  defaultZoom={12}
+                                  gestureHandling={'greedy'}
+                                  disableDefaultUI={true}>
+                          {myArray.map((item)=> (
+                            <div>
+                                  <AdvancedMarker title={'AdvancedMarker with custom html content.'} position={{lat: item.LATITUD, lng: item.LONGITUD}} ref={markerRef} onClick={() => setInfoWindowCombasShown(true)}></AdvancedMarker>
+                                  {infoWindowCombasShown && ( 
+                                  <InfoWindow anchor={marker} onCloseClick={() => setInfoWindowCombasShown(false)}>
+                                      <h2 className='text-lg font-bold'>{item.NOMBRE}</h2>
+                                      <br/>
+                                      <div className="leading-normal"><p className='text-md'><span className="font-bold">Localidad:</span> {item.LOCALIDAD}</p>
+                                      <p className='text-md'><span className="font-bold">ucg:</span> {item.UCG}</p>
+                                      </div>
+                                  </InfoWindow> 
+                                  )} 
+                              </div>
+                           ))}
+                              </Map>
+                          </div>
+                      </APIProvider>
+                </div>
+           
+        </div>
+      </div>
+
+    </div>
+</div>
 
 
 
@@ -778,5 +1470,6 @@ transition={{ ease: "linear",
 
 
     </main>
+
   );
 }
