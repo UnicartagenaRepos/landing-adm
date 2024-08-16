@@ -683,22 +683,20 @@ function getDate() {
 
 
 
+// export type TreeMarkerProps = {
+//   tree: Tree;
+//   onClick: (tree: Tree) => void;
+//   setMarkerRef: (marker: Marker | null, key: string) => void;
+// };
+
+
 export default function Home() {
-  // const [markerRef, marker] = useAdvancedMarkerRef();
-  for (var i=0; i < myArray.length; i++) {
-    console.log(myArray[i]['NOMBRE']); 
-    var combasMref = "combasMarkerRef" + [i]
-    var combasM ="combasMarker" + [i]
-    var [combasMref, combasM] = useAdvancedMarkerRef();
-    console.log(combasM); 
-    var handleCombasMarkerClick = useCallback(
-      () => setInfoWindowCombasShown(isShown => !isShown),
-      []
-    );
-    
-    var combasHandleClose = useCallback(() => setInfoWindowShown(false), []);
-    // <button>myArray[i]</button>
-  } 
+  // const ref = useCallback(
+  //   (marker: google.maps.marker.AdvancedMarkerElement) =>
+  //     setMarkerRef(marker, tree.key),
+  //   [setMarkerRef, tree.key]
+  // );
+
 
   const [infoWindowCombasShown, setInfoWindowCombasShown] = useState(false);
 
@@ -1354,7 +1352,7 @@ transition={{ ease: "linear",
                           </AdvancedMarker>
                           {infoWindowShown && ( 
                           <InfoWindow anchor={marker} onCloseClick={handleClose}>
-                              <h2 className='text-xl font-bold'>Sensor Fredonia</h2>
+                              <h2 className='text-lg font-bold'>Sensor Fredonia</h2>
                               <br/>
                               <p className='text-lg'>Inundacion</p>
                               <br/>
@@ -1362,7 +1360,7 @@ transition={{ ease: "linear",
                           )} 
                               {infoWindowShown2 && ( 
                           <InfoWindow anchor={marker2} onCloseClick={handleClose2}>
-                              <h2 className='text-xl font-bold'>Sensor Lomas del Marion</h2>
+                              <h2 className='text-lg font-bold'>Sensor Lomas del Marion</h2>
                               <br/>
                               <p className='text-lg'>Remocion en masa</p>
                               <br/>
@@ -1370,7 +1368,7 @@ transition={{ ease: "linear",
                           )} 
                               {infoWindowShown3 && ( 
                           <InfoWindow anchor={marker3} onCloseClick={handleClose3}>
-                              <h2 className='text-xl font-bold'>Sensor Cerro de Albornoz</h2>
+                              <h2 className='text-lg font-bold'>Sensor Cerro de Albornoz</h2>
                               <br/>
                               <p className='text-lg'>Remocion en masa</p>
                               <br/>
@@ -1378,7 +1376,7 @@ transition={{ ease: "linear",
                           )} 
                               {infoWindowShown4 && ( 
                           <InfoWindow anchor={marker4} onCloseClick={handleClose4}>
-                              <h2 className='text-xl font-bold'>Sensor Bayunca</h2>
+                              <h2 className='text-lg font-bold'>Sensor Bayunca</h2>
                               <br/>
                               <p className='text-lg'>Inundacion</p>
                               <br/>
@@ -1386,7 +1384,7 @@ transition={{ ease: "linear",
                           )} 
                               {infoWindowShown5 && ( 
                           <InfoWindow anchor={marker5} onCloseClick={handleClose5}>
-                              <h2 className='text-xl font-bold'>Sensor Membrillal</h2>
+                              <h2 className='text-lg font-bold'>Sensor Membrillal</h2>
                               <br/>
                               <p className='text-lg'>Inundacion</p>
                               <br/>
@@ -1394,7 +1392,7 @@ transition={{ ease: "linear",
                           )} 
                               {infoWindowShown6 && ( 
                           <InfoWindow anchor={marker6} onCloseClick={handleClose6}>
-                              <h2 className='text-xl font-bold'>Sensor San Francisco</h2>
+                              <h2 className='text-lg font-bold'>Sensor San Francisco</h2>
                               <br/>
                               <p className='text-lg'>Inundacion</p>
                               <br/>
@@ -1402,7 +1400,7 @@ transition={{ ease: "linear",
                           )} 
                               {infoWindowShown7 && ( 
                           <InfoWindow anchor={marker7} onCloseClick={handleClose7}>
-                              <h2 className='text-xl font-bold'>Sensor San Francisco</h2>
+                              <h2 className='text-lg font-bold'>Sensor San Francisco</h2>
                               <br/>
                               <p className='text-lg'>Remocion en masa</p>
                               <br/>
@@ -1410,7 +1408,7 @@ transition={{ ease: "linear",
                           )} 
                               {infoWindowShown8 && ( 
                           <InfoWindow anchor={marker8} onCloseClick={handleClose8}>
-                              <h2 className='text-xl font-bold'>Sensor Policarpa</h2>
+                              <h2 className='text-lg font-bold'>Sensor Policarpa</h2>
                               <br/>
                               <p className='text-md'>Inundacion</p>
                               <br/>
