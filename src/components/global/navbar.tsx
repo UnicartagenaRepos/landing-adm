@@ -16,7 +16,7 @@ const Navbar = (props: Props) => {
   
   return (
     <header className='z-[100] flex flex-col items-center justify-between bg-red'>
-        <div className='bg-mainc dark:bg-white h-12 w-full flex flex-row gap-4'>
+        <div className='bg-mainc h-12 w-full flex flex-row gap-4'>
             <div className='w-full flex justify-around items-center'>
               <Image className="" src="/images/gov.png" width={150} height={2} alt="gov Logo" />
               <div className='flex flex-row items-center justify-center p-10 gap-6'>
