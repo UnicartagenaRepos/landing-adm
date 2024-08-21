@@ -1400,7 +1400,7 @@ transition={{ ease: "linear",
                                   gestureHandling={'greedy'}
                                   disableDefaultUI={true}>
                           {myArray.map((item)=> (
-                            <div id={item.NOMBRE}>
+                            <div key={item.NOMBRE}>
                                   <AdvancedMarker position={{lat: item.LATITUD, lng: item.LONGITUD}} ref={markerRef} onClick={() => setInfoWindowShown8(true)}></AdvancedMarker>
                                   {/* {infoWindowCombasShown && ( 
                                   <InfoWindow anchor={marker} onCloseClick={() => setInfoWindowCombasShown(false)}>
