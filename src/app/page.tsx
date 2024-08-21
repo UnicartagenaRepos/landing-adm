@@ -793,9 +793,9 @@ export default function Home() {
       <div id="default-carousel" className="" data-carousel="slide">
       {/* <!-- Carousel wrapper --> */}
           <div className="relative overflow-hidden md:h-[800px]">
-              <div className="hidden duration-3000" data-carousel-item>
+              {/* <div className="hidden duration-3000" data-carousel-item>
                   <Image width={400} height={600} src="/images/banners/sat-banner2.png" className="absolute block w-full -translate-x-1/2 -translate-y-2/2 top-2/2 left-1/2" alt="..." />
-              </div>
+              </div> */}
               <div className="hidden duration-300" data-carousel-item>
                   <img width={400} height={600} src="/images/home1.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-2/3 top-2/3 left-1/2" alt="..." />
               </div>
@@ -1362,7 +1362,7 @@ transition={{ ease: "linear",
                           )} 
                               {infoWindowShown7 && ( 
                           <InfoWindow anchor={marker7} onCloseClick={handleClose7}>
-                              <h2 className='text-lg font-bold'>Sensor San Francisco</h2>
+                              <h2 className='text-lg font-bold'>Sensor Lo Amador</h2>
                               <br/>
                               <p className='text-md'>Remocion en masa</p>
                               <br/>
@@ -1400,7 +1400,7 @@ transition={{ ease: "linear",
                                   gestureHandling={'greedy'}
                                   disableDefaultUI={true}>
                           {myArray.map((item)=> (
-                            <div key={item.NOMBRE}>
+                            <div id={item.NOMBRE}>
                                   <AdvancedMarker position={{lat: item.LATITUD, lng: item.LONGITUD}} ref={markerRef} onClick={() => setInfoWindowShown8(true)}></AdvancedMarker>
                                   {/* {infoWindowCombasShown && ( 
                                   <InfoWindow anchor={marker} onCloseClick={() => setInfoWindowCombasShown(false)}>
