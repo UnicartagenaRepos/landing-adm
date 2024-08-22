@@ -12,12 +12,12 @@ La presente Política de Privacidad tiene el objetivo de dar a conocer el modo e
 Uso y tratamiento de los datos de carácter personal
 
 SISTEMA DE ALERTAS TEMPRANA recopila y trata datos personales de los usuarios (como nombre, dirección, teléfono, dirección de correo electrónico y otros similares) para poder prestarle nuestros servicios, facilitarle los productos que solicite de acuerdo a sus gustos y preferencias o mantenerle informado de nuestras novedades.
-La información de carácter personal que pudiera proporcionar a través de la página web será incorporada a un fichero titularidad de ADVANCE INSPIRING SOCIAL INNOVATION SL.
+La información de carácter personal que pudiera proporcionar a través de la página web será incorporada a un fichero titularidad de SISTEMA DE ALERTAS TEMPRANA.
 Los empleados de SISTEMA DE ALERTAS TEMPRANA serán los destinatarios de la información recogida. Esta compañía no venderá, cederá ni distribuirá la información personal que es recopilada sin su consentimiento.
 
 Ejercicio de derechos: acceso, rectificación, cancelación y oposición
 
-Los usuarios que hayan facilitado sus datos personales En cualquier momento puede revocar el consentimiento otorgado para el tratamiento de sus datos personales por escrito, a través del correo electrónico info@advanceinspiring.org, remitiéndonos una copia de su DNI.
+Los usuarios que hayan facilitado sus datos personales En cualquier momento puede revocar el consentimiento otorgado para el tratamiento de sus datos personales por escrito, a través del correo electrónico info@oagrd.org, remitiéndonos una copia de su DNI.
 
 Seguridad de su información personal
 
