@@ -794,7 +794,7 @@ export default function Home() {
       {/* <!-- Carousel wrapper --> */}
           <div className="relative overflow-hidden md:h-[800px]">
               <div className="hidden duration-3000" data-carousel-item>
-                  <Image width={400} height={600} src="/images/banners/sat-banner2.png" className="absolute block w-full -translate-x-1/2 -translate-y-2/2 top-2/2 left-1/2" alt="..." />
+                  <img width={400} height={600} src="/images/banners/sat-banner2.png" className="absolute block w-full -translate-x-1/2 -translate-y-2/2 top-2/2 left-1/2" alt="..." />
               </div>
               <div className="hidden duration-300" data-carousel-item>
                   <img width={400} height={600} src="/images/home1.jpeg" className="absolute block w-full -translate-x-1/2 -translate-y-2/3 top-2/3 left-1/2" alt="..." />

@@ -23,7 +23,7 @@ export default function RootLayout({
       <link rel="icon" href="/icon.png" sizes="any" />
       <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
       <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js" async></script>
-      <title>Sistema de Alertas Temprana</title>
+      <title>Sistema de Alertas Tempranas</title>
       </head>
       <body className={font.className}>         
         <ThemeProvider
