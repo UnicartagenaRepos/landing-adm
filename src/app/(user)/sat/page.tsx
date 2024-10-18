@@ -90,7 +90,7 @@ function sat() {
 
 
             <div  className="mx-auto max-w-6xl mb-20 items-center justify-center object-center text-center align-middle " >
-                <h5 className="m-6 text-4xl font-extrabold  rounded-md bg-mainc text-white p-1 items-center text-center">Ventajas de un SAT</h5>
+                <h5 className="m-6 text-4xl font-extrabold  rounded-md bg-mainc text-white p-1 items-center text-center">Pilares del Sistema de Alertas Tempranas</h5>
                 <Image height={420} width={600} className="h-[400px] mx-auto object-fit rounded-xl my-8" src="/ventajas_personas.jpeg" alt="" />
                 <div className="flex flex-col items-center p-4 leading-normal mx-auto bg-blue-50 rounded-xl">
                         <Carousel   plugins={[
@@ -99,13 +99,20 @@ function sat() {
                         }),
                     ]}>
                     <CarouselContent className="text-2xl text-left max-w-6xl mt-4 text-wrap">
-                        <CarouselItem className="pl-32 flex flex-col items-center justify-center gap-4 px-10"><div className='flex gap-3 justify-center items-center'><span className='bg-secondc text-center h-10 w-10 rounded-full font-bold'>1</span><span className='text-2xl font-bold'>Reducción del riesgo de desastres</span></div><p className='text-xl text-wrap'>Asesorar en la formulación, seguimiento y evaluación de la política pública de gestión de riesgo de emergencia y desastres del Distrito de Cartagena ajustada a los lineamientos de esta materia.</p></CarouselItem>
+                        {/* <CarouselItem className="pl-32 flex flex-col items-center justify-center gap-4 px-10"><div className='flex gap-3 justify-center items-center'><span className='bg-secondc text-center h-10 w-10 rounded-full font-bold'>1</span><span className='text-2xl font-bold'>Reducción del riesgo de desastres</span></div><p className='text-xl text-wrap'>Asesorar en la formulación, seguimiento y evaluación de la política pública de gestión de riesgo de emergencia y desastres del Distrito de Cartagena ajustada a los lineamientos de esta materia.</p></CarouselItem>
                         <CarouselItem className="pl-32 flex flex-col items-center justify-center gap-4 px-10"><div className='flex gap-3 justify-center items-center'><span className='bg-secondc text-center h-10 w-10 rounded-full font-bold'>2</span><span className='text-2xl font-bold'>Protección de vidas</span></div><p className='text-xl text-wrap'>Al brindar información oportuna sobre los riesgos, las personas pueden tomar decisiones informadas para protegerse a sí mismas y a sus familias, lo que puede salvar vidas.</p></CarouselItem>
                         <CarouselItem className="pl-32 flex flex-col items-center justify-center gap-4 px-10"><div className='flex gap-3 justify-center items-center'><span className='bg-secondc text-center h-10 w-10 rounded-full  font-bold'>3</span><span className='text-2xl  font-bold'>Minimización de daños</span></div><p className='text-xl text-wrap'>La alerta temprana permite a las autoridades y a la población tomar medidas para reducir los daños materiales y económicos causados por los desastres.</p></CarouselItem>
                         <CarouselItem className="pl-32 flex flex-col items-center justify-start gap-4 px-10"><div className='flex gap-3 justify-center items-center'><span className='bg-secondc text-center h-10 w-10 rounded-full  font-bold'>4</span><span className='text-2xl  font-bold'>Aumento de la resiliencia</span></div><p className='text-xl text-wrap'>La resiliencia es la capacidad de una comunidad para recuperarse de un desastre.</p><p className='text-xl'>El sistema de alertas tempranas es una herramienta fundamental para fortalecer la resiliencia de las comunidades.</p></CarouselItem>
                         <CarouselItem className="pl-32 flex flex-col items-center justify-start gap-4 px-10"><div className='flex gap-3 justify-center items-center'><span className='bg-secondc text-center h-10 w-10 rounded-full  font-bold'>5</span><span className='text-2xl  font-bold'>Mejoramiento de la respuesta a emergencias</span></div><p className='text-xl text-wrap'>El sistema facilita la coordinación de la respuesta a emergencias entre las diferentes entidades gubernamentales y organizaciones de ayuda humanitaria.</p></CarouselItem>
                         <CarouselItem className="pl-32 flex flex-col items-center justify-center gap-4 px-10"><div className='flex gap-3 justify-center items-center'><span className='bg-secondc text-center h-10 w-10 rounded-full  font-bold'>6</span><span className='text-2xl  font-bold'>Promoción de una cultura de prevención</span></div><p className='text-xl text-wrap'>El sistema ayuda a crear conciencia sobre los riesgos de desastres y la importancia de estar preparados para afrontarlos.</p></CarouselItem>
-                    
+                     */}
+                        <CarouselItem className="pl-32 flex flex-col items-center justify-center gap-4 px-10"><div className='flex gap-3 justify-center items-center'><span className='bg-secondc text-center h-10 w-10 rounded-full font-bold'>1</span><span className='text-2xl font-bold'>Comprensión y gestión del riesgo de desastre</span></div><p className='text-xl text-wrap'>Asesorar en la formulación, seguimiento y evaluación de la política pública de gestión de riesgo de emergencia y desastres del Distrito de Cartagena ajustada a los lineamientos de esta materia.</p></CarouselItem>
+                        <CarouselItem className="pl-32 flex flex-col items-center justify-center gap-4 px-10"><div className='flex gap-3 justify-center items-center'><span className='bg-secondc text-center h-10 w-10 rounded-full font-bold'>2</span><span className='text-2xl font-bold'>Detección, observacion, vigilancia, analisis y previsión de las amenazas</span></div><p className='text-xl text-wrap'>Al brindar información oportuna sobre los riesgos, las personas pueden tomar decisiones informadas para protegerse a sí mismas y a sus familias, lo que puede salvar vidas.</p></CarouselItem>
+                        <CarouselItem className="pl-32 flex flex-col items-center justify-center gap-4 px-10"><div className='flex gap-3 justify-center items-center'><span className='bg-secondc text-center h-10 w-10 rounded-full  font-bold'>3</span><span className='text-2xl  font-bold'>difusión y comunicación de alertas</span></div><p className='text-xl text-wrap'>La alerta temprana permite a las autoridades y a la población tomar medidas para reducir los daños materiales y económicos causados por los desastres.</p></CarouselItem>
+                        <CarouselItem className="pl-32 flex flex-col items-center justify-start gap-4 px-10"><div className='flex gap-3 justify-center items-center'><span className='bg-secondc text-center h-10 w-10 rounded-full  font-bold'>4</span><span className='text-2xl  font-bold'>Preparación y respuesta</span></div><p className='text-xl text-wrap'>La resiliencia es la capacidad de una comunidad para recuperarse de un desastre.</p><p className='text-xl'>El sistema de alertas tempranas es una herramienta fundamental para fortalecer la resiliencia de las comunidades.</p></CarouselItem>
+                        {/* <CarouselItem className="pl-32 flex flex-col items-center justify-start gap-4 px-10"><div className='flex gap-3 justify-center items-center'><span className='bg-secondc text-center h-10 w-10 rounded-full  font-bold'>5</span><span className='text-2xl  font-bold'>Mejoramiento de la respuesta a emergencias</span></div><p className='text-xl text-wrap'>El sistema facilita la coordinación de la respuesta a emergencias entre las diferentes entidades gubernamentales y organizaciones de ayuda humanitaria.</p></CarouselItem>
+                        <CarouselItem className="pl-32 flex flex-col items-center justify-center gap-4 px-10"><div className='flex gap-3 justify-center items-center'><span className='bg-secondc text-center h-10 w-10 rounded-full  font-bold'>6</span><span className='text-2xl  font-bold'>Comprensión y gestión del riesgo de desastre</span></div><p className='text-xl text-wrap'>El sistema ayuda a crear conciencia sobre los riesgos de desastres y la importancia de estar preparados para afrontarlos.</p></CarouselItem>
+                     */}
                     </CarouselContent>
                     </Carousel>
                 </div>                
@@ -116,9 +123,9 @@ function sat() {
 
             {/* funcionamiento de los sistemas */}
             <div className='bg-gray-50 p-10'>
-                <span className='w-full mx-auto block text-center text-3xl font-medium mb-5'> Funcionamiento de los sistemas de alertas tempranas</span>
+                <span className='w-full mx-auto block text-center text-3xl font-medium mb-5'> Herramientas del sistemas de alertas tempranas</span>
                 <div className=' md:flex md:flex-col flex-row items-center justify-center relative mb-10 '>
-                    <a href="#" className="m-3 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row max-w-72 h-[420px] hover:bg-gray-100  ">
+                    {/* <a href="#" className="m-3 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row max-w-72 h-[420px] hover:bg-gray-100  ">
                         <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
                         <Image height={420} width={600} className="w-32 h-32" src="/images/sat/monitoring.png" alt="sat objetivos"/>
                         <div>
@@ -141,7 +148,7 @@ function sat() {
 
                             <Image height={420} width={600} className="w-32 h-32" src="/images/sat/emitir.png" alt="sat ventajas"/>
 
-                            {/* <Image height={420} width={600} className="rounded-full w-96 h-96 md:h-48 md:w-48 md:rounded-full" src="/sat.jpeg" alt="" /> */}
+                            
                             <div>
                                 <h5 className="mt-4 mb-2 text-lg font-semibold tracking-tight text-gray-900 ">Comunicación y alerta</h5>
                                 <p className="mb-4 text-sm text-gray-700 ">Si se emite una alerta, la OAGRD activa los canales de comunicación para difundirla a la población lo antes posible.</p>
@@ -154,13 +161,13 @@ function sat() {
 
                             <Image height={420} width={600} className=" w-32 h-32" src="/images/sat/megaphone.png" alt="Difucion de alertas"/>
 
-                            {/* <Image height={420} width={600} className="rounded-full w-96 h-96 md:h-48 md:w-48 md:rounded-full" src="/sat.jpeg" alt="" /> */}
+                            
                             <div>
                                 <h5 className="mt-4 mb-2 text-lg font-semibold tracking-tight text-gray-900  text-center">Medios de comunicación</h5>
                                 <p className="mb-4 text-sm text-gray-700 ">La población recibe la alerta y toma las medidas de precaución necesarias para protegerse.</p>
                             </div>
                         </div>
-                    </a>
+                    </a> */}
 
                     {/* <a href="#" className="m-3 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row max-w-60 h-[420px] hover:bg-gray-100  ">
                         <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
@@ -171,6 +178,64 @@ function sat() {
                             <p className="mb-4 text-sm text-gray-700 ">Las autoridades y las personas involucradas toman acciones de acuerdo con los protocolos de respuesta establecidos, y se realiza un seguimiento continuo de la situación para evaluar la efectividad de las medidas tomadas</p>
                         </div>
                     </a> */}
+
+
+
+<a href="#" className="m-3 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row max-w-72 h-[420px] hover:bg-gray-100  ">
+                        <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
+                        <Image height={420} width={600} className="w-32 h-32" src="/images/sat/monitoring.png" alt="sat objetivos"/>
+                        <div>
+                            <h5 className="mt-4 mb-2 text-lg font-semibold tracking-tight text-gray-900 ">Sensores</h5>
+                            <p className="mb-4 text-sm text-gray-700 ">La OAGRD recibe información sobre un posible peligro a través de su red de monitoreo o de otras fuentes.</p>
+                        </div>
+                        </div>
+                    </a> 
+                    <a href="#" className="m-3 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row max-w-72 h-[420px] hover:bg-gray-100  ">
+                        <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
+                        <Image height={420} width={600} className="w-32 h-32" src="/images/sat/analisis.png" alt="sat objetivos"/>
+                        <div>
+                            <h5 className="mt-4 mb-2 text-lg font-semibold tracking-tight text-gray-900 ">Applicación Movil</h5>
+                            <p className="mb-4 text-sm text-gray-700 ">La información es analizada por un equipo de expertos, quienes determinan el nivel de riesgo y la necesidad de emitir una alerta.</p>
+                        </div>
+                        </div>
+                    </a>
+                    <a href="#" className="m-3 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row max-w-72 h-[420px] hover:bg-gray-100  ">
+                        <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
+
+                            <Image height={420} width={600} className="w-32 h-32" src="/images/sat/emitir.png" alt="sat ventajas"/>
+
+                            
+                            <div>
+                                <h5 className="mt-4 mb-2 text-lg font-semibold tracking-tight text-gray-900 ">Boletín de Pronóstico</h5>
+                                <p className="mb-4 text-sm text-gray-700 ">Si se emite una alerta, la OAGRD activa los canales de comunicación para difundirla a la población lo antes posible.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="#" className="m-3 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row max-w-72 h-[420px] hover:bg-gray-100  ">
+                        <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
+
+                            <Image height={420} width={600} className=" w-32 h-32" src="/images/sat/megaphone.png" alt="Difucion de alertas"/>
+
+                            
+                            <div>
+                                <h5 className="mt-4 mb-2 text-lg font-semibold tracking-tight text-gray-900  text-center">Sala de Crisis</h5>
+                                <p className="mb-4 text-sm text-gray-700 ">La población recibe la alerta y toma las medidas de precaución necesarias para protegerse.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" className="m-3 flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row max-w-72 h-[420px] hover:bg-gray-100  ">
+                        <div className="flex flex-col justify-center items-center p-4 leading-normal text-justify">
+
+                            <Image height={420} width={600} className=" w-32 h-32" src="/images/sat/megaphone.png" alt="Difucion de alertas"/>
+
+                            
+                            <div>
+                                <h5 className="mt-4 mb-2 text-lg font-semibold tracking-tight text-gray-900  text-center">Combas</h5>
+                                <p className="mb-4 text-sm text-gray-700 ">La población recibe la alerta y toma las medidas de precaución necesarias para protegerse.</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
 

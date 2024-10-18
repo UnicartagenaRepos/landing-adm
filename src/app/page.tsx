@@ -858,8 +858,8 @@ export default function Home() {
             <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
             <div className="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
             <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white ">
-                <Image width={400} height={600} src="/images/app-image2.jpeg" className="w-[272px] h-[572px]" alt="" />
-                <Image width={400} height={600} src="/images/app-image2.jpeg" className="hidden w-[272px] h-[572px]" alt="" />
+                <Image width={400} height={600} src="/images/login.png" className="w-[272px] h-[572px]" alt="" />
+                <Image width={400} height={600} src="/images/login.png" className="hidden w-[272px] h-[572px]" alt="" />
             </div>
         </div>
 
@@ -869,8 +869,8 @@ export default function Home() {
             <div className="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
             <div className="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
             <div className="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white ">
-                <Image width={400} height={600} src="/images/home-app.jpeg" className=" w-[272px] h-[572px]" alt="" />
-                <Image width={400} height={600} src="/images/home-app.jpeg" className="hidden w-[272px] h-[572px]" alt="" />
+                <Image width={400} height={600} src="/images/home.png" className=" w-[272px] h-[572px]" alt="" />
+                <Image width={400} height={600} src="/images/home.png" className="hidden w-[272px] h-[572px]" alt="" />
             </div>
         </div>
 
@@ -887,7 +887,7 @@ export default function Home() {
 
     </div>
     <div className="flex flex-row gap-4">
-        <a href="#" className="md:mt-10 w-full sm:w-auto bg-mainc shadow-2xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 ">
+        <a href="https://play.google.com/store/apps/details?id=com.unicartagena.satapp" className="md:mt-10 w-full sm:w-auto bg-mainc shadow-2xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 ">
             <svg className="me-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-play" role="Image height={420} width={600}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"></path></svg>
             <div className="text-left rtl:text-right">
                 <div className="mb-1 text-base">Descargala en</div>
