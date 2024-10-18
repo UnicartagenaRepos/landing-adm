@@ -52,9 +52,9 @@ jobs:
                     --no-use-http2
                     --allow-unauthenticated
                     --port=3000
-                    --concurrency=120
+                    --concurrency=50
                     --timeout=300 
                     --min-instances=1
-                    --max-instances=2
+                    --max-instances=10
                     --cpu=1 
                     --memory=1Gi
