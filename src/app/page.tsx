@@ -887,14 +887,14 @@ export default function Home() {
 
     </div>
     <div className="flex flex-row gap-4">
-        <a href="https://play.google.com/store/apps/details?id=com.unicartagena.satapp" className="md:mt-10 w-full sm:w-auto bg-mainc shadow-2xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 ">
+        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.unicartagena.satapp" className="md:mt-10 w-full sm:w-auto bg-mainc shadow-2xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 ">
             <svg className="me-3 w-7 h-7" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google-play" role="Image height={420} width={600}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"></path></svg>
             <div className="text-left rtl:text-right">
                 <div className="mb-1 text-base">Descargala en</div>
                 <div className="-mt-1 font-sans text-lg font-semibold">Google Play</div>
             </div>
         </a>
-        <a href="#" className="md:mt-10 border w-full sm:w-auto shadow-2xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5  ">
+        <a target="_blank" href="https://apps.apple.com/us/app/satapp/id6736963760" className="md:mt-10 border w-full sm:w-auto shadow-2xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 bg-white focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5  ">
             {/* <Image src={'/images/'} alt="app store image"/> */}
             <svg  className="me-3 w-8 h-8" fill="#23234c"  viewBox="-52.01 0 560.035 560.035" xmlns="http://www.w3.org/2000/svg"><path d="M380.844 297.529c.787 84.752 74.349 112.955 75.164 113.314-.622 1.988-11.754 40.191-38.756 79.652-23.343 34.117-47.568 68.107-85.731 68.811-37.499.691-49.557-22.236-92.429-22.236-42.859 0-56.256 21.533-91.753 22.928-36.837 1.395-64.889-36.891-88.424-70.883-48.093-69.53-84.846-196.475-35.496-282.165 24.516-42.554 68.328-69.501 115.882-70.192 36.173-.69 70.315 24.336 92.429 24.336 22.1 0 63.59-30.096 107.208-25.676 18.26.76 69.517 7.376 102.429 55.552-2.652 1.644-61.159 35.704-60.523 106.559M310.369 89.418C329.926 65.745 343.089 32.79 339.498 0 311.308 1.133 277.22 18.785 257 42.445c-18.121 20.952-33.991 54.487-29.709 86.628 31.421 2.431 63.52-15.967 83.078-39.655"/></svg>
             <div className="text-left rtl:text-right">
@@ -1226,35 +1226,6 @@ transition={{ ease: "linear",
 </div>
 
 </motion.div>
-
-
-
-{/* ten atento a 
-<div id="alert-additional-content-1" className="w-3/4 p-4 mx-auto text-justify mb-20 mt-8 text-gray-600 border border-blue-300 rounded-lg bg-blue-50 dark:bg-gray-600 dark:text-blue-400 dark:border-blue-500" role="alert">
-  <div className="flex items-center">
-    <svg className="text-black flex-shrink-0 w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-      <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
-    </svg>
-    <span className="sr-only">Info</span>
-    <h3 className="text-xl font-medium text-black">Info</h3>
-  </div>
-  <div className="mt-2 mb-4 text-lg">
-  Ten en cuenta las funciones en situacion de desastre que son de vital importancia para el correcto desarrollo de las actividades en una situación de dasastre.
-  </div>
-  <div className="flex">
-    <button type="button" className="text-white bg-blue-800 hover:bg-blue-900 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-lg text-xs px-3 py-1.5 me-2 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-      <svg className="me-2 h-3 w-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 14">
-        <path d="M10 0C4.612 0 0 5.336 0 7c0 1.742 3.546 7 10 7 6.454 0 10-5.258 10-7 0-1.664-4.612-7-10-7Zm0 10a3 3 0 1 1 0-6 3 3 0 0 1 0 6Z"/>
-      </svg>
-      Ver mas
-    </button>
-
-  </div>
-</div> */}
-
-
-
-
 
 {/* maps sensors */}
    
