@@ -7,7 +7,6 @@ import "./globals.css";
 import { ThemeProvider } from "@/provider/themes-provider";
 import Navbar from "@/components/global/navbar";
 import Footer from "@/components/global/footer";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { DefaultSeo } from "next-seo";
 import SEO from "@/seo.config"; // Archivo con tu configuración SEO global
 import { useEffect } from "react";

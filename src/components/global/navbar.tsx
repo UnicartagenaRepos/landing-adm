@@ -99,7 +99,7 @@ const Navbar = () => {
                 {showSubmenu && (
                   <div
                     ref={submenuRef}
-                    className="absolute left-0 top-full mt-2 w-56 bg-white shadow-lg rounded-md overflow-hidden z-50"
+                    className="absolute left-0 top-full mt-2 w-80 bg-white shadow-lg rounded-md overflow-hidden z-50"
                   >
                     <ul>
                       <li>
