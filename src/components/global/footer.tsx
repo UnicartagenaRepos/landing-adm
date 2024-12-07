@@ -22,27 +22,27 @@ function Footer() {
                     <h2 className="mb-6 text-xl font-bold text-white uppercase ">Recursos</h2>
                     <ul className="text-white  font-medium">
                         <li className="mb-4">
-                            <a href="https://documental.satoagrdcartagena.oagrd.org" className="hover:underline">Documental</a>
+                            <a href="/herramientas-del-sat/boletines" className="hover:underline">Documental</a>
                         </li>
-                        <li>
+                        {/* <li>
                             <a href="https://geovisor.satoagrdcartagena.oagrd.org" className="hover:underline">Geovisor</a>
-                        </li>
+                        </li> */}
                     </ul>
                 </div>
                 <div>
                     <h2 className="mb-6 text-xl font-bold text-white uppercase ">Siguenos</h2>
                     <ul className="text-white  font-medium space-y-4">
                         <li className="">
-                            <a href="https://www.facebook.com/gestiondelriesgoctg" className="hover:underline ">Facebook</a>
+                            <a target='_blank' href="https://www.facebook.com/gestiondelriesgoctg" className="hover:underline ">Facebook</a>
                         </li>
                         <li>
-                            <a href="https://x.com/oagrdcartagena" className="hover:underline">X</a>
+                            <a target='_blank' href="https://x.com/oagrdcartagena" className="hover:underline">X</a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/gestiondelriesgoctg" className="hover:underline">Instagram</a>
+                            <a target='_blank' href="https://www.instagram.com/gestiondelriesgoctg" className="hover:underline">Instagram</a>
                         </li>
                         <li>
-                            <a href="https://www.tiktok.com/@gestiondelriesgoctg" className="hover:underline">TikTok</a>
+                            <a target='_blank' href="https://www.tiktok.com/@gestiondelriesgoctg" className="hover:underline">TikTok</a>
                         </li>
                     </ul>
                 </div>
