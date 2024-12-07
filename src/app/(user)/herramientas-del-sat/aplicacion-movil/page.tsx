@@ -31,7 +31,7 @@ const AplicacionMovil = (): JSX.Element  => (
       <meta property="og:description" content="A page with client-side rendered content." /> */}
     {/* </Head> */}
         {/* Download the app */}
-        <div className="m-20 w-full text-center">
+        <div className="m-20 text-center">
             <h5 className="text-4xl font-bold text-mainc mb-6">DESCARGA NUESTRA APLICACIÓN</h5>
             <p className="mb-20 text-base text-gray-500 sm:text-lg ">Aquí encontrarás toda la información sobre la aplicación móvil del SAT. Descarga la app y accede a herramientas diseñadas para gestionar riesgos y reportar emergencias.</p>
             <div className="flex flex-col gap-4 items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 rtl:space-x-reverse">
