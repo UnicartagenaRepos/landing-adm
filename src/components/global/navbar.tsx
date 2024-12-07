@@ -72,7 +72,7 @@ const Navbar = () => {
                   href="/"
                   onClick={() => handleClick('/sat', true)}
                   className={`block py-2 px-3 hover:underline rounded ${
-                    activeLink === '/sat' ? 'font-bold' : ''
+                    activeLink === '/' ? 'font-bold' : ''
                   }`}
                 >
                   SAT
