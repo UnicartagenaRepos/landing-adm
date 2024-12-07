@@ -70,7 +70,7 @@ function sat() {
                 className="z-50 flex flex-col justify-center items-center drop-shadow-2xl"
             >
                 <motion.p className="font-bold  text-6xl md:text-6xl drop-shadow-[2px_2px_var(--tw-shadow-color)] shadow-gray-800 text-center bg-grey bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-200 py-4">
-                Sistema de Alerta Temprana <br /> de Cartagena
+                Sistema de Alertas Tempranas <br /> de Cartagena
                 </motion.p> 
              </motion.div> 
             </ImagesSlider>
