@@ -94,10 +94,10 @@ function DeleteAccount() {
                 <p className='text-gray-700 dark:text-gray-300 mb-2'>
                   <strong className='text-gray-900 dark:text-white'>Email de contacto:</strong>{' '}
                   <a
-                    href="mailto:contacto@oagrd.gov.co"
+                    href="mailto:contacto@oagrd.org"
                     className='text-blue-600 dark:text-blue-400 hover:underline font-medium'
                   >
-                    contacto@oagrd.gov.co
+                    contacto@oagrd.org
                   </a>
                 </p>
                 <p className='text-gray-700 dark:text-gray-300'>
@@ -130,7 +130,7 @@ function DeleteAccount() {
               </div>
 
               <a
-                href="mailto:contacto@oagrd.gov.co?subject=Solicitud de Eliminación de Cuenta - SatApp Oficial&body=Nombre completo:%0D%0AEmail registrado:%0D%0AMotivo (opcional):%0D%0A%0D%0AConfirmo que entiendo que la eliminación es permanente e irreversible."
+                href="mailto:contacto@oagrd.org?subject=Solicitud de Eliminación de Cuenta - SatApp Oficial&body=Nombre completo:%0D%0AEmail registrado:%0D%0AMotivo (opcional):%0D%0A%0D%0AConfirmo que entiendo que la eliminación es permanente e irreversible."
                 className='inline-flex items-center px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl'
               >
                 <Mail className='h-5 w-5 mr-2' />
@@ -268,10 +268,10 @@ function DeleteAccount() {
             <p className='text-gray-700 dark:text-gray-300'>
               <strong className='text-gray-900 dark:text-white'>Email:</strong>{' '}
               <a
-                href="mailto:contacto@oagrd.gov.co"
+                href="mailto:contacto@oagrd.org"
                 className='text-blue-600 dark:text-blue-400 hover:underline'
               >
-                contacto@oagrd.gov.co
+                contacto@oagrd.org
               </a>
             </p>
             <p className='text-gray-700 dark:text-gray-300'>
@@ -317,10 +317,10 @@ function DeleteAccount() {
             </a>
             <span className='text-gray-400'>|</span>
             <a
-              href="mailto:contacto@oagrd.gov.co"
+              href="mailto:contacto@oagrd.org"
               className='text-blue-600 dark:text-blue-400 hover:underline'
             >
-              contacto@oagrd.gov.co
+              contacto@oagrd.org
             </a>
           </div>
           <p className='text-gray-500 dark:text-gray-500 text-sm mt-4'>
