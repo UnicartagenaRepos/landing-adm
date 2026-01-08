@@ -178,11 +178,11 @@ function DeleteAccount() {
                 </li>
                 <li className='flex items-start'>
                   <span className='font-bold mr-2 text-green-600 dark:text-green-400'>4.</span>
-                  <span>Selecciona <strong>"Configuración"</strong> o <strong>"Ajustes"</strong></span>
+                  <span>Selecciona <strong>&quot;Configuración&quot;</strong> o <strong>&quot;Ajustes&quot;</strong></span>
                 </li>
                 <li className='flex items-start'>
                   <span className='font-bold mr-2 text-green-600 dark:text-green-400'>5.</span>
-                  <span>Busca la opción <strong>"Eliminar Cuenta"</strong></span>
+                  <span>Busca la opción <strong>&quot;Eliminar Cuenta&quot;</strong></span>
                 </li>
                 <li className='flex items-start'>
                   <span className='font-bold mr-2 text-green-600 dark:text-green-400'>6.</span>
