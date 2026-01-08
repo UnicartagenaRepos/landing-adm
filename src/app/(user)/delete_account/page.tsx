@@ -4,7 +4,18 @@ import Image from 'next/image'
 
 export const metadata = {
   title: 'Eliminación de Cuenta - SatApp Oficial OAGRD',
-  description: 'Página oficial para solicitar la eliminación de cuenta de SatApp Oficial - Sistema de Alertas Tempranas de la OAGRD, Alcaldía de Cartagena de Indias',
+  description: 'Página oficial para solicitar la eliminación de cuenta de SatApp Oficial (org.oagrd.satapp) - Sistema de Alertas Tempranas de la OAGRD, Alcaldía de Cartagena de Indias',
+  applicationName: 'SatApp Oficial',
+  authors: [{ name: 'OAGRD - Oficina Asesora para la Gestión del Riesgo de Desastres', url: 'https://www.satcartagena.oagrd.org' }],
+  keywords: ['SatApp Oficial', 'org.oagrd.satapp', 'OAGRD', 'eliminación de cuenta', 'borrar cuenta', 'delete account', 'Sistema de Alertas Tempranas', 'Cartagena', 'Universidad de Cartagena'],
+  other: {
+    'application-name': 'SatApp Oficial',
+    'app-id': 'org.oagrd.satapp',
+    'developer': 'OAGRD - Oficina Asesora para la Gestión del Riesgo de Desastres',
+    'developer-email': 'gestionriesgo2023@unicartagena.edu.co',
+    'contact-email': 'contacto@oagrd.gov.co',
+    'organization': 'Universidad de Cartagena - OAGRD',
+  }
 }
 
 function DeleteAccount() {
@@ -36,13 +47,31 @@ function DeleteAccount() {
           </p>
         </div>
 
+        {/* Información de la Aplicación */}
+        <div className='bg-blue-50 dark:bg-blue-900/20 rounded-2xl shadow-xl p-6 mb-8 border-2 border-blue-200 dark:border-blue-700'>
+          <h3 className='text-xl font-bold text-blue-900 dark:text-blue-300 mb-3'>
+            📱 Información de la Aplicación
+          </h3>
+          <div className='space-y-2 text-gray-700 dark:text-gray-300'>
+            <p><strong className='text-blue-900 dark:text-blue-200'>Nombre de la aplicación:</strong> SatApp Oficial</p>
+            <p><strong className='text-blue-900 dark:text-blue-200'>ID de la aplicación:</strong> org.oagrd.satapp</p>
+            <p><strong className='text-blue-900 dark:text-blue-200'>Desarrollador:</strong> OAGRD - Oficina Asesora para la Gestión del Riesgo de Desastres</p>
+            <p><strong className='text-blue-900 dark:text-blue-200'>Organización:</strong> Universidad de Cartagena</p>
+            <p><strong className='text-blue-900 dark:text-blue-200'>Email del desarrollador:</strong>{' '}
+              <a href="mailto:gestionriesgo2023@unicartagena.edu.co" className='text-blue-600 dark:text-blue-400 hover:underline'>
+                gestionriesgo2023@unicartagena.edu.co
+              </a>
+            </p>
+          </div>
+        </div>
+
         {/* Información Principal */}
         <div className='bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 mb-8'>
           <h3 className='text-2xl font-bold text-gray-900 dark:text-white mb-4 pb-3 border-b-2 border-blue-500'>
             Solicitud de Eliminación de Cuenta
           </h3>
           <p className='text-gray-700 dark:text-gray-300 mb-4 leading-relaxed'>
-            Si deseas eliminar tu cuenta de <strong>SatApp Oficial</strong>, toda tu información personal
+            Si deseas eliminar tu cuenta de <strong>SatApp Oficial (org.oagrd.satapp)</strong>, toda tu información personal
             y datos asociados serán eliminados permanentemente de nuestros sistemas.
           </p>
           <p className='text-gray-700 dark:text-gray-300 leading-relaxed'>
@@ -295,7 +324,7 @@ function DeleteAccount() {
         {/* Footer */}
         <div className='bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 text-center'>
           <p className='text-xl font-bold text-gray-900 dark:text-white mb-2'>
-            SatApp Oficial
+            SatApp Oficial (org.oagrd.satapp)
           </p>
           <p className='text-gray-600 dark:text-gray-400 mb-1'>
             Sistema de Alertas Tempranas
@@ -303,10 +332,13 @@ function DeleteAccount() {
           <p className='text-gray-600 dark:text-gray-400 mb-1'>
             Oficina Asesora para la Gestión del Riesgo de Desastres (OAGRD)
           </p>
+          <p className='text-gray-600 dark:text-gray-400 mb-1'>
+            Universidad de Cartagena
+          </p>
           <p className='text-gray-600 dark:text-gray-400 mb-4'>
             Alcaldía de Cartagena de Indias, Colombia
           </p>
-          <div className='flex justify-center space-x-4 text-sm'>
+          <div className='flex flex-col sm:flex-row justify-center items-center gap-2 sm:gap-4 text-sm mb-3'>
             <a
               href="https://www.satcartagena.oagrd.org"
               target="_blank"
@@ -315,16 +347,23 @@ function DeleteAccount() {
             >
               www.satcartagena.oagrd.org
             </a>
-            <span className='text-gray-400'>|</span>
+            <span className='hidden sm:inline text-gray-400'>|</span>
             <a
               href="mailto:contacto@oagrd.org"
               className='text-blue-600 dark:text-blue-400 hover:underline'
             >
               contacto@oagrd.org
             </a>
+            <span className='hidden sm:inline text-gray-400'>|</span>
+            <a
+              href="mailto:gestionriesgo2023@unicartagena.edu.co"
+              className='text-blue-600 dark:text-blue-400 hover:underline'
+            >
+              gestionriesgo2023@unicartagena.edu.co
+            </a>
           </div>
           <p className='text-gray-500 dark:text-gray-500 text-sm mt-4'>
-            © 2026 OAGRD - Alcaldía de Cartagena de Indias. Todos los derechos reservados.
+            © 2026 OAGRD - Universidad de Cartagena - Alcaldía de Cartagena de Indias. Todos los derechos reservados.
           </p>
         </div>
       </div>
