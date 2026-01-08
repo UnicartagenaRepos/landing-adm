@@ -3,24 +3,98 @@ import { Mail, AlertTriangle, Smartphone, Clock, Shield, Trash2 } from 'lucide-r
 import Image from 'next/image'
 
 export const metadata = {
-  title: 'Eliminación de Cuenta - SatApp Oficial OAGRD',
-  description: 'Página oficial para solicitar la eliminación de cuenta de SatApp Oficial (org.oagrd.satapp) - Sistema de Alertas Tempranas de la OAGRD, Alcaldía de Cartagena de Indias',
+  title: 'Eliminación de Cuenta - SatApp Oficial (org.oagrd.satapp) | OAGRD Universidad de Cartagena',
+  description: 'Página oficial para solicitar la eliminación de cuenta y datos de SatApp Oficial (org.oagrd.satapp). Desarrollado por OAGRD - Oficina Asesora para la Gestión del Riesgo de Desastres, Universidad de Cartagena. Sistema de Alertas Tempranas de Cartagena de Indias.',
   applicationName: 'SatApp Oficial',
   authors: [{ name: 'OAGRD - Oficina Asesora para la Gestión del Riesgo de Desastres', url: 'https://www.satcartagena.oagrd.org' }],
-  keywords: ['SatApp Oficial', 'org.oagrd.satapp', 'OAGRD', 'eliminación de cuenta', 'borrar cuenta', 'delete account', 'Sistema de Alertas Tempranas', 'Cartagena', 'Universidad de Cartagena'],
+  keywords: [
+    'SatApp Oficial',
+    'org.oagrd.satapp',
+    'eliminar cuenta SatApp',
+    'borrar cuenta SatApp Oficial',
+    'delete account SatApp',
+    'OAGRD',
+    'Universidad de Cartagena',
+    'Sistema de Alertas Tempranas',
+    'Cartagena de Indias',
+    'gestionriesgo2023@unicartagena.edu.co',
+    'eliminación de datos personales',
+    'privacidad SatApp'
+  ],
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  openGraph: {
+    title: 'Eliminación de Cuenta - SatApp Oficial (org.oagrd.satapp)',
+    description: 'Página oficial para eliminar tu cuenta de SatApp Oficial. Desarrollado por OAGRD - Universidad de Cartagena.',
+    url: 'https://www.satcartagena.oagrd.org/delete_account',
+    siteName: 'SatApp Oficial - OAGRD',
+    locale: 'es_CO',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Eliminación de Cuenta - SatApp Oficial',
+    description: 'Elimina tu cuenta de SatApp Oficial (org.oagrd.satapp) - OAGRD Universidad de Cartagena',
+  },
   other: {
     'application-name': 'SatApp Oficial',
     'app-id': 'org.oagrd.satapp',
     'developer': 'OAGRD - Oficina Asesora para la Gestión del Riesgo de Desastres',
     'developer-email': 'gestionriesgo2023@unicartagena.edu.co',
-    'contact-email': 'contacto@oagrd.gov.co',
+    'contact-email': 'contacto@oagrd.org',
     'organization': 'Universidad de Cartagena - OAGRD',
+    'google-site-verification': 'delete-account-page',
   }
 }
 
 function DeleteAccount() {
+  // Datos estructurados JSON-LD para SEO
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: 'Eliminación de Cuenta - SatApp Oficial',
+    description: 'Página oficial para solicitar la eliminación de cuenta de SatApp Oficial (org.oagrd.satapp)',
+    url: 'https://www.satcartagena.oagrd.org/delete_account',
+    publisher: {
+      '@type': 'Organization',
+      name: 'OAGRD - Oficina Asesora para la Gestión del Riesgo de Desastres',
+      url: 'https://www.satcartagena.oagrd.org',
+      email: 'gestionriesgo2023@unicartagena.edu.co',
+      contactPoint: {
+        '@type': 'ContactPoint',
+        email: 'contacto@oagrd.org',
+        contactType: 'Customer Service',
+        areaServed: 'CO',
+        availableLanguage: 'Spanish'
+      }
+    },
+    about: {
+      '@type': 'SoftwareApplication',
+      name: 'SatApp Oficial',
+      applicationCategory: 'UtilitiesApplication',
+      operatingSystem: 'Android',
+      identifier: 'org.oagrd.satapp',
+      author: {
+        '@type': 'Organization',
+        name: 'Universidad de Cartagena - OAGRD',
+        email: 'gestionriesgo2023@unicartagena.edu.co'
+      }
+    }
+  };
+
   return (
-    <div className='min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 py-12 px-4 sm:px-6 lg:px-8'>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <div className='min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 py-12 px-4 sm:px-6 lg:px-8'>
       <div className='max-w-5xl mx-auto'>
         {/* Header */}
         <div className='bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 mb-8 text-center'>
@@ -367,7 +441,8 @@ function DeleteAccount() {
           </p>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   )
 }
 

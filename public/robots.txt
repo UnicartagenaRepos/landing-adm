@@ -1,0 +1,13 @@
+# robots.txt para SatApp Oficial - OAGRD
+# Permite el rastreo de Google y otros motores de búsqueda
+
+User-agent: *
+Allow: /
+Allow: /delete_account
+Allow: /privacidad
+
+# Sitemap
+Sitemap: https://www.satcartagena.oagrd.org/sitemap.xml
+
+# Crawl-delay para ser amigable con los servidores
+Crawl-delay: 1
